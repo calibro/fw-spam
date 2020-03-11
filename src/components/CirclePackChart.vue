@@ -1,19 +1,15 @@
 <template>
-  <div class="circle-pack-chart" >
-    <div class="log-info">Node info: {{nodeInfo}}</div>
-    <svg id="main-svg" ref='mainSvg'>
-    </svg>
-  </div>
+  <g id="main-chart" ref='mainChart' :transform="'translate('+ x + ',' + y + ')'" :height="height" :width="width">
+  </g>
 </template>
 
 <script>
 import * as d3 from 'd3'
 import {group} from "d3-array";
 
-import {saveSvgAsPng} from 'save-svg-as-png'
-
 export default {
   name: 'CirclePackChart',
+  props: ['x', 'y', 'height', 'width'],
   data () {
     return {
       chartData: {},
@@ -44,11 +40,13 @@ export default {
     },
     draw () {
       let self = this
-      let vHeight = this.$el.clientHeight
-      let vWidth = this.$el.clientWidth
+      let vHeight = this.height //1000 //this.$el.clientHeight
+      let vWidth = this.width //this.$el.clientWidth
       let rad = Math.min(vWidth,vHeight)
-      var svg = d3.select(this.$refs.mainSvg).attr('width', vWidth).attr('height', vHeight)
+      var svg = d3.select(this.$refs.mainChart).attr('width', vWidth).attr('height', vHeight)
       // Declare d3 layout
+
+      d3.select(this.$refs.mainChart).selectAll('*').remove()
 
       const root = d3.pack()
         .size([rad - 10, rad - 10])
@@ -77,14 +75,13 @@ export default {
             let el = d3.select(this).attr("fill", self.color(d.height))
             self.nodeInfo = ''
           })
-
-    },
-    exportImage () {
-      saveSvgAsPng(this.$refs.mainSvg, "chart.png")
     }
   },
   watch: {
     chartData () {
+      this.draw()
+    },
+    height () {
       this.draw()
     }
   }
@@ -92,6 +89,5 @@ export default {
 </script>
 
 <style scoped lang="stylus">
-.circle-pack-chart
-  min-height 400px
+
 </style>

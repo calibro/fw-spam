@@ -7,25 +7,32 @@
       <options-bar></options-bar>
     </div>
     <div class="slide-container item-container">
-      <circle-pack-chart></circle-pack-chart>
+      <div class="slide-box">
+        <slide-container ref="slide"></slide-container>
+      </div>
     </div>
     <div class="export-bar-container item-container">
-      <export-bar></export-bar>
+      <export-bar @export="doExport"></export-bar>
     </div>
   </div>
 </template>
 
 <script>
-import CirclePackChart from './components/CirclePackChart.vue'
+import SlideContainer from './components/SlideContainer.vue'
 import OptionsBar from './components/OptionsBar.vue'
 import ExportBar from './components/ExportBar.vue'
 
 export default {
   name: 'app',
   components: {
-    CirclePackChart,
+    SlideContainer,
     ExportBar,
     OptionsBar
+  },
+  methods: {
+    doExport () {
+      this.$refs.slide.exportImage()
+    }
   }
 }
 </script>
@@ -65,4 +72,11 @@ body
     display flex
     flex 1 0 auto
     background #f2f2f2
+    max-height: calc(100vh - 40px - 90px - 90px)
+    overflow: hidden;
+    .slide-box
+      width 80%
+      margin 15px auto
+      overflow hidden
+      text-align: center
 </style>
