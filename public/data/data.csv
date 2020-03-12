@@ -1,0 +1,1001 @@
+lastmonth,ip,hostname,email_score,email_score_name,dnsmatch,blacklists,ip_int,lastday,blacklists_count,blacklists_snources,second_level_domain,third_level_domain,category
+3.071084512210233,2.224.241.87,2-224-241-87.ip172.fastwebnet.it,,Poor,1,[object Object],48296279,0,3,cbl.abuseat.org | pbl.spamhaus.org | bl.spamcop.net,fastwebnet.it,ip172.fastwebnet.it,consumer
+3.7645136074368057,2.225.175.182,2-225-175-182.ip176.fastwebnet.it,,Poor,1,[object Object],48345014,4.640626566762715,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip176.fastwebnet.it,consumer
+4.444460905627123,2.226.12.12,2-226-12-12.ip178.fastwebnet.it,,Poor,1,[object Object],48368652,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip178.fastwebnet.it,consumer
+3.4817399689070765,2.228.7.202,egateway02.mercurypayments.it,,Good,1,[object Object],48498634,3.6865167372241863,0,,mercurypayments.it,egateway02.mercurypayments.it,enterprise
+4.005001775551836,2.228.9.106,2-228-9-106.ip189.fastwebnet.it,,Neutral,1,[object Object],48499050,0,0,,fastwebnet.it,ip189.fastwebnet.it,consumer
+3.5633320123529932,2.228.12.140,smtp.focolare.org,,Neutral,1,[object Object],48499852,3.9873974651493196,0,,focolare.org,smtp.focolare.org,enterprise
+3.0706518402124003,2.228.22.122,2-228-22-122.ip189.fastwebnet.it,,Neutral,1,[object Object],48502394,3.5614784944906024,0,,fastwebnet.it,ip189.fastwebnet.it,consumer
+3.1927472283373772,2.228.22.123,mail.adcom.it,,Neutral,1,[object Object],48502395,3.5614784944906024,0,,adcom.it,mail.adcom.it,enterprise
+3.3969335868202415,2.228.24.205,smtp105.mcontact.it,,Neutral,1,[object Object],48502989,4.125713735230223,0,,mcontact.it,smtp105.mcontact.it,enterprise
+4.207776274280431,2.228.24.242,smtp5.mmm.it,,Neutral,1,[object Object],48503026,3.5614784944906024,0,,mmm.it,smtp5.mmm.it,enterprise
+4.213003762313292,2.228.24.243,smtp6.mmm.it,,Neutral,1,[object Object],48503027,3.862508490154583,0,,mmm.it,smtp6.mmm.it,enterprise
+4.119164156511954,2.228.24.244,smtp7.mmm.it,,Neutral,1,[object Object],48503028,3.084755127551316,0,,mmm.it,smtp7.mmm.it,enterprise
+4.232048762854066,2.228.24.245,smtp19.mmm.it,,Neutral,1,[object Object],48503029,3.3851881547612983,0,,mmm.it,smtp19.mmm.it,enterprise
+2.9200228805654858,2.228.32.79,mail02.siae.it,,Good,1,[object Object],48504911,0,0,,siae.it,mail02.siae.it,enterprise
+2.9068902849459857,2.228.36.187,mail.prodottigianni.com,,Good,1,[object Object],48506043,0,0,,prodottigianni.com,mail.prodottigianni.com,enterprise
+3.4896471382627183,2.228.51.207,2-228-51-207.ip190.fastwebnet.it,,Good,1,[object Object],48509903,3.5614784944906024,0,,fastwebnet.it,ip190.fastwebnet.it,consumer
+3.085505394688851,2.228.52.234,2-228-52-234.ip190.fastwebnet.it,,Neutral,1,[object Object],48510186,0,0,,fastwebnet.it,ip190.fastwebnet.it,consumer
+2.9075406772938495,2.228.60.199,2-228-60-199.ip190.fastwebnet.it,,Neutral,1,[object Object],48512199,0,0,,fastwebnet.it,ip190.fastwebnet.it,consumer
+4.4017795943084455,2.228.66.139,2-228-66-139.ip190.fastwebnet.it,,Good,1,[object Object],48513675,4.765573597052458,0,,fastwebnet.it,ip190.fastwebnet.it,consumer
+3.554542550059336,2.228.66.143,maildirect.tntitaly.it,,Good,1,[object Object],48513679,3.084755127551316,0,,tntitaly.it,maildirect.tntitaly.it,enterprise
+3.5438003713273187,2.228.67.23,2-228-67-23.ip190.fastwebnet.it,,Good,1,[object Object],48513815,3.783247622788209,0,,fastwebnet.it,ip190.fastwebnet.it,consumer
+2.962935096515888,2.228.93.156,servermail.eurostreet.it,,Poor,1,[object Object],48520604,0,0,,eurostreet.it,servermail.eurostreet.it,enterprise
+3.1123346598927113,2.228.95.50,smtp.fincantieri.it,,Good,1,[object Object],48521010,0,0,,fincantieri.it,smtp.fincantieri.it,enterprise
+3.1298460900525993,2.228.95.51,smtp.fincantieri.it,,Good,1,[object Object],48521011,3.084755127551316,0,,fincantieri.it,smtp.fincantieri.it,enterprise
+2.934087355095046,2.228.102.212,2-228-102-212.ip191.fastwebnet.it,,Poor,1,[object Object],48522964,0,1,cbl.abuseat.org,fastwebnet.it,ip191.fastwebnet.it,consumer
+3.1314602410411445,2.228.111.229,mg.luisaviaroma.com,,Good,1,[object Object],48525285,3.084755127551316,0,,luisaviaroma.com,mg.luisaviaroma.com,enterprise
+3.159765242753471,2.228.121.163,mail.conadfo.it,,Good,1,[object Object],48527779,3.6865167372241863,0,,conadfo.it,mail.conadfo.it,enterprise
+3.891014047411305,2.228.133.2,,,Good,,[object Object],48530690,3.783247622788209,0,,,,enterprise
+3.3585737690708686,2.228.136.250,relay1.icp.mi.it,,Poor,1,[object Object],48531706,0,0,,icp.mi.it,relay1.icp.mi.it,enterprise
+3.4744555893189624,2.228.136.251,relay2.icp.mi.it,,Neutral,1,[object Object],48531707,0,0,,icp.mi.it,relay2.icp.mi.it,enterprise
+2.8837607847012956,2.228.147.108,smtp.bricoio.it,,Neutral,1,[object Object],48534380,0,0,,bricoio.it,smtp.bricoio.it,enterprise
+2.914767041719899,2.228.147.228,2-228-147-228.ip192.fastwebnet.it,,Poor,1,[object Object],48534500,3.3851881547612983,1,cbl.abuseat.org,fastwebnet.it,ip192.fastwebnet.it,consumer
+4.11793689877694,2.228.150.119,2-228-150-119.ip192.fastwebnet.it,,Good,1,[object Object],48535159,4.4065196636238895,0,,fastwebnet.it,ip192.fastwebnet.it,consumer
+3.420954449198538,2.228.150.124,2-228-150-124.ip192.fastwebnet.it,,Neutral,1,[object Object],48535164,3.084755127551316,0,,fastwebnet.it,ip192.fastwebnet.it,consumer
+2.9223702692818443,2.228.150.228,antispam2.gruppopam.it,,Neutral,1,[object Object],48535268,3.084755127551316,0,,gruppopam.it,antispam2.gruppopam.it,enterprise
+3.675926271635465,2.228.152.66,2-228-152-66.ip192.fastwebnet.it,,Good,1,[object Object],48535618,3.5614784944906024,0,,fastwebnet.it,ip192.fastwebnet.it,consumer
+3.629933727806337,2.228.152.75,2-228-152-75.ip192.fastwebnet.it,,Good,1,[object Object],48535627,3.5614784944906024,0,,fastwebnet.it,ip192.fastwebnet.it,consumer
+3.27105784229689,2.228.164.82,2-228-164-82.ip192.fastwebnet.it,,Good,1,[object Object],48538706,3.6865167372241863,0,,fastwebnet.it,ip192.fastwebnet.it,consumer
+4.248285225686198,2.228.236.149,smtp2.gls-italy.com,,Good,1,[object Object],48557205,4.230456840939598,0,,gls-italy.com,smtp2.gls-italy.com,enterprise
+4.38174002261173,2.228.254.10,mail.aslcaserta.it,,Good,1,[object Object],48561674,0,0,,aslcaserta.it,mail.aslcaserta.it,enterprise
+2.902389783719309,2.229.17.134,2-229-17-134.ip194.fastwebnet.it,,Good,1,[object Object],48566662,0,0,,fastwebnet.it,ip194.fastwebnet.it,consumer
+3.4969468065885225,2.229.23.199,posta.mancinobrokers.com,,Good,1,[object Object],48568263,3.3851881547612983,0,,mancinobrokers.com,posta.mancinobrokers.com,enterprise
+3.025516180186184,2.229.41.118,mail.studiopalma.eu,,Neutral,1,[object Object],48572790,0,0,,studiopalma.eu,mail.studiopalma.eu,enterprise
+2.922617627533607,2.229.81.80,2-229-81-80.ip195.fastwebnet.it,,Neutral,1,[object Object],48582992,3.084755127551316,0,,fastwebnet.it,ip195.fastwebnet.it,consumer
+2.9674191553042006,2.229.87.228,2-229-87-228.ip196.fastwebnet.it,,Neutral,1,[object Object],48584676,3.5614784944906024,0,,fastwebnet.it,ip196.fastwebnet.it,consumer
+3.203937626568218,2.229.125.94,2-229-125-94.ip196.fastwebnet.it,,Neutral,1,[object Object],48594270,0,0,,fastwebnet.it,ip196.fastwebnet.it,consumer
+3.922063730186014,2.229.249.153,2-229-249-153.ip199.fastwebnet.it,,Poor,1,[object Object],48626073,3.6865167372241863,2,cbl.abuseat.org | bl.spamcop.net,fastwebnet.it,ip199.fastwebnet.it,consumer
+3.300855601635141,2.230.20.232,2-230-20-232.ip199.fastwebnet.it,,Poor,1,[object Object],48633064,0,0,,fastwebnet.it,ip199.fastwebnet.it,consumer
+3.01426479241099,2.233.84.20,2-233-84-20.ip216.fastwebnet.it,,Neutral,1,[object Object],48845844,3.9293415305750377,0,,fastwebnet.it,ip216.fastwebnet.it,consumer
+3.6389054784389496,2.234.19.229,2-234-19-229.ip220.fastwebnet.it,,Poor,1,[object Object],48894949,0,1,cbl.abuseat.org,fastwebnet.it,ip220.fastwebnet.it,consumer
+3.273430507674352,2.234.55.31,2-234-55-31.ip221.fastwebnet.it,,Neutral,1,[object Object],48903967,0,0,,fastwebnet.it,ip221.fastwebnet.it,consumer
+2.8956212123553087,2.235.112.227,2-235-112-227.ip227.fastwebnet.it,,Poor,1,[object Object],48984291,0,1,cbl.abuseat.org,fastwebnet.it,ip227.fastwebnet.it,consumer
+3.064274260355688,2.238.72.26,2-238-72-26.ip242.fastwebnet.it,,Poor,1,[object Object],49170458,0,0,,fastwebnet.it,ip242.fastwebnet.it,consumer
+3.2979477254302174,2.238.196.150,2-238-196-150.ip245.fastwebnet.it,,Neutral,1,[object Object],49202326,0,0,,fastwebnet.it,ip245.fastwebnet.it,consumer
+3.0141569563118487,5.152.240.89,ciclopecr.tesoro.it,,Good,1,[object Object],93909081,4.230456840939598,0,,tesoro.it,ciclopecr.tesoro.it,enterprise
+4.098732980631789,5.152.242.6,smtp1.acquistinretepa.it,,Good,1,[object Object],93909510,4.4065196636238895,0,,acquistinretepa.it,smtp1.acquistinretepa.it,enterprise
+2.9124949210642535,31.131.240.77,newsmtpol.seamilano.eu,,Good,1,[object Object],528740429,0,0,,seamilano.eu,newsmtpol.seamilano.eu,enterprise
+3.047094832091036,37.186.198.206,37-186-198-206.ip270.fastwebnet.it,,Poor,1,[object Object],632997582,0,1,cbl.abuseat.org,fastwebnet.it,ip270.fastwebnet.it,consumer
+3.7391113694232465,37.186.199.182,ip4.osculati.it,,Good,1,[object Object],632997814,3.6865167372241863,0,,osculati.it,ip4.osculati.it,enterprise
+3.0019858843561313,37.186.204.34,wwwsede.interacciai.it,,Neutral,1,[object Object],632998946,0,0,,interacciai.it,wwwsede.interacciai.it,enterprise
+2.9918870487395064,37.186.204.40,relay.interacciai.it,,Neutral,1,[object Object],632998952,3.862508490154583,0,,interacciai.it,relay.interacciai.it,enterprise
+3.506487716566045,37.186.205.36,37-186-205-36.ip270.fastwebnet.it,,Good,1,[object Object],632999204,0,0,,fastwebnet.it,ip270.fastwebnet.it,consumer
+3.036483421113247,37.186.207.230,mail.gruppodiba.it,,Good,1,[object Object],632999910,3.084755127551316,0,,gruppodiba.it,mail.gruppodiba.it,enterprise
+3.4649893930333553,37.186.212.186,remote.aicarr.org,,Neutral,1,[object Object],633001146,0,0,,aicarr.org,remote.aicarr.org,enterprise
+3.1592581082768474,37.186.213.226,mail.briedacabs.com,,Good,1,[object Object],633001442,3.3851881547612983,0,,briedacabs.com,mail.briedacabs.com,enterprise
+3.341352726371992,37.186.216.36,mail.oikos-paint.com,,Neutral,1,[object Object],633002020,3.6865167372241863,0,,oikos-paint.com,mail.oikos-paint.com,enterprise
+2.893368505723073,37.186.216.115,mail.furuno.it,,Good,1,[object Object],633002099,3.3851881547612983,0,,furuno.it,mail.furuno.it,enterprise
+3.046451676240333,37.186.220.35,mail.miarete.it,,Good,1,[object Object],633003043,0,0,,miarete.it,mail.miarete.it,enterprise
+3.3848325807564996,37.186.220.197,mail-197.innovazionedigitale.it,,Neutral,1,[object Object],633003205,0,0,,innovazionedigitale.it,mail-197.innovazionedigitale.it,enterprise
+3.3120324812852004,37.186.220.198,mail-198.innovazionedigitale.it,,Good,1,[object Object],633003206,3.5614784944906024,0,,innovazionedigitale.it,mail-198.innovazionedigitale.it,enterprise
+3.9711418071732325,37.186.220.200,mail-200.innovazionedigitale.it,,Good,1,[object Object],633003208,0,0,,innovazionedigitale.it,mail-200.innovazionedigitale.it,enterprise
+3.7211987413395984,37.186.220.207,out1.fabersystem.it,,Good,1,[object Object],633003215,3.862508490154583,0,,fabersystem.it,out1.fabersystem.it,enterprise
+2.9009725090850407,37.186.220.223,mail.porto.genova.it,,Good,1,[object Object],633003231,3.9293415305750377,0,,porto.genova.it,mail.porto.genova.it,enterprise
+3.4437160608704995,37.186.220.235,out-235.innovazionedigitale.it,,Good,1,[object Object],633003243,4.038599749210265,0,,innovazionedigitale.it,out-235.innovazionedigitale.it,enterprise
+3.853199820285408,37.186.220.238,mx2.agenziazurich.it,,Good,1,[object Object],633003246,4.363068936586154,0,,agenziazurich.it,mx2.agenziazurich.it,enterprise
+3.5651337514727115,37.186.220.240,mx1-cnappc.innovazionedigitale.it,,Good,1,[object Object],633003248,4.038599749210265,0,,innovazionedigitale.it,mx1-cnappc.innovazionedigitale.it,enterprise
+3.561006952094621,37.186.220.248,mail-248.innovazionedigitale.it,,Good,1,[object Object],633003256,3.9293415305750377,0,,innovazionedigitale.it,mail-248.innovazionedigitale.it,enterprise
+3.637975934481524,37.186.220.249,mail-249.innovazionedigitale.it,,Good,1,[object Object],633003257,4.531486836603579,0,,innovazionedigitale.it,mail-249.innovazionedigitale.it,enterprise
+3.098715227256387,37.186.228.70,mail.ucimu.it,,Good,1,[object Object],633005126,3.9293415305750377,0,,ucimu.it,mail.ucimu.it,enterprise
+3.0243438729409804,37.186.234.57,37-186-234-57.ip270.fastwebnet.it,,Neutral,1,[object Object],633006649,0,0,,fastwebnet.it,ip270.fastwebnet.it,consumer
+3.393936585668299,37.186.236.100,mail.coopservice.it,,Good,1,[object Object],633007204,3.5614784944906024,0,,coopservice.it,mail.coopservice.it,enterprise
+3.37679219096873,37.186.236.103,mail2.coopservice.it,,Good,1,[object Object],633007207,3.6865167372241863,0,,coopservice.it,mail2.coopservice.it,enterprise
+3.13495073276862,37.186.238.194,a.fbi0.lnk.bitconn.eu,,Neutral,1,[object Object],633007810,3.084755127551316,0,,bitconn.eu,lnk.bitconn.eu,enterprise
+2.9071466163994666,37.186.238.220,mail.owa.otim.it,,Good,1,[object Object],633007836,3.6865167372241863,0,,otim.it,owa.otim.it,enterprise
+3.0461655231813523,37.186.241.3,mailout.siven.it,,Neutral,1,[object Object],633008387,3.862508490154583,0,,siven.it,mailout.siven.it,enterprise
+3.3342743439909355,37.186.241.18,mx01.corvallisholding.it,,Good,1,[object Object],633008402,3.5614784944906024,0,,corvallisholding.it,mx01.corvallisholding.it,enterprise
+3.54515889866152,37.186.241.104,mail.gruppoveritas.it,,Good,0,[object Object],633008488,4.163538485818565,0,,gruppoveritas.it,mail.gruppoveritas.it,enterprise
+3.295496098657112,37.186.241.153,mail.tdbnet.it,,Neutral,1,[object Object],633008537,3.862508490154583,0,,tdbnet.it,mail.tdbnet.it,enterprise
+3.458785276897007,37.186.245.180,mail.las.it,,Neutral,1,[object Object],633009588,3.862508490154583,0,,las.it,mail.las.it,enterprise
+3.260798474420535,37.186.252.85,smtp.lobsoftware.it,,Neutral,1,[object Object],633011285,0,0,,lobsoftware.it,smtp.lobsoftware.it,enterprise
+3.2147304268986736,37.186.252.92,smtp.popolis.it,,Good,1,[object Object],633011292,3.783247622788209,0,,popolis.it,smtp.popolis.it,enterprise
+2.9544094619574586,37.186.253.45,mail.horsa.it,,Neutral,1,[object Object],633011501,3.3851881547612983,0,,horsa.it,mail.horsa.it,enterprise
+3.0009547388632796,62.101.65.201,mx2.multiconsult.com,,Neutral,1,[object Object],1046823369,3.3851881547612983,0,,multiconsult.com,mx2.multiconsult.com,enterprise
+3.7736077080292487,62.101.76.177,smtpout2.fastweb.it,,Good,1,[object Object],1046826161,4.038599749210265,0,,fastweb.it,smtpout2.fastweb.it,corporate
+3.797187842204037,62.101.76.178,smtpout3.fastweb.it,,Good,1,[object Object],1046826162,3.783247622788209,0,,fastweb.it,smtpout3.fastweb.it,corporate
+3.763872545861937,62.101.76.185,smtpout4.fastweb.it,,Good,1,[object Object],1046826169,3.5614784944906024,0,,fastweb.it,smtpout4.fastweb.it,corporate
+3.013262425651819,62.101.77.196,pat.giochipreziosi.it,,Neutral,0,[object Object],1046826436,0,0,,giochipreziosi.it,pat.giochipreziosi.it,enterprise
+3.7771453603484684,62.101.80.193,mta.di-net.it,,Good,1,[object Object],1046827201,4.125713735230223,0,,di-net.it,mta.di-net.it,enterprise
+3.651746358836965,62.101.80.236,mail.savidis.it,,Good,1,[object Object],1046827244,4.339563394789035,0,,savidis.it,mail.savidis.it,enterprise
+3.0308417189514314,62.101.86.35,mail.palazzoducale.genova.it,,Neutral,1,[object Object],1046828579,0,0,,palazzoducale.genova.it,mail.palazzoducale.genova.it,enterprise
+3.28671839066826,62.101.86.54,smtp.galliera.it,,Good,1,[object Object],1046828598,3.3851881547612983,0,,galliera.it,smtp.galliera.it,enterprise
+3.7102021161453496,62.101.86.87,relay.ospedale-gaslini.ge.it,,Good,1,[object Object],1046828631,3.6865167372241863,0,,ospedale-gaslini.ge.it,relay.ospedale-gaslini.ge.it,enterprise
+3.643273939534243,62.101.86.130,62-101-86-130.ip.fastwebnet.it,,Good,1,[object Object],1046828674,4.288427460813301,0,,fastwebnet.it,ip.fastwebnet.it,consumer
+3.8815312809867457,62.101.86.213,mail.bancosta.it,,Good,1,[object Object],1046828757,4.230456840939598,0,,bancosta.it,mail.bancosta.it,enterprise
+3.388648051598723,62.101.104.51,62-101-104-51.ip.fastwebnet.it,,Neutral,1,[object Object],1046833203,3.9873974651493196,0,,fastwebnet.it,ip.fastwebnet.it,consumer
+3.867022907263693,62.101.104.245,mail.brenntag.it,,Good,1,[object Object],1046833397,4.426743730894204,0,,brenntag.it,mail.brenntag.it,enterprise
+3.0385712038949135,81.208.13.171,81-208-13-171.ip.fastwebnet.it,,Neutral,1,[object Object],1372589483,0,0,,fastwebnet.it,ip.fastwebnet.it,consumer
+3.32198954241806,81.208.15.168,fwlinux.gsy.it,,Neutral,1,[object Object],1372589992,0,0,,gsy.it,fwlinux.gsy.it,enterprise
+3.242565546610038,81.208.15.228,mailsrv-fw.boero.it,,Good,1,[object Object],1372590052,3.084755127551316,0,,boero.it,mailsrv-fw.boero.it,enterprise
+3.03036701527591,81.208.40.98,mle-gw.mle.it,,Good,1,[object Object],1372596322,3.6865167372241863,0,,mle.it,mle-gw.mle.it,enterprise
+3.909809410623394,81.208.46.246,smtpout01.marposs.net,,Good,1,[object Object],1372598006,4.198239346205174,0,,marposs.net,smtpout01.marposs.net,enterprise
+3.5487639977080705,81.208.52.179,posta.usco.it,,Good,1,[object Object],1372599475,4.038599749210265,0,,usco.it,posta.usco.it,enterprise
+2.893510914033206,81.208.60.180,host180-60.81208.static.axxam.com,,Neutral,0,[object Object],1372601524,0,0,,axxam.com,static.axxam.com,enterprise
+3.1472007437277534,81.208.66.74,e-mail2.ricca-it.com,,Good,1,[object Object],1372602954,3.084755127551316,0,,ricca-it.com,e-mail2.ricca-it.com,enterprise
+3.0616857242986506,81.208.86.44,mx.tamoil.com,,Good,1,[object Object],1372608044,3.3851881547612983,0,,tamoil.com,mx.tamoil.com,enterprise
+3.2280102410484113,81.208.89.61,mail.gruppobim.it,,Good,1,[object Object],1372608829,3.3851881547612983,0,,gruppobim.it,mail.gruppobim.it,enterprise
+3.752610581955969,81.208.97.78,smtp2.zurich-connect.it,,Good,1,[object Object],1372610894,4.038599749210265,0,,zurich-connect.it,smtp2.zurich-connect.it,enterprise
+3.7955699298796044,81.208.106.249,mail.conadcentronord.it,,Good,1,[object Object],1372613369,4.038599749210265,0,,conadcentronord.it,mail.conadcentronord.it,enterprise
+3.8425787780936806,81.208.112.114,81-208-112-114.ip.fastwebnet.it,,Good,1,[object Object],1372614770,4.125713735230223,0,,fastwebnet.it,ip.fastwebnet.it,consumer
+4.548547093242603,81.208.112.117,mail.msccrociere.it,,Good,1,[object Object],1372614773,4.561438685655898,0,,msccrociere.it,mail.msccrociere.it,enterprise
+4.452830287532571,81.208.118.80,relay.popso.it,,Good,1,[object Object],1372616272,4.8972277252098895,0,,popso.it,relay.popso.it,enterprise
+3.3209037012398994,81.208.123.189,server.blumarinesrl.com,,Neutral,1,[object Object],1372617661,3.862508490154583,0,,blumarinesrl.com,server.blumarinesrl.com,enterprise
+3.7509530104555457,83.103.19.134,mail2.cmbcarpi.it,,Good,1,[object Object],1399264134,4.260448498826621,0,,cmbcarpi.it,mail2.cmbcarpi.it,enterprise
+3.549523658699261,83.103.23.221,mx1.italcom.biz,,Good,1,[object Object],1399265245,4.125713735230223,0,,italcom.biz,mx1.italcom.biz,enterprise
+3.315140728306806,83.103.29.246,itf-mgw02.italfarmaco.it,,Good,1,[object Object],1399266806,4.163538485818565,0,,italfarmaco.it,itf-mgw02.italfarmaco.it,enterprise
+3.29919634293565,83.103.48.41,83-103-48-41.ip.fastwebnet.it,,Good,1,[object Object],1399271465,0,0,,fastwebnet.it,ip.fastwebnet.it,consumer
+2.9018713183228013,83.103.59.30,mail3.virtualsolution.net,,Neutral,1,[object Object],1399274270,3.6865167372241863,0,,virtualsolution.net,mail3.virtualsolution.net,enterprise
+3.781884482837311,83.103.59.35,joomla.linkhost.it,,Good,1,[object Object],1399274275,4.038599749210265,0,,linkhost.it,joomla.linkhost.it,enterprise
+3.7734682824840817,83.103.59.75,linkmail.linkhost.it,,Good,1,[object Object],1399274315,4.515676771666111,0,,linkhost.it,linkmail.linkhost.it,enterprise
+3.0186479272877262,83.103.59.211,mail2.ufficiodiscount.it,,Neutral,1,[object Object],1399274451,3.5614784944906024,0,,ufficiodiscount.it,mail2.ufficiodiscount.it,enterprise
+3.134647307794449,83.103.75.100,antispam.makita.it,,Good,1,[object Object],1399278436,3.3851881547612983,0,,makita.it,antispam.makita.it,enterprise
+3.9608463278607275,83.103.96.246,mailhost.minihotel.it,,Good,1,[object Object],1399283958,4.08427761845219,0,,minihotel.it,mailhost.minihotel.it,enterprise
+2.928999983044652,83.103.98.84,83-103-98-84.ip.fastwebnet.it,,Good,1,[object Object],1399284308,0,0,,fastwebnet.it,ip.fastwebnet.it,consumer
+4.084405881262723,83.103.115.70,webmail.ima.it,,Good,1,[object Object],1399288646,4.446067768047895,0,,ima.it,webmail.ima.it,enterprise
+3.297578856962031,83.103.115.226,mail.viabizzuno.com,,Good,1,[object Object],1399288802,4.08427761845219,0,,viabizzuno.com,mail.viabizzuno.com,enterprise
+3.8338484011647176,85.18.12.244,mailserver.sestosg.net,,Good,1,[object Object],1427246324,4.260448498826621,0,,sestosg.net,mailserver.sestosg.net,enterprise
+3.5088319184020573,85.18.22.50,relay01.bancaifis.it,,Good,1,[object Object],1427248690,4.198239346205174,0,,bancaifis.it,relay01.bancaifis.it,enterprise
+4.020763840358744,85.18.29.249,85-18-29-249.ip.fastwebnet.it,,Good,1,[object Object],1427250681,4.125713735230223,0,,fastwebnet.it,ip.fastwebnet.it,consumer
+3.985387239872297,85.18.34.67,mx2.sviluppochimica.it,,Good,1,[object Object],1427251779,4.363068936586154,0,,sviluppochimica.it,mx2.sviluppochimica.it,enterprise
+3.0463515441151445,85.18.34.95,mail.federchimica.it,,Good,1,[object Object],1427251807,3.5614784944906024,0,,federchimica.it,mail.federchimica.it,enterprise
+3.4222447501535935,85.18.54.176,remote.paroleedintorni.it,,Neutral,1,[object Object],1427257008,4.230456840939598,0,,paroleedintorni.it,remote.paroleedintorni.it,enterprise
+3.1496323784506406,85.18.84.61,85-18-84-61.ip.fastwebnet.it,,Neutral,1,[object Object],1427264573,3.084755127551316,0,,fastwebnet.it,ip.fastwebnet.it,consumer
+3.4074563010032795,85.18.84.68,htmail.hugotrumpy.it,,Good,1,[object Object],1427264580,3.3851881547612983,0,,hugotrumpy.it,htmail.hugotrumpy.it,enterprise
+4.4412076493075245,85.18.95.20,mx014msr.fastwebnet.it,,Good,1,[object Object],1427267348,4.446067768047895,0,,fastwebnet.it,mx014msr.fastwebnet.it,consumer
+4.422121914670453,85.18.95.21,mx011msr.fastwebnet.it,,Good,1,[object Object],1427267349,4.339563394789035,0,,fastwebnet.it,mx011msr.fastwebnet.it,consumer
+4.437492356444646,85.18.95.22,mx012msr.fastwebnet.it,,Good,1,[object Object],1427267350,4.339563394789035,0,,fastwebnet.it,mx012msr.fastwebnet.it,consumer
+2.9586319248588224,85.18.95.24,mx011msb.fastweb.it,,Good,1,[object Object],1427267352,3.084755127551316,0,,fastweb.it,mx011msb.fastweb.it,corporate
+3.0129535390940587,85.18.95.31,mx012msb.fastweb.it,,Good,1,[object Object],1427267359,3.6865167372241863,0,,fastweb.it,mx012msb.fastweb.it,corporate
+3.1653811271490198,85.18.95.35,mx013msb.fastweb.it,,Good,1,[object Object],1427267363,0,0,,fastweb.it,mx013msb.fastweb.it,corporate
+3.05472528167218,85.18.95.41,mx014msb.fastweb.it,,Good,1,[object Object],1427267369,3.5614784944906024,0,,fastweb.it,mx014msb.fastweb.it,corporate
+4.437009044748089,85.18.95.57,mx013msr.fastwebnet.it,,Good,1,[object Object],1427267385,4.384512051422598,0,,fastwebnet.it,mx013msr.fastwebnet.it,consumer
+4.622043923447986,85.18.95.70,mr012msr.fastwebnet.it,,Neutral,1,[object Object],1427267398,4.888394722530353,0,,fastwebnet.it,mr012msr.fastwebnet.it,consumer
+4.600353400180329,85.18.95.71,mr013msr.fastwebnet.it,,Neutral,1,[object Object],1427267399,4.8948175605378585,0,,fastwebnet.it,mr013msr.fastwebnet.it,consumer
+3.810261242675314,85.18.95.90,mr021msb.fastweb.it,,Good,1,[object Object],1427267418,4.176231734003883,0,,fastweb.it,mr021msb.fastweb.it,corporate
+3.7856764426356513,85.18.95.97,mr032msb.fastweb.it,,Good,1,[object Object],1427267425,4.341061324384862,0,,fastweb.it,mr032msb.fastweb.it,corporate
+4.007304032043956,85.18.95.98,mr012msl.fastweb.it,,Neutral,1,[object Object],1427267426,4.341061324384862,0,,fastweb.it,mr012msl.fastweb.it,corporate
+3.9927845826717263,85.18.95.99,mr011msl.fastweb.it,,Neutral,1,[object Object],1427267427,4.524692715776474,0,,fastweb.it,mr011msl.fastweb.it,corporate
+3.820851317973133,85.18.95.100,mr024msb.fastweb.it,,Good,1,[object Object],1427267428,4.208449228738307,0,,fastweb.it,mr024msb.fastweb.it,corporate
+4.012045686342394,85.18.95.102,mr014msl.fastweb.it,,Neutral,1,[object Object],1427267430,4.141530873617273,0,,fastweb.it,mr014msl.fastweb.it,corporate
+4.457357200540042,85.18.95.103,mr014msb.fastweb.it,,Good,1,[object Object],1427267431,4.80267612736495,0,,fastweb.it,mr014msb.fastweb.it,corporate
+4.468839606349734,85.18.95.104,mr013msb.fastweb.it,,Good,1,[object Object],1427267432,4.769872969365598,0,,fastweb.it,mr013msb.fastweb.it,corporate
+3.8174016156191755,85.18.95.106,mr033msb.fastweb.it,,Good,1,[object Object],1427267434,4.3175557825877435,0,,fastweb.it,mr033msb.fastweb.it,corporate
+4.011683252803173,85.18.95.107,mr013msl.fastweb.it,,Neutral,1,[object Object],1427267435,4.062270006250898,0,,fastweb.it,mr013msl.fastweb.it,corporate
+4.468288180315652,85.18.95.108,mr011msb.fastweb.it,,Good,1,[object Object],1427267436,4.743565984851166,0,,fastweb.it,mr011msb.fastweb.it,corporate
+4.459834488837467,85.18.95.109,mr012msb.fastweb.it,,Good,1,[object Object],1427267437,4.769872969365598,0,,fastweb.it,mr012msb.fastweb.it,corporate
+4.6043171358752355,85.18.95.110,mr014msr.fastwebnet.it,,Neutral,1,[object Object],1427267438,4.954413608403469,0,,fastwebnet.it,mr014msr.fastwebnet.it,consumer
+4.607906324541506,85.18.95.111,mr011msr.fastwebnet.it,,Neutral,1,[object Object],1427267439,4.881857373412575,0,,fastwebnet.it,mr011msr.fastwebnet.it,consumer
+2.933957651342847,85.18.101.35,dexter.cesd.it,,Good,1,[object Object],1427268899,3.0627475153500248,0,,cesd.it,dexter.cesd.it,enterprise
+4.784224326974766,85.18.101.248,smtp4.mmm.it,,Good,1,[object Object],1427269112,0,0,,mmm.it,smtp4.mmm.it,enterprise
+4.711051917402414,85.18.101.250,smtp14.mmm.it,,Good,1,[object Object],1427269114,0,0,,mmm.it,smtp14.mmm.it,enterprise
+4.774049552079873,85.18.101.254,smtp21.mmm.it,,Neutral,1,[object Object],1427269118,4.7155356025273045,0,,mmm.it,smtp21.mmm.it,enterprise
+3.6647078911745328,85.18.103.25,mail.auchan.it,,Good,1,[object Object],1427269401,3.840500877953292,0,,auchan.it,mail.auchan.it,enterprise
+3.387886331141373,85.18.106.173,serv-ftp.cna-to.it,,Neutral,0,[object Object],1427270317,3.3631805425600065,0,,cna-to.it,serv-ftp.cna-to.it,enterprise
+3.1858607915902146,85.18.107.12,posta.gemmo.com,,Good,1,[object Object],1427270412,3.0627475153500248,0,,gemmo.com,posta.gemmo.com,enterprise
+2.9127479667323826,85.18.120.214,mail.dmr.st,,Neutral,0,[object Object],1427273942,0,0,,dmr.st,mail.dmr.st,enterprise
+4.178777981142576,85.18.123.226,mx1.altea.net,,Good,1,[object Object],1427274722,3.965389852948028,0,,altea.net,mx1.altea.net,enterprise
+2.9667494908522816,85.18.140.132,mx.gruppomaiorana.it,,Good,1,[object Object],1427278980,3.664509125022895,0,,gruppomaiorana.it,mx.gruppomaiorana.it,enterprise
+3.0112507248288374,85.18.156.242,85-18-156-242.ip.fastwebnet.it,,Neutral,1,[object Object],1427283186,0,0,,fastwebnet.it,ip.fastwebnet.it,consumer
+3.0951626703085418,85.18.160.139,85-18-160-139.ip.fastwebnet.it,,Neutral,1,[object Object],1427284107,0,0,,fastwebnet.it,ip.fastwebnet.it,consumer
+3.0254261149677144,85.18.162.172,85-18-162-172.ip.fastwebnet.it,,Neutral,1,[object Object],1427284652,3.0627475153500248,0,,fastwebnet.it,ip.fastwebnet.it,consumer
+3.2945519535323866,85.18.190.21,mail.sogesa.net,,Neutral,1,[object Object],1427291669,4.292775132428255,0,,sogesa.net,mail.sogesa.net,enterprise
+3.0910648556295217,85.18.201.81,prod.bestunion.it,,Neutral,0,[object Object],1427294545,0,0,,bestunion.it,prod.bestunion.it,enterprise
+3.46690029728084,85.18.244.5,mail.nordfluid.it,,Neutral,1,[object Object],1427305477,3.0627475153500248,0,,nordfluid.it,mail.nordfluid.it,enterprise
+3.776799542109888,85.18.244.73,85-18-244-73.ip.fastwebnet.it,,Good,1,[object Object],1427305545,4.3175557825877435,0,,fastwebnet.it,ip.fastwebnet.it,consumer
+3.2985164516278784,85.18.245.109,smtp.igsonline.it,,Good,1,[object Object],1427305837,3.664509125022895,0,,igsonline.it,smtp.igsonline.it,enterprise
+3.4558252332283224,85.18.245.170,smtp2.elt.it,,Good,1,[object Object],1427305898,3.5394708822893106,0,,elt.it,smtp2.elt.it,enterprise
+2.9205201351789727,85.18.246.122,posta.gamma-meccanica.it,,Neutral,1,[object Object],1427306106,0,0,,gamma-meccanica.it,posta.gamma-meccanica.it,enterprise
+3.2115050068316737,85.18.247.116,smtp1.fcworkgroup.net,,Good,1,[object Object],1427306356,3.5394708822893106,0,,fcworkgroup.net,smtp1.fcworkgroup.net,enterprise
+3.541875724480797,85.18.248.198,mail.flashstart.com,,Good,1,[object Object],1427306694,3.7612400105869175,0,,flashstart.com,mail.flashstart.com,enterprise
+4.290875306155002,89.43.192.253,guvja.porlikents.com,,Good,0,[object Object],1496039677,0,0,,porlikents.com,guvja.porlikents.com,enterprise
+3.4424478625828963,89.96.71.196,89-96-71-196.ip11.fastwebnet.it,,Good,1,[object Object],1499482052,3.840500877953292,0,,fastwebnet.it,ip11.fastwebnet.it,consumer
+3.311123646956042,89.96.129.176,mail.con.repower.com,,Neutral,1,[object Object],1499496880,3.9073339183737463,0,,repower.com,con.repower.com,enterprise
+2.9018713183228013,89.96.129.177,mail04.nexusat.it,,Neutral,1,[object Object],1499496881,3.0627475153500248,0,,nexusat.it,mail04.nexusat.it,enterprise
+3.1956582102411573,89.96.131.132,mail.robinson.it,,Neutral,1,[object Object],1499497348,0,0,,robinson.it,mail.robinson.it,enterprise
+3.935651862144555,89.96.131.133,mail3.robinson.it,,Good,1,[object Object],1499497349,4.539431073454606,0,,robinson.it,mail3.robinson.it,enterprise
+2.886580754004696,89.96.131.140,mxv3.robinson.it,,Neutral,1,[object Object],1499497356,0,0,,robinson.it,mxv3.robinson.it,enterprise
+3.12476434257946,89.96.131.158,mail4.robinson.it,,Good,0,[object Object],1499497374,0,0,,robinson.it,mail4.robinson.it,enterprise
+2.888189865174232,89.96.135.67,89-96-135-67.ip12.fastwebnet.it,,Neutral,1,[object Object],1499498307,3.3631805425600065,0,,fastwebnet.it,ip12.fastwebnet.it,consumer
+3.320508175824905,89.96.139.113,89-96-139-113.ip12.fastwebnet.it,,Neutral,1,[object Object],1499499377,3.664509125022895,0,,fastwebnet.it,ip12.fastwebnet.it,consumer
+3.277322749793562,89.96.139.120,mail3.tns.it,,Neutral,1,[object Object],1499499384,3.5394708822893106,0,,tns.it,mail3.tns.it,enterprise
+3.9558919983050855,89.96.139.126,mailout.tns.it,,Good,1,[object Object],1499499390,4.292775132428255,0,,tns.it,mailout.tns.it,enterprise
+2.8956212123553087,89.96.139.187,89-96-139-187.ip12.fastwebnet.it,,Neutral,1,[object Object],1499499451,3.3631805425600065,0,,fastwebnet.it,ip12.fastwebnet.it,consumer
+2.8956212123553087,89.96.139.195,89-96-139-195.ip12.fastwebnet.it,,Neutral,1,[object Object],1499499459,3.3631805425600065,0,,fastwebnet.it,ip12.fastwebnet.it,consumer
+3.024644766348176,89.96.147.183,smtp.rheavendors.com,,Good,1,[object Object],1499501495,3.0627475153500248,0,,rheavendors.com,smtp.rheavendors.com,enterprise
+4.2163641822173625,89.96.148.119,pandora.qualitygroup.it,,Neutral,1,[object Object],1499501687,0,0,,qualitygroup.it,pandora.qualitygroup.it,enterprise
+3.2813969701418353,89.96.155.4,89-96-155-4.ip13.fastwebnet.it,,Neutral,1,[object Object],1499503364,3.5394708822893106,0,,fastwebnet.it,ip13.fastwebnet.it,consumer
+3.7933623106955294,89.96.157.8,mail.pierreti.com,,Good,0,[object Object],1499503880,0,0,,pierreti.com,mail.pierreti.com,enterprise
+3.2055568884783963,89.96.160.248,out1.aslcn1.it,,Good,1,[object Object],1499504888,3.7612400105869175,0,,aslcn1.it,out1.aslcn1.it,enterprise
+3.0860149383701185,89.96.161.60,mail.selte.eu,,Neutral,1,[object Object],1499504956,3.9073339183737463,0,,selte.eu,mail.selte.eu,enterprise
+3.325524341367157,89.96.161.73,out.ietnetworks.com,,Good,1,[object Object],1499504969,3.840500877953292,0,,ietnetworks.com,out.ietnetworks.com,enterprise
+2.9607975510841573,89.96.161.156,mail.cofipo.it,,Good,1,[object Object],1499505052,0,0,,cofipo.it,mail.cofipo.it,enterprise
+3.696758943391158,89.96.162.83,mail.aimgroup.eu,,Good,1,[object Object],1499505235,3.965389852948028,0,,aimgroup.eu,mail.aimgroup.eu,enterprise
+3.637455399817268,89.96.162.84,rmmail.aimgroup.eu,,Good,1,[object Object],1499505236,3.3631805425600065,0,,aimgroup.eu,rmmail.aimgroup.eu,enterprise
+2.8832195817684565,89.96.178.106,mail.aeit.it,,Neutral,1,[object Object],1499509354,3.0627475153500248,0,,aeit.it,mail.aeit.it,enterprise
+3.6207269789081566,89.96.179.37,smtp.gastaldi.it,,Good,1,[object Object],1499509541,3.5394708822893106,0,,gastaldi.it,smtp.gastaldi.it,enterprise
+3.083631936349531,89.96.184.66,89-96-184-66.ip13.fastwebnet.it,,Neutral,1,[object Object],1499510850,0,0,,fastwebnet.it,ip13.fastwebnet.it,consumer
+3.2971133149367398,89.96.184.88,mx2.provincia.brescia.it,,Neutral,1,[object Object],1499510872,3.664509125022895,0,,provincia.brescia.it,mx2.provincia.brescia.it,enterprise
+3.09937415169811,89.96.184.227,office.nexths.it,,Good,1,[object Object],1499511011,3.0627475153500248,0,,nexths.it,office.nexths.it,enterprise
+3.902949430084893,89.96.185.70,smtp00.humantools.it,,Good,1,[object Object],1499511110,3.840500877953292,0,,humantools.it,smtp00.humantools.it,enterprise
+3.6912169374376576,89.96.187.70,mail.melchioni.it,,Neutral,1,[object Object],1499511622,3.9073339183737463,0,,melchioni.it,mail.melchioni.it,enterprise
+3.0356337588321693,89.96.188.11,89-96-188-11.ip13.fastwebnet.it,,Neutral,1,[object Object],1499511819,3.0627475153500248,0,,fastwebnet.it,ip13.fastwebnet.it,consumer
+3.6393329858195167,89.96.188.102,mail.comune.rho.mi.it,,Good,1,[object Object],1499511910,3.664509125022895,0,,rho.mi.it,comune.rho.mi.it,enterprise
+3.2075453699728054,89.96.188.230,89-96-188-230.ip13.fastwebnet.it,,Neutral,1,[object Object],1499512038,3.840500877953292,0,,fastwebnet.it,ip13.fastwebnet.it,consumer
+4.19553646249979,89.96.188.242,89-96-188-242.ip13.fastwebnet.it,,Good,1,[object Object],1499512050,4.919648950225405,0,,fastwebnet.it,ip13.fastwebnet.it,consumer
+3.441780716928405,89.96.189.86,89-96-189-86.ip13.fastwebnet.it,,Neutral,1,[object Object],1499512150,0,0,,fastwebnet.it,ip13.fastwebnet.it,consumer
+3.0658774568751177,89.96.193.197,posta.asst-fbf-sacco.it,,Good,1,[object Object],1499513285,4.016592137008973,0,,asst-fbf-sacco.it,posta.asst-fbf-sacco.it,enterprise
+3.01426479241099,89.96.195.186,89-96-195-186.ip13.fastwebnet.it,,Neutral,1,[object Object],1499513786,3.7612400105869175,0,,fastwebnet.it,ip13.fastwebnet.it,consumer
+4.122536047473066,89.96.202.170,89-96-202-170.ip14.fastwebnet.it,,Good,1,[object Object],1499515562,4.341061324384862,0,,fastwebnet.it,ip14.fastwebnet.it,consumer
+3.5656966176364158,89.96.203.76,mail.metroweb.it,,Good,1,[object Object],1499515724,0,0,,metroweb.it,mail.metroweb.it,enterprise
+3.4922170268336417,89.96.203.138,mailfw.giorgioarmani.it,,Good,1,[object Object],1499515786,3.9073339183737463,0,,giorgioarmani.it,mailfw.giorgioarmani.it,enterprise
+3.175985863423143,89.96.203.172,mail.vedanimetalli.it,,Good,1,[object Object],1499515820,3.7612400105869175,0,,vedanimetalli.it,mail.vedanimetalli.it,enterprise
+3.270170080796694,89.96.208.233,mx3.hsgerardo.org,,Good,0,[object Object],1499517161,4.141530873617273,0,,hsgerardo.org,mx3.hsgerardo.org,enterprise
+3.843143341685644,89.96.212.130,mail.aogarbagnate.lombardia.it,,Good,1,[object Object],1499518082,4.103706123028931,0,,aogarbagnate.lombardia.it,mail.aogarbagnate.lombardia.it,enterprise
+3.457954281882641,89.96.212.244,efesto.uniecampus.it,,Neutral,1,[object Object],1499518196,3.9073339183737463,0,,uniecampus.it,efesto.uniecampus.it,enterprise
+2.973281640407002,89.96.212.249,debra.uniecampus.it,,Neutral,1,[object Object],1499518201,3.5394708822893106,0,,uniecampus.it,debra.uniecampus.it,enterprise
+3.009027037677979,89.96.218.226,posta.comune.cinisello-balsamo.mi.it,,Neutral,1,[object Object],1499519714,0,0,,cinisello-balsamo.mi.it,comune.cinisello-balsamo.mi.it,enterprise
+3.707878540797515,89.96.219.154,webmail.gruppopellegrini.it,,Good,1,[object Object],1499519898,4.103706123028931,0,,gruppopellegrini.it,webmail.gruppopellegrini.it,enterprise
+2.9077966252698295,89.96.223.243,posta.aslcn2.it,,Neutral,1,[object Object],1499521011,3.5394708822893106,0,,aslcn2.it,posta.aslcn2.it,enterprise
+3.7637135038097087,89.96.225.85,mail.infogare.net,,Good,1,[object Object],1499521365,3.664509125022895,0,,infogare.net,mail.infogare.net,enterprise
+3.1393960269090173,89.96.225.86,mail.bandiegare.it,,Neutral,1,[object Object],1499521366,0,0,,bandiegare.it,mail.bandiegare.it,enterprise
+3.991974615630713,89.96.227.140,smtp.nolarmadry.it,,Good,1,[object Object],1499521932,4.292775132428255,0,,nolarmadry.it,smtp.nolarmadry.it,enterprise
+3.0771903797516713,89.96.237.42,mail.autospedg.com,,Good,1,[object Object],1499524394,3.3631805425600065,0,,autospedg.com,mail.autospedg.com,enterprise
+3.0143572020464693,89.96.244.55,89-96-244-55.ip14.fastwebnet.it,,Neutral,1,[object Object],1499526199,3.0627475153500248,0,,fastwebnet.it,ip14.fastwebnet.it,consumer
+3.433324413217594,89.96.244.164,mail.temporary.it,,Good,1,[object Object],1499526308,3.5394708822893106,0,,temporary.it,mail.temporary.it,enterprise
+3.0360148475008844,89.96.246.8,89-96-246-8.ip14.fastwebnet.it,,Neutral,1,[object Object],1499526664,3.7612400105869175,0,,fastwebnet.it,ip14.fastwebnet.it,consumer
+2.9938934051172645,89.96.247.11,mail.martinengocommunication.com,,Neutral,1,[object Object],1499526923,0,0,,martinengocommunication.com,mail.martinengocommunication.com,enterprise
+2.991042907141594,89.96.251.94,mail.eurosupport.it,,Neutral,1,[object Object],1499528030,3.0627475153500248,0,,eurosupport.it,mail.eurosupport.it,enterprise
+3.161041480179491,89.97.31.215,89-97-31-215.ip15.fastwebnet.it,,Poor,1,[object Object],1499537367,3.0627475153500248,1,cbl.abuseat.org,fastwebnet.it,ip15.fastwebnet.it,consumer
+3.3034830549488357,89.97.63.190,89-97-63-190.ip16.fastwebnet.it,,Poor,1,[object Object],1499545534,3.5394708822893106,1,cbl.abuseat.org,fastwebnet.it,ip16.fastwebnet.it,consumer
+3.800488861925394,89.97.69.11,relay3.gse.it,,Good,1,[object Object],1499546891,4.103706123028931,0,,gse.it,relay3.gse.it,enterprise
+3.7963949024967776,89.97.69.12,relay4.gse.it,,Good,1,[object Object],1499546892,4.038599749210265,0,,gse.it,relay4.gse.it,enterprise
+3.794061070499607,89.97.69.13,relay2.gse.it,,Good,1,[object Object],1499546893,3.9873974651493196,0,,gse.it,relay2.gse.it,enterprise
+3.8122720168132367,89.97.69.15,relay1.gse.it,,Good,1,[object Object],1499546895,3.9873974651493196,0,,gse.it,relay1.gse.it,enterprise
+3.104271954008892,89.97.73.75,static.89-97-73-75.ip16.fastwebnet.it,,Neutral,0,[object Object],1499547979,0,0,,fastwebnet.it,ip16.fastwebnet.it,consumer
+2.9945225252864947,89.97.75.2,fortimail.mailsecurity.fastcloud.it,,Neutral,1,[object Object],1499548418,3.6865167372241863,0,,fastcloud.it,mailsecurity.fastcloud.it,enterprise
+3.3673107448130812,89.97.75.9,gw04.mailsecurity.fastcloud.it,,Neutral,1,[object Object],1499548425,3.3851881547612983,0,,fastcloud.it,mailsecurity.fastcloud.it,enterprise
+3.0764034571147283,89.97.76.11,89-97-76-11.ip16.fastwebnet.it,,Neutral,1,[object Object],1499548683,3.6865167372241863,0,,fastwebnet.it,ip16.fastwebnet.it,consumer
+3.437267924762784,89.97.76.133,89-97-76-133.ip16.fastwebnet.it,,Poor,1,[object Object],1499548805,4.9038649856138665,1,cbl.abuseat.org,fastwebnet.it,ip16.fastwebnet.it,consumer
+3.1826846257718455,89.97.79.10,smtp.invitalia.it,,Neutral,0,[object Object],1499549450,3.084755127551316,0,,invitalia.it,smtp.invitalia.it,enterprise
+3.295076731982143,89.97.88.19,mail1.comune.napoli.it,,Good,1,[object Object],1499551763,3.5614784944906024,0,,comune.napoli.it,mail1.comune.napoli.it,enterprise
+3.273481390627124,89.97.106.207,89-97-106-207.ip17.fastwebnet.it,,Poor,1,[object Object],1499556559,0,1,cbl.abuseat.org,fastwebnet.it,ip17.fastwebnet.it,consumer
+3.3473815397791253,89.97.119.174,89-97-119-174.ip17.fastwebnet.it,,Poor,1,[object Object],1499559854,3.783247622788209,1,cbl.abuseat.org,fastwebnet.it,ip17.fastwebnet.it,consumer
+3.34960759818254,89.97.145.8,89-97-145-8.ip17.fastwebnet.it,,Poor,1,[object Object],1499566344,0,1,cbl.abuseat.org,fastwebnet.it,ip17.fastwebnet.it,consumer
+3.054177648032058,89.97.150.210,89-97-150-210.ip18.fastwebnet.it,,Neutral,1,[object Object],1499567826,0,0,,fastwebnet.it,ip18.fastwebnet.it,consumer
+2.9280241664884548,89.97.163.47,mail.scf.gov.it,,Good,0,[object Object],1499570991,3.5614784944906024,0,,scf.gov.it,mail.scf.gov.it,enterprise
+3.0422405641298913,89.97.169.139,0001m012eg01lsv.mlsoftware.it,,Neutral,1,[object Object],1499572619,0,0,,mlsoftware.it,0001m012eg01lsv.mlsoftware.it,enterprise
+3.55850223940879,89.97.173.26,mail.terminalvideo.com,,Good,1,[object Object],1499573530,3.862508490154583,0,,terminalvideo.com,mail.terminalvideo.com,enterprise
+3.564092693486618,89.97.174.199,mail.snai.it,,Neutral,1,[object Object],1499573959,0,0,,snai.it,mail.snai.it,enterprise
+3.98038695842555,89.97.177.3,scon03.inps.it,,Good,1,[object Object],1499574531,4.531486836603579,0,,inps.it,scon03.inps.it,enterprise
+3.992763542644649,89.97.177.19,scon03.inps.it,,Good,1,[object Object],1499574547,4.4822654016671395,0,,inps.it,scon03.inps.it,enterprise
+2.8796852272782094,89.97.197.105,fw.carpigianigroup.com,,Neutral,1,[object Object],1499579753,3.5614784944906024,0,,carpigianigroup.com,fw.carpigianigroup.com,enterprise
+3.0907291540867785,89.97.204.34,mail.cetspa.it,,Neutral,1,[object Object],1499581474,3.9873974651493196,0,,cetspa.it,mail.cetspa.it,enterprise
+3.3201122898642996,89.97.204.43,makeventi.it,,Good,0,[object Object],1499581483,3.9873974651493196,0,,makeventi.it,.makeventi.it,enterprise
+3.614642576325666,89.97.207.50,eolo.tp-net.it,,Good,0,[object Object],1499582258,4.531486836603579,0,,tp-net.it,eolo.tp-net.it,enterprise
+3.15897120488126,89.97.227.137,89-97-227-137.ip19.fastwebnet.it,,Neutral,1,[object Object],1499587465,4.546700327977765,0,,fastwebnet.it,ip19.fastwebnet.it,consumer
+2.970956345393461,89.97.227.141,mail.hdia.it,,Good,1,[object Object],1499587469,0,0,,hdia.it,mail.hdia.it,enterprise
+3.3542018516483916,89.97.227.190,89-97-227-190.ip19.fastwebnet.it,,Good,1,[object Object],1499587518,3.862508490154583,0,,fastwebnet.it,ip19.fastwebnet.it,consumer
+2.921512939632033,89.97.230.146,mailserver2.unimaticaspa.it,,Neutral,1,[object Object],1499588242,3.3851881547612983,0,,unimaticaspa.it,mailserver2.unimaticaspa.it,enterprise
+2.940523644664497,89.97.231.84,mail.gaea.it,,Neutral,1,[object Object],1499588436,3.3851881547612983,0,,gaea.it,mail.gaea.it,enterprise
+2.9155217813343195,89.97.232.154,mx1.labservice.it,,Neutral,1,[object Object],1499588762,0,0,,labservice.it,mx1.labservice.it,enterprise
+4.191132707011493,89.97.233.16,mx1.universoimprese.it,,Good,1,[object Object],1499588880,4.531486836603579,0,,universoimprese.it,mx1.universoimprese.it,enterprise
+3.1802319847953453,89.97.233.43,89-97-233-43.ip19.fastwebnet.it,,Neutral,1,[object Object],1499588907,3.783247622788209,0,,fastwebnet.it,ip19.fastwebnet.it,consumer
+3.537252886960627,89.97.236.28,mail.apra.it,,Good,1,[object Object],1499589660,4.038599749210265,0,,apra.it,mail.apra.it,enterprise
+4.462736162998404,89.97.236.171,mail.sicurezzapostale.it,,Good,1,[object Object],1499589803,4.737543214728596,0,,sicurezzapostale.it,mail.sicurezzapostale.it,enterprise
+4.5091903450342565,89.97.236.181,mailpeo.sicurezzapostale.it,,Good,1,[object Object],1499589813,4.9764212206047596,0,,sicurezzapostale.it,mailpeo.sicurezzapostale.it,enterprise
+3.4163835570579155,89.97.236.231,mailgw.comune.ancona.it,,Good,1,[object Object],1499589863,4.08427761845219,0,,comune.ancona.it,mailgw.comune.ancona.it,enterprise
+3.4120846391531825,89.97.241.200,mail.unisal.it,,Good,1,[object Object],1499591112,3.6865167372241863,0,,unisal.it,mail.unisal.it,enterprise
+3.1739751140948225,89.97.254.26,89-97-254-26.ip2.fastwebnet.it,,Neutral,1,[object Object],1499594266,0,0,,fastwebnet.it,ip2.fastwebnet.it,consumer
+2.9076588258727427,89.97.255.134,mail.fcr.re.it,,Good,1,[object Object],1499594630,3.5614784944906024,0,,fcr.re.it,mail.fcr.re.it,enterprise
+2.928999983044652,92.42.80.159,spamfw01.gamenetgroup.it,,Neutral,1,[object Object],1546277023,3.3851881547612983,0,,gamenetgroup.it,spamfw01.gamenetgroup.it,enterprise
+2.885773957154941,92.42.80.172,spamfw02.gamenetgroup.it,,Neutral,0,[object Object],1546277036,3.3851881547612983,0,,gamenetgroup.it,spamfw02.gamenetgroup.it,enterprise
+3.3749634106882507,92.223.130.50,92-223-130-50.ip274.fastwebnet.it,,Poor,0,[object Object],1558151730,0,1,cbl.abuseat.org,fastwebnet.it,ip274.fastwebnet.it,consumer
+2.8777701320879423,92.223.149.70,mail.coscon.it,,Neutral,1,[object Object],1558156614,3.3851881547612983,0,,coscon.it,mail.coscon.it,enterprise
+3.1084088352340453,92.223.150.138,92-223-150-138.ip274.fastwebnet.it,,Neutral,0,[object Object],1558156938,3.084755127551316,0,,fastwebnet.it,ip274.fastwebnet.it,consumer
+2.884571326644236,92.223.152.105,92-223-152-105.ip274.fastwebnet.it,,Poor,0,[object Object],1558157417,0,1,cbl.abuseat.org,fastwebnet.it,ip274.fastwebnet.it,consumer
+3.2896940045952556,92.223.153.227,mail.setgroup.com,,Good,1,[object Object],1558157795,3.3851881547612983,0,,setgroup.com,mail.setgroup.com,enterprise
+3.27622868126194,92.223.155.235,smtp.indutexspa.com,,Poor,1,[object Object],1558158315,3.9873974651493196,0,,indutexspa.com,smtp.indutexspa.com,enterprise
+2.9203863149347833,92.223.168.172,92-223-168-172.ip274.fastwebnet.it,,Neutral,0,[object Object],1558161580,3.783247622788209,0,,fastwebnet.it,ip274.fastwebnet.it,consumer
+3.0935743798649993,92.223.168.220,webmail.burkeburke.com,,Neutral,1,[object Object],1558161628,4.125713735230223,0,,burkeburke.com,webmail.burkeburke.com,enterprise
+3.0727570565395608,92.223.169.156,smtp.imageline.it,,Neutral,1,[object Object],1558161820,0,0,,imageline.it,smtp.imageline.it,enterprise
+3.6065343139171455,92.223.172.140,smtpdea.deagostini.com,,Good,1,[object Object],1558162572,3.6865167372241863,0,,deagostini.com,smtpdea.deagostini.com,enterprise
+2.9072845783880252,92.223.173.200,mx1.clinicasangiorgio.it,,Neutral,1,[object Object],1558162888,3.084755127551316,0,,clinicasangiorgio.it,mx1.clinicasangiorgio.it,enterprise
+3.3882250385160058,92.223.176.242,mail.saistours.com,,Neutral,1,[object Object],1558163698,3.9873974651493196,0,,saistours.com,mail.saistours.com,enterprise
+4.121311071740374,92.223.182.251,92-223-182-251.ip275.fastwebnet.it,,Poor,1,[object Object],1558165243,0,1,cbl.abuseat.org,fastwebnet.it,ip275.fastwebnet.it,consumer
+2.991042907141594,92.223.186.220,mail.fidea.com,,Neutral,1,[object Object],1558166236,0,0,,fidea.com,mail.fidea.com,enterprise
+3.736330640657933,92.223.187.218,ailux.org,,Poor,1,[object Object],1558166490,0,0,,ailux.org,.ailux.org,enterprise
+3.2190581447221196,92.223.188.58,serverweb.officinabiomedica.it,,Neutral,1,[object Object],1558166586,3.3851881547612983,0,,officinabiomedica.it,serverweb.officinabiomedica.it,enterprise
+3.961693820281651,92.223.191.27,mail4.aracneeditrice.com,,Good,1,[object Object],1558167323,0,0,,aracneeditrice.com,mail4.aracneeditrice.com,enterprise
+4.121747843101436,92.223.191.28,mail5.aracneeditrice.com,,Good,1,[object Object],1558167324,0,0,,aracneeditrice.com,mail5.aracneeditrice.com,enterprise
+3.1755717085180093,92.223.193.73,smtp.sender.eglue.it,,Neutral,1,[object Object],1558167881,0,0,,eglue.it,sender.eglue.it,enterprise
+3.2008312648725727,92.223.193.214,posta2.vittoriaassicurazioni.it,,Good,0,[object Object],1558168022,3.5614784944906024,0,,vittoriaassicurazioni.it,posta2.vittoriaassicurazioni.it,enterprise
+3.1902892989435614,92.223.193.215,posta.vittoriaassicurazioni.it,,Good,0,[object Object],1558168023,3.9293415305750377,0,,vittoriaassicurazioni.it,posta.vittoriaassicurazioni.it,enterprise
+3.1268493508866966,92.223.199.202,92-223-199-202.ip275.fastwebnet.it,,Neutral,1,[object Object],1558169546,3.5614784944906024,0,,fastwebnet.it,ip275.fastwebnet.it,consumer
+3.532365448691978,92.223.202.104,relay.vortice-italy.com,,Good,1,[object Object],1558170216,3.783247622788209,0,,vortice-italy.com,relay.vortice-italy.com,enterprise
+3.3813208085611706,92.223.207.42,mail3.artcrafts.it,,Neutral,1,[object Object],1558171434,3.084755127551316,0,,artcrafts.it,mail3.artcrafts.it,enterprise
+2.979933762988663,92.223.208.227,mail.digi.it,,Good,1,[object Object],1558171875,3.3851881547612983,0,,digi.it,mail.digi.it,enterprise
+2.989985417573656,92.223.210.246,92-223-210-246.ip275.fastwebnet.it,,Neutral,1,[object Object],1558172406,0,0,,fastwebnet.it,ip275.fastwebnet.it,consumer
+3.1984792662345956,92.223.213.48,smtp.accatre-stp.it,,Neutral,1,[object Object],1558172976,3.6865167372241863,0,,accatre-stp.it,smtp.accatre-stp.it,enterprise
+3.031138145474374,92.223.213.114,92-223-213-114.ip275.fastwebnet.it,,Neutral,1,[object Object],1558173042,3.3851881547612983,0,,fastwebnet.it,ip275.fastwebnet.it,consumer
+3.5825601747576785,92.223.220.4,static.92-223-220-4.ip275.fastwebnet.it,,Good,0,[object Object],1558174724,0,0,,fastwebnet.it,ip275.fastwebnet.it,consumer
+3.652827518398245,92.223.220.8,92-223-220-8.ip275.fastwebnet.it,,Poor,1,[object Object],1558174728,3.084755127551316,1,cbl.abuseat.org,fastwebnet.it,ip275.fastwebnet.it,consumer
+3.624227474407225,92.223.220.9,92-223-220-9.ip275.fastwebnet.it,,Good,1,[object Object],1558174729,4.198239346205174,0,,fastwebnet.it,ip275.fastwebnet.it,consumer
+3.5821812546355263,92.223.220.88,92-223-220-88.ip275.fastwebnet.it,,Good,1,[object Object],1558174808,0,0,,fastwebnet.it,ip275.fastwebnet.it,consumer
+3.041676948763889,92.223.221.221,srvmail.cantinesanmarzano.com,,Neutral,1,[object Object],1558175197,3.3851881547612983,0,,cantinesanmarzano.com,srvmail.cantinesanmarzano.com,enterprise
+3.5819937543166254,92.223.222.82,mail.dentalica.com,,Good,1,[object Object],1558175314,3.3851881547612983,0,,dentalica.com,mail.dentalica.com,enterprise
+3.090651647635311,92.223.223.20,mail.videotec.com,,Good,1,[object Object],1558175508,3.084755127551316,0,,videotec.com,mail.videotec.com,enterprise
+2.940997984410432,92.223.236.220,smtp.lisaspa.it,,Good,1,[object Object],1558179036,0,0,,lisaspa.it,smtp.lisaspa.it,enterprise
+3.572360630656481,92.223.244.195,mail.lucanasistemi.com,,Good,1,[object Object],1558181059,3.084755127551316,0,,lucanasistemi.com,mail.lucanasistemi.com,enterprise
+3.4590729844145867,92.223.245.82,92-223-245-82.ip276.fastwebnet.it,,Poor,1,[object Object],1558181202,3.783247622788209,1,cbl.abuseat.org,fastwebnet.it,ip276.fastwebnet.it,consumer
+3.782105365364247,92.223.247.194,mail.ama.it,,Good,1,[object Object],1558181826,4.163538485818565,0,,ama.it,mail.ama.it,enterprise
+2.9346797937332942,93.32.16.168,93-32-16-168.ip31.fastwebnet.it,,Neutral,1,[object Object],1562382504,0,0,,fastwebnet.it,ip31.fastwebnet.it,consumer
+3.035340385982223,93.32.25.119,93-32-25-119.ip31.fastwebnet.it,,Neutral,1,[object Object],1562384759,3.3851881547612983,0,,fastwebnet.it,ip31.fastwebnet.it,consumer
+3.049032822954646,93.32.74.93,93-32-74-93.ip32.fastwebnet.it,,Poor,1,[object Object],1562397277,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip32.fastwebnet.it,consumer
+3.764105519559548,93.32.74.145,93-32-74-145.ip32.fastwebnet.it,,Poor,1,[object Object],1562397329,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip32.fastwebnet.it,consumer
+3.4139173415855444,93.33.144.63,93-33-144-63.ip44.fastwebnet.it,,Neutral,1,[object Object],1562480703,3.6865167372241863,0,,fastwebnet.it,ip44.fastwebnet.it,consumer
+3.1935430694995497,93.33.162.111,93-33-162-111.ip45.fastwebnet.it,,Poor,1,[object Object],1562485359,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip45.fastwebnet.it,consumer
+4.099822155906636,93.33.193.24,smtp.bonatti.it,,Good,1,[object Object],1562493208,4.288427460813301,0,,bonatti.it,smtp.bonatti.it,enterprise
+3.708747837328429,93.33.200.155,93-33-200-155.ip46.fastwebnet.it,,Neutral,1,[object Object],1562495131,3.3851881547612983,0,,fastwebnet.it,ip46.fastwebnet.it,consumer
+2.997126082137231,93.33.203.92,93-33-203-92.ip46.fastwebnet.it,,Good,1,[object Object],1562495836,3.084755127551316,0,,fastwebnet.it,ip46.fastwebnet.it,consumer
+2.888189865174232,93.33.211.13,93-33-211-13.ip46.fastwebnet.it,,Neutral,1,[object Object],1562497805,0,0,,fastwebnet.it,ip46.fastwebnet.it,consumer
+3.1713439258044693,93.33.214.186,mx1.previero.it,,Good,1,[object Object],1562498746,3.783247622788209,0,,previero.it,mx1.previero.it,enterprise
+3.4948685833178805,93.33.225.102,mail02.consiglioveneto.it,,Good,1,[object Object],1562501478,3.9873974651493196,0,,consiglioveneto.it,mail02.consiglioveneto.it,enterprise
+3.12476434257946,93.33.241.235,93-33-241-235.ip46.fastwebnet.it,,Neutral,1,[object Object],1562505707,0,0,,fastwebnet.it,ip46.fastwebnet.it,consumer
+2.885918877255121,93.34.6.147,mail.comune.ragusa.gov.it,,Neutral,1,[object Object],1562510995,3.5614784944906024,0,,ragusa.gov.it,comune.ragusa.gov.it,enterprise
+3.171687097499756,93.34.10.196,mail.cassageometri.it,,Good,1,[object Object],1562512068,3.783247622788209,0,,cassageometri.it,mail.cassageometri.it,enterprise
+3.7954858168897396,93.34.11.201,mail-dmz-frontend.provincia.venezia.it,,Neutral,1,[object Object],1562512329,3.6865167372241863,0,,provincia.venezia.it,mail-dmz-frontend.provincia.venezia.it,enterprise
+3.6477386211822025,93.34.11.202,mail-dmz-smtp.provincia.venezia.it,,Neutral,1,[object Object],1562512330,0,0,,provincia.venezia.it,mail-dmz-smtp.provincia.venezia.it,enterprise
+4.016457291767725,93.34.14.163,mx1.siad.eu,,Good,1,[object Object],1562513059,4.531486836603579,0,,siad.eu,mx1.siad.eu,enterprise
+4.3278365588262755,93.34.81.74,93-34-81-74.ip48.fastwebnet.it,,Poor,1,[object Object],1562530122,4.686367469485338,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip48.fastwebnet.it,consumer
+3.3727357196523715,93.34.93.96,93-34-93-96.ip49.fastwebnet.it,,Poor,1,[object Object],1562533216,0,1,pbl.spamhaus.org,fastwebnet.it,ip49.fastwebnet.it,consumer
+3.184582705197487,93.34.112.212,93-34-112-212.ip49.fastwebnet.it,,Poor,1,[object Object],1562538196,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip49.fastwebnet.it,consumer
+3.7130930637716353,93.34.113.85,93-34-113-85.ip49.fastwebnet.it,,Poor,1,[object Object],1562538325,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip49.fastwebnet.it,consumer
+2.992000557985866,93.34.115.101,93-34-115-101.ip49.fastwebnet.it,,Poor,1,[object Object],1562538853,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip49.fastwebnet.it,consumer
+4.342526143578526,93.34.138.229,93-34-138-229.ip50.fastwebnet.it,,Poor,1,[object Object],1562544869,4.602834989949885,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip50.fastwebnet.it,consumer
+3.0723125725612763,93.34.139.89,93-34-139-89.ip50.fastwebnet.it,,Poor,1,[object Object],1562544985,3.5614784944906024,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip50.fastwebnet.it,consumer
+3.6688289746366665,93.34.140.66,93-34-140-66.ip50.fastwebnet.it,,Poor,1,[object Object],1562545218,3.9293415305750377,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip50.fastwebnet.it,consumer
+3.331582503823548,93.34.143.87,93-34-143-87.ip50.fastwebnet.it,,Poor,1,[object Object],1562546007,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip50.fastwebnet.it,consumer
+3.2910724206236517,93.34.147.245,93-34-147-245.ip50.fastwebnet.it,,Poor,1,[object Object],1562547189,3.6865167372241863,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip50.fastwebnet.it,consumer
+3.4800673376703215,93.34.148.140,93-34-148-140.ip50.fastwebnet.it,,Poor,1,[object Object],1562547340,0,1,pbl.spamhaus.org,fastwebnet.it,ip50.fastwebnet.it,consumer
+3.9403848935992403,93.34.159.7,93-34-159-7.ip50.fastwebnet.it,,Poor,1,[object Object],1562550023,4.426743730894204,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip50.fastwebnet.it,consumer
+3.4902498565021944,93.34.212.197,93-34-212-197.ip51.fastwebnet.it,,Poor,1,[object Object],1562563781,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip51.fastwebnet.it,consumer
+4.204554253824532,93.34.215.98,93-34-215-98.ip51.fastwebnet.it,,Poor,1,[object Object],1562564450,4.515676771666111,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip51.fastwebnet.it,consumer
+3.4345434204445113,93.34.221.4,93-34-221-4.ip51.fastwebnet.it,,Poor,1,[object Object],1562565892,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip51.fastwebnet.it,consumer
+3.6329535995284137,93.34.223.186,93-34-223-186.ip51.fastwebnet.it,,Poor,1,[object Object],1562566586,4.628379788012235,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip51.fastwebnet.it,consumer
+3.3698313629994425,93.34.232.92,93-34-232-92.ip51.fastwebnet.it,,Poor,1,[object Object],1562568796,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip51.fastwebnet.it,consumer
+3.992627567122813,93.34.233.117,93-34-233-117.ip52.fastwebnet.it,,Poor,1,[object Object],1562569077,4.08427761845219,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip52.fastwebnet.it,consumer
+3.137602494893647,93.34.236.55,93-34-236-55.ip52.fastwebnet.it,,Poor,1,[object Object],1562569783,0,1,pbl.spamhaus.org,fastwebnet.it,ip52.fastwebnet.it,consumer
+3.84928531207923,93.34.239.115,93-34-239-115.ip52.fastwebnet.it,,Poor,1,[object Object],1562570611,4.08427761845219,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip52.fastwebnet.it,consumer
+2.880629140890174,93.35.8.118,93-35-8-118.ip52.fastwebnet.it,,Poor,1,[object Object],1562577014,0,1,pbl.spamhaus.org,fastwebnet.it,ip52.fastwebnet.it,consumer
+3.051980181724706,93.35.144.149,93-35-144-149.ip55.fastwebnet.it,,Poor,1,[object Object],1562611861,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip55.fastwebnet.it,consumer
+2.94406862861924,93.35.145.198,93-35-145-198.ip55.fastwebnet.it,,Poor,1,[object Object],1562612166,3.783247622788209,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip55.fastwebnet.it,consumer
+3.7626618131565785,93.35.147.86,93-35-147-86.ip55.fastwebnet.it,,Poor,1,[object Object],1562612566,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip55.fastwebnet.it,consumer
+3.694468280918261,93.35.175.71,93-35-175-71.ip56.fastwebnet.it,,Poor,1,[object Object],1562619719,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip56.fastwebnet.it,consumer
+4.2318612124210455,93.35.181.106,93-35-181-106.ip56.fastwebnet.it,,Poor,1,[object Object],1562621290,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip56.fastwebnet.it,consumer
+3.3568484773063125,93.35.182.167,93-35-182-167.ip56.fastwebnet.it,,Poor,1,[object Object],1562621607,3.9873974651493196,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip56.fastwebnet.it,consumer
+2.9806832790498103,93.35.188.225,93-35-188-225.ip56.fastwebnet.it,,Poor,1,[object Object],1562623201,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip56.fastwebnet.it,consumer
+4.08851478159937,93.35.219.209,93-35-219-209.ip56.fastwebnet.it,,Poor,1,[object Object],1562631121,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip56.fastwebnet.it,consumer
+4.497603264564528,93.35.221.102,93-35-221-102.ip56.fastwebnet.it,,Poor,1,[object Object],1562631526,4.575693250903732,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip56.fastwebnet.it,consumer
+3.799770087956553,93.35.223.239,93-35-223-239.ip57.fastwebnet.it,,Poor,1,[object Object],1562632175,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip57.fastwebnet.it,consumer
+3.016860170189118,93.35.228.140,93-35-228-140.ip57.fastwebnet.it,,Poor,1,[object Object],1562633356,0,1,pbl.spamhaus.org,fastwebnet.it,ip57.fastwebnet.it,consumer
+3.016354597580552,93.35.241.167,93-35-241-167.ip57.fastwebnet.it,,Poor,1,[object Object],1562636711,0,1,pbl.spamhaus.org,fastwebnet.it,ip57.fastwebnet.it,consumer
+2.8944252827095975,93.35.243.50,93-35-243-50.ip57.fastwebnet.it,,Poor,1,[object Object],1562637106,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip57.fastwebnet.it,consumer
+3.1768023960375658,93.35.245.31,93-35-245-31.ip57.fastwebnet.it,,Poor,1,[object Object],1562637599,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip57.fastwebnet.it,consumer
+2.944303935198224,93.36.111.55,93-36-111-55.ip59.fastwebnet.it,,Poor,1,[object Object],1562668855,0,1,pbl.spamhaus.org,fastwebnet.it,ip59.fastwebnet.it,consumer
+3.970699290350796,93.36.161.161,93-36-161-161.ip60.fastwebnet.it,,Poor,1,[object Object],1562681761,4.385367331473694,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip60.fastwebnet.it,consumer
+3.0278513438164345,93.36.162.68,93-36-162-68.ip61.fastwebnet.it,,Poor,1,[object Object],1562681924,4.038599749210265,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip61.fastwebnet.it,consumer
+2.98605838171173,93.36.167.47,93-36-167-47.ip61.fastwebnet.it,,Poor,1,[object Object],1562683183,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip61.fastwebnet.it,consumer
+3.368327564671249,93.36.182.85,93-36-182-85.ip61.fastwebnet.it,,Poor,1,[object Object],1562687061,0,1,pbl.spamhaus.org,fastwebnet.it,ip61.fastwebnet.it,consumer
+3.132364837976204,93.36.182.237,93-36-182-237.ip61.fastwebnet.it,,Poor,1,[object Object],1562687213,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip61.fastwebnet.it,consumer
+2.9300858134210626,93.36.183.193,93-36-183-193.ip61.fastwebnet.it,,Poor,1,[object Object],1562687425,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip61.fastwebnet.it,consumer
+4.139872669324256,93.36.187.53,93-36-187-53.ip61.fastwebnet.it,,Poor,1,[object Object],1562688309,4.260448498826621,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip61.fastwebnet.it,consumer
+3.0412139482062805,93.36.191.231,93-36-191-231.ip61.fastwebnet.it,,Poor,1,[object Object],1562689511,0,1,pbl.spamhaus.org,fastwebnet.it,ip61.fastwebnet.it,consumer
+2.899670936249068,93.36.194.97,93-36-194-97.ip61.fastwebnet.it,,Poor,1,[object Object],1562690145,3.084755127551316,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip61.fastwebnet.it,consumer
+3.316985848371212,93.36.223.56,93-36-223-56.ip62.fastwebnet.it,,Poor,1,[object Object],1562697528,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip62.fastwebnet.it,consumer
+3.970643092494047,93.36.241.119,93-36-241-119.ip62.fastwebnet.it,,Poor,1,[object Object],1562702199,3.862508490154583,1,pbl.spamhaus.org,fastwebnet.it,ip62.fastwebnet.it,consumer
+2.9430172431841997,93.36.241.182,93-36-241-182.ip62.fastwebnet.it,,Poor,1,[object Object],1562702262,3.9873974651493196,1,pbl.spamhaus.org,fastwebnet.it,ip62.fastwebnet.it,consumer
+3.670817203542771,93.38.62.179,93-38-62-179.ip69.fastwebnet.it,,Good,1,[object Object],1562787507,0,0,,fastwebnet.it,ip69.fastwebnet.it,consumer
+3.3008476395762743,93.38.81.75,93-38-81-75.ip69.fastwebnet.it,,Neutral,1,[object Object],1562792267,0,0,,fastwebnet.it,ip69.fastwebnet.it,consumer
+2.9029076309042368,93.39.49.221,93-39-49-221.ip74.fastwebnet.it,,Poor,1,[object Object],1562849757,0,1,pbl.spamhaus.org,fastwebnet.it,ip74.fastwebnet.it,consumer
+3.6969892653745404,93.39.70.70,outop.savingroup.com,,Good,1,[object Object],1562854982,4.038599749210265,0,,savingroup.com,outop.savingroup.com,enterprise
+2.89257423202309,93.39.75.224,93-39-75-224.ip74.fastwebnet.it,,Neutral,1,[object Object],1562856416,0,0,,fastwebnet.it,ip74.fastwebnet.it,consumer
+4.505290963441732,93.39.90.0,smtp1.mc-svc-z.it,,Neutral,1,[object Object],1562860032,0,0,,mc-svc-z.it,smtp1.mc-svc-z.it,enterprise
+4.499001006057837,93.39.90.1,smtp2.mc-svc-z.it,,Neutral,1,[object Object],1562860033,0,0,,mc-svc-z.it,smtp2.mc-svc-z.it,enterprise
+4.480731375302916,93.39.90.2,smtp3.mc-svc-z.it,,Neutral,1,[object Object],1562860034,4.424060155846603,0,,mc-svc-z.it,smtp3.mc-svc-z.it,enterprise
+4.489314512499986,93.39.90.3,smtp4.mc-svc-z.it,,Neutral,1,[object Object],1562860035,4.3633597192724025,0,,mc-svc-z.it,smtp4.mc-svc-z.it,enterprise
+4.468027646463243,93.39.90.4,smtp5.mc-svc-z.it,,Neutral,1,[object Object],1562860036,4.384512051422598,0,,mc-svc-z.it,smtp5.mc-svc-z.it,enterprise
+4.242309602143858,93.39.90.5,smtp6.mc-svc-z.it,,Good,1,[object Object],1562860037,4.141530873617273,0,,mc-svc-z.it,smtp6.mc-svc-z.it,enterprise
+4.213658270706582,93.39.90.6,smtp7.mc-svc-z.it,,Good,1,[object Object],1562860038,4.141530873617273,0,,mc-svc-z.it,smtp7.mc-svc-z.it,enterprise
+4.247759195540106,93.39.90.7,smtp8.mc-svc-z.it,,Good,1,[object Object],1562860039,4.062270006250898,0,,mc-svc-z.it,smtp8.mc-svc-z.it,enterprise
+4.377125631683632,93.39.90.8,smtp9.mc-svc-z.it,,Neutral,1,[object Object],1562860040,4.141530873617273,0,,mc-svc-z.it,smtp9.mc-svc-z.it,enterprise
+4.418436392756948,93.39.90.9,smtp10.mc-svc-z.it,,Neutral,1,[object Object],1562860041,4.103706123028931,0,,mc-svc-z.it,smtp10.mc-svc-z.it,enterprise
+4.691981430857405,93.39.90.30,smtp31.mc-svc-z.it,,Poor,1,[object Object],1562860062,4.970805158772981,0,,mc-svc-z.it,smtp31.mc-svc-z.it,enterprise
+5.093840439101558,93.39.90.31,smtp32.mc-svc-z.it,,Neutral,1,[object Object],1562860063,4.881857373412575,0,,mc-svc-z.it,smtp32.mc-svc-z.it,enterprise
+3.002397658018716,93.39.94.26,93-39-94-26.ip75.fastwebnet.it,,Neutral,1,[object Object],1562861082,0,0,,fastwebnet.it,ip75.fastwebnet.it,consumer
+2.9135062203013495,93.39.95.155,mail.marzorativentilazione.net,,Neutral,1,[object Object],1562861467,3.5394708822893106,0,,marzorativentilazione.net,mail.marzorativentilazione.net,enterprise
+3.252788311689131,93.39.98.6,mercury.comune.salerno.it,,Neutral,1,[object Object],1562862086,3.9073339183737463,0,,comune.salerno.it,mercury.comune.salerno.it,enterprise
+2.9786315296834185,93.39.100.21,mail.pozzolispa.com,,Good,1,[object Object],1562862613,3.840500877953292,0,,pozzolispa.com,mail.pozzolispa.com,enterprise
+3.8867543296330647,93.39.106.228,mail4.sdb.it,,Good,1,[object Object],1562864356,4.176231734003883,0,,sdb.it,mail4.sdb.it,enterprise
+3.155157300513117,93.39.106.252,93-39-106-252.ip75.fastwebnet.it,,Neutral,1,[object Object],1562864380,3.0627475153500248,0,,fastwebnet.it,ip75.fastwebnet.it,consumer
+3.833514566410198,93.39.116.76,vigo.lkj.it,,Good,1,[object Object],1562866764,0,0,,lkj.it,vigo.lkj.it,enterprise
+3.559043005517927,93.39.121.74,93-39-121-74.ip75.fastwebnet.it,,Good,1,[object Object],1562868042,3.3631805425600065,0,,fastwebnet.it,ip75.fastwebnet.it,consumer
+3.0517117804230063,93.39.121.164,93-39-121-164.ip75.fastwebnet.it,,Neutral,1,[object Object],1562868132,3.5394708822893106,0,,fastwebnet.it,ip75.fastwebnet.it,consumer
+3.3888171415322668,93.39.144.107,93-39-144-107.ip76.fastwebnet.it,,Poor,1,[object Object],1562873963,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip76.fastwebnet.it,consumer
+2.9678650252951693,93.39.147.168,93-39-147-168.ip76.fastwebnet.it,,Poor,1,[object Object],1562874792,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip76.fastwebnet.it,consumer
+3.2398985212834237,93.39.148.155,93-39-148-155.ip76.fastwebnet.it,,Poor,1,[object Object],1562875035,0,1,pbl.spamhaus.org,fastwebnet.it,ip76.fastwebnet.it,consumer
+3.109523522951969,93.39.151.47,93-39-151-47.ip76.fastwebnet.it,,Poor,1,[object Object],1562875695,3.9073339183737463,1,pbl.spamhaus.org,fastwebnet.it,ip76.fastwebnet.it,consumer
+3.1547227887390994,93.39.211.178,mx.amiacque.it,,Good,1,[object Object],1562891186,3.5394708822893106,0,,amiacque.it,mx.amiacque.it,enterprise
+3.0252309095615497,93.39.212.18,mail.mediagrafspa.it,,Good,1,[object Object],1562891282,3.5394708822893106,0,,mediagrafspa.it,mail.mediagrafspa.it,enterprise
+3.393685899505232,93.39.213.190,93-39-213-190.ip77.fastwebnet.it,,Poor,1,[object Object],1562891710,3.0627475153500248,1,cbl.abuseat.org,fastwebnet.it,ip77.fastwebnet.it,consumer
+3.1008530865300052,93.39.214.133,93-39-214-133.ip77.fastwebnet.it,,Poor,1,[object Object],1562891909,3.840500877953292,1,cbl.abuseat.org,fastwebnet.it,ip77.fastwebnet.it,consumer
+3.0761497375239575,93.39.218.32,93-39-218-32.ip77.fastwebnet.it,,Poor,1,[object Object],1562892832,3.0627475153500248,1,cbl.abuseat.org,fastwebnet.it,ip77.fastwebnet.it,consumer
+3.0903931928522472,93.39.232.150,93-39-232-150.ip78.fastwebnet.it,,Neutral,1,[object Object],1562896534,3.5394708822893106,0,,fastwebnet.it,ip78.fastwebnet.it,consumer
+4.143479529488511,93.39.232.157,93-39-232-157.ip78.fastwebnet.it,,Good,1,[object Object],1562896541,3.0627475153500248,0,,fastwebnet.it,ip78.fastwebnet.it,consumer
+3.177765414034004,93.39.234.196,93-39-234-196.ip78.fastwebnet.it,,Neutral,1,[object Object],1562897092,0,0,,fastwebnet.it,ip78.fastwebnet.it,consumer
+3.239476876122242,93.39.235.85,mbox.sait-abr.com,,Good,1,[object Object],1562897237,3.3631805425600065,0,,sait-abr.com,mbox.sait-abr.com,enterprise
+3.523105450062661,93.39.235.140,zimbra3.pegperego.com,,Good,1,[object Object],1562897292,3.5394708822893106,0,,pegperego.com,zimbra3.pegperego.com,enterprise
+3.1631128670716695,93.39.236.230,mail.rizzola.it,,Neutral,1,[object Object],1562897638,3.0627475153500248,0,,rizzola.it,mail.rizzola.it,enterprise
+3.1897549090735096,93.39.245.60,mail.datagest.it,,Neutral,1,[object Object],1562899772,3.3631805425600065,0,,datagest.it,mail.datagest.it,enterprise
+3.279117773577478,93.40.8.203,93-40-8-203.ip36.fastwebnet.it,,Poor,1,[object Object],1562904779,0,1,cbl.abuseat.org,fastwebnet.it,ip36.fastwebnet.it,consumer
+3.6354001689067714,93.40.8.210,93-40-8-210.ip36.fastwebnet.it,,Poor,1,[object Object],1562904786,0,1,cbl.abuseat.org,fastwebnet.it,ip36.fastwebnet.it,consumer
+3.035824344966669,93.40.19.20,93-40-19-20.ip36.fastwebnet.it,,Poor,1,[object Object],1562907412,3.7612400105869175,1,pbl.spamhaus.org,fastwebnet.it,ip36.fastwebnet.it,consumer
+3.0714357410865567,93.40.23.93,93-40-23-93.ip36.fastwebnet.it,,Poor,1,[object Object],1562908509,3.5394708822893106,1,pbl.spamhaus.org,fastwebnet.it,ip36.fastwebnet.it,consumer
+3.074154885987134,93.40.65.4,93-40-65-4.ip37.fastwebnet.it,,Poor,1,[object Object],1562919172,0,1,pbl.spamhaus.org,fastwebnet.it,ip37.fastwebnet.it,consumer
+3.7544243916569093,93.40.82.215,93-40-82-215.ip37.fastwebnet.it,,Poor,1,[object Object],1562923735,0,1,pbl.spamhaus.org,fastwebnet.it,ip37.fastwebnet.it,consumer
+3.605485378644843,93.40.87.42,93-40-87-42.ip38.fastwebnet.it,,Poor,1,[object Object],1562924842,0,1,pbl.spamhaus.org,fastwebnet.it,ip38.fastwebnet.it,consumer
+3.872947251136003,93.40.90.195,93-40-90-195.ip38.fastwebnet.it,,Poor,1,[object Object],1562925763,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip38.fastwebnet.it,consumer
+3.5841513564389005,93.40.101.87,93-40-101-87.ip38.fastwebnet.it,,Poor,1,[object Object],1562928471,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip38.fastwebnet.it,consumer
+3.0223829678783463,93.40.101.211,93-40-101-211.ip38.fastwebnet.it,,Poor,1,[object Object],1562928595,0,1,pbl.spamhaus.org,fastwebnet.it,ip38.fastwebnet.it,consumer
+3.9729497326678587,93.40.108.173,93-40-108-173.ip38.fastwebnet.it,,Poor,1,[object Object],1562930349,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip38.fastwebnet.it,consumer
+3.2979477254302174,93.40.109.142,93-40-109-142.ip38.fastwebnet.it,,Poor,1,[object Object],1562930574,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip38.fastwebnet.it,consumer
+3.3599727108306934,93.40.112.160,93-40-112-160.ip38.fastwebnet.it,,Poor,1,[object Object],1562931360,0,1,pbl.spamhaus.org,fastwebnet.it,ip38.fastwebnet.it,consumer
+2.8956212123553087,93.40.116.84,93-40-116-84.ip38.fastwebnet.it,,Poor,1,[object Object],1562932308,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip38.fastwebnet.it,consumer
+3.2891135990950904,93.40.117.34,93-40-117-34.ip38.fastwebnet.it,,Poor,1,[object Object],1562932514,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip38.fastwebnet.it,consumer
+3.3094485919386525,93.40.122.249,93-40-122-249.ip38.fastwebnet.it,,Poor,1,[object Object],1562934009,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip38.fastwebnet.it,consumer
+3.5295954260937226,93.40.126.4,93-40-126-4.ip38.fastwebnet.it,,Poor,1,[object Object],1562934788,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip38.fastwebnet.it,consumer
+3.5204292364076517,93.40.184.232,93-40-184-232.ip40.fastwebnet.it,,Poor,1,[object Object],1562949864,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip40.fastwebnet.it,consumer
+2.997750540179606,93.40.194.12,93-40-194-12.ip40.fastwebnet.it,,Poor,1,[object Object],1562952204,4.176231734003883,1,pbl.spamhaus.org,fastwebnet.it,ip40.fastwebnet.it,consumer
+3.415827892569461,93.40.195.96,93-40-195-96.ip40.fastwebnet.it,,Poor,1,[object Object],1562952544,3.7612400105869175,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip40.fastwebnet.it,consumer
+4.2213407795438345,93.40.197.164,93-40-197-164.ip40.fastwebnet.it,,Poor,1,[object Object],1562953124,4.539431073454606,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip40.fastwebnet.it,consumer
+4.029920023058133,93.40.198.162,93-40-198-162.ip40.fastwebnet.it,,Poor,1,[object Object],1562953378,4.477307664882027,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip40.fastwebnet.it,consumer
+2.9495559659371438,93.40.198.215,93-40-198-215.ip40.fastwebnet.it,,Poor,1,[object Object],1562953431,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip40.fastwebnet.it,consumer
+4.053338007412235,93.40.205.178,93-40-205-178.ip40.fastwebnet.it,,Poor,1,[object Object],1562955186,4.49366915946482,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip40.fastwebnet.it,consumer
+3.7780325866800584,93.40.206.72,93-40-206-72.ip40.fastwebnet.it,,Poor,1,[object Object],1562955336,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip40.fastwebnet.it,consumer
+3.016860170189118,93.40.206.110,93-40-206-110.ip40.fastwebnet.it,,Poor,1,[object Object],1562955374,0,1,pbl.spamhaus.org,fastwebnet.it,ip40.fastwebnet.it,consumer
+4.068881514391586,93.40.210.239,93-40-210-239.ip40.fastwebnet.it,,Poor,1,[object Object],1562956527,4.56744984427599,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip40.fastwebnet.it,consumer
+2.887777840588607,93.40.214.227,93-40-214-227.ip40.fastwebnet.it,,Poor,1,[object Object],1562957539,0,1,pbl.spamhaus.org,fastwebnet.it,ip40.fastwebnet.it,consumer
+3.870573478724688,93.40.224.108,93-40-224-108.ip40.fastwebnet.it,,Poor,1,[object Object],1562959980,4.016592137008973,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip40.fastwebnet.it,consumer
+3.396601606192854,93.40.226.42,93-40-226-42.ip40.fastwebnet.it,,Poor,1,[object Object],1562960426,4.292775132428255,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip40.fastwebnet.it,consumer
+3.1112148520086254,93.40.227.156,93-40-227-156.ip40.fastwebnet.it,,Poor,1,[object Object],1562960796,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip40.fastwebnet.it,consumer
+4.171226971003822,93.40.229.244,93-40-229-244.ip40.fastwebnet.it,,Poor,1,[object Object],1562961396,4.016592137008973,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip40.fastwebnet.it,consumer
+2.878318164413115,93.41.2.23,93-41-2-23.ip79.fastwebnet.it,,Poor,1,[object Object],1562968599,3.3631805425600065,1,pbl.spamhaus.org,fastwebnet.it,ip79.fastwebnet.it,consumer
+3.1661526848145805,93.41.6.64,93-41-6-64.ip79.fastwebnet.it,,Poor,1,[object Object],1562969664,0,1,pbl.spamhaus.org,fastwebnet.it,ip79.fastwebnet.it,consumer
+3.016860170189118,93.41.14.227,93-41-14-227.ip79.fastwebnet.it,,Poor,1,[object Object],1562971875,0,1,pbl.spamhaus.org,fastwebnet.it,ip79.fastwebnet.it,consumer
+3.9621907565859074,93.41.18.138,93-41-18-138.ip79.fastwebnet.it,,Poor,1,[object Object],1562972810,4.5094792244022885,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip79.fastwebnet.it,consumer
+3.515634195335457,93.41.33.229,93-41-33-229.ip79.fastwebnet.it,,Poor,1,[object Object],1562976741,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip79.fastwebnet.it,consumer
+4.50711457049041,93.41.34.126,93-41-34-126.ip79.fastwebnet.it,,Poor,1,[object Object],1562976894,4.56744984427599,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip79.fastwebnet.it,consumer
+2.899931563066572,93.41.36.78,93-41-36-78.ip79.fastwebnet.it,,Poor,1,[object Object],1562977358,3.0627475153500248,1,pbl.spamhaus.org,fastwebnet.it,ip79.fastwebnet.it,consumer
+3.228744069254471,93.41.42.240,93-41-42-240.ip79.fastwebnet.it,,Poor,1,[object Object],1562979056,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip79.fastwebnet.it,consumer
+3.6285506827135365,93.41.108.23,93-41-108-23.ip81.fastwebnet.it,,Poor,1,[object Object],1562995735,4.460257789465848,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip81.fastwebnet.it,consumer
+3.3531513746335433,93.41.111.158,93-41-111-158.ip81.fastwebnet.it,,Poor,1,[object Object],1562996638,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip81.fastwebnet.it,consumer
+3.379125571904869,93.41.114.124,93-41-114-124.ip81.fastwebnet.it,,Poor,1,[object Object],1562997372,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip81.fastwebnet.it,consumer
+3.1325173763976233,93.41.118.224,93-41-118-224.ip81.fastwebnet.it,,Poor,1,[object Object],1562998496,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip81.fastwebnet.it,consumer
+3.3361355405944697,93.41.120.204,93-41-120-204.ip81.fastwebnet.it,,Poor,1,[object Object],1562998988,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip81.fastwebnet.it,consumer
+3.40558981472711,93.41.121.68,93-41-121-68.ip81.fastwebnet.it,,Poor,1,[object Object],1562999108,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip81.fastwebnet.it,consumer
+3.0885537277020676,93.41.121.138,93-41-121-138.ip81.fastwebnet.it,,Poor,1,[object Object],1562999178,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip81.fastwebnet.it,consumer
+3.9772616464810864,93.41.122.208,93-41-122-208.ip81.fastwebnet.it,,Poor,1,[object Object],1562999504,4.176231734003883,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip81.fastwebnet.it,consumer
+3.002508453484569,93.41.125.227,93-41-125-227.ip81.fastwebnet.it,,Poor,1,[object Object],1563000291,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip81.fastwebnet.it,consumer
+3.3487741628280165,93.41.127.118,93-41-127-118.ip81.fastwebnet.it,,Poor,1,[object Object],1563000694,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip81.fastwebnet.it,consumer
+3.0857537085986912,93.41.139.133,93-41-139-133.ip81.fastwebnet.it,,Poor,1,[object Object],1563003781,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip81.fastwebnet.it,consumer
+2.9508412843160015,93.41.144.233,93-41-144-233.ip81.fastwebnet.it,,Poor,1,[object Object],1563005161,0,1,pbl.spamhaus.org,fastwebnet.it,ip81.fastwebnet.it,consumer
+3.0520790246160114,93.41.162.196,93-41-162-196.ip82.fastwebnet.it,,Neutral,1,[object Object],1563009732,3.5394708822893106,0,,fastwebnet.it,ip82.fastwebnet.it,consumer
+3.862364867336273,93.41.176.10,mail.ismett.edu,,Good,0,[object Object],1563013130,3.840500877953292,0,,ismett.edu,mail.ismett.edu,enterprise
+2.888189865174232,93.41.176.151,93-41-176-151.ip82.fastwebnet.it,,Neutral,1,[object Object],1563013271,0,0,,fastwebnet.it,ip82.fastwebnet.it,consumer
+3.130306204049,93.41.181.230,smtp.comune.treviso.it,,Neutral,1,[object Object],1563014630,3.0627475153500248,0,,comune.treviso.it,smtp.comune.treviso.it,enterprise
+3.1608326979588552,93.41.183.30,zimbra.anstel.it,,Neutral,1,[object Object],1563014942,4.141530873617273,0,,anstel.it,zimbra.anstel.it,enterprise
+2.906771927074095,93.41.188.193,relay.aulss2.veneto.it,,Good,1,[object Object],1563016385,0,0,,aulss2.veneto.it,relay.aulss2.veneto.it,enterprise
+3.421232127242156,93.41.191.138,mail.docservizi.it,,Good,1,[object Object],1563017098,3.3631805425600065,0,,docservizi.it,mail.docservizi.it,enterprise
+4.803561101584953,93.41.193.212,93-41-193-212.ip82.fastwebnet.it,,Poor,1,[object Object],1563017684,4.743565984851166,1,cbl.abuseat.org,fastwebnet.it,ip82.fastwebnet.it,consumer
+2.880629140890174,93.41.195.127,93-41-195-127.ip83.fastwebnet.it,,Neutral,1,[object Object],1563018111,0,0,,fastwebnet.it,ip83.fastwebnet.it,consumer
+3.4741084463831395,93.41.199.135,mail.alumbria.it,,Good,1,[object Object],1563019143,3.664509125022895,0,,alumbria.it,mail.alumbria.it,enterprise
+3.278682281455849,93.41.202.146,93-41-202-146.ip83.fastwebnet.it,,Neutral,1,[object Object],1563019922,0,0,,fastwebnet.it,ip83.fastwebnet.it,consumer
+3.685393130934462,93.41.203.164,mailout.bcdtravel.it,,Good,1,[object Object],1563020196,3.965389852948028,0,,bcdtravel.it,mailout.bcdtravel.it,enterprise
+2.888189865174232,93.41.205.177,93-41-205-177.ip83.fastwebnet.it,,Neutral,1,[object Object],1563020721,0,0,,fastwebnet.it,ip83.fastwebnet.it,consumer
+3.016860170189118,93.41.210.76,93-41-210-76.ip83.fastwebnet.it,,Neutral,1,[object Object],1563021900,0,0,,fastwebnet.it,ip83.fastwebnet.it,consumer
+2.930945062998882,93.41.211.239,93-41-211-239.ip83.fastwebnet.it,,Neutral,1,[object Object],1563022319,0,0,,fastwebnet.it,ip83.fastwebnet.it,consumer
+2.9171429331292074,93.41.216.102,93-41-216-102.ip83.fastwebnet.it,,Neutral,1,[object Object],1563023462,0,0,,fastwebnet.it,ip83.fastwebnet.it,consumer
+3.2875155253779713,93.42.31.18,93-42-31-18.ip84.fastwebnet.it,,Poor,1,[object Object],1563041554,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip84.fastwebnet.it,consumer
+3.0568111871343624,93.42.43.114,93-42-43-114.ip85.fastwebnet.it,,Poor,1,[object Object],1563044722,3.0627475153500248,1,pbl.spamhaus.org,fastwebnet.it,ip85.fastwebnet.it,consumer
+2.8950945983308225,93.42.103.178,93-42-103-178.ip86.fastwebnet.it,,Neutral,1,[object Object],1563060146,0,0,,fastwebnet.it,ip86.fastwebnet.it,consumer
+3.005567877498474,93.42.108.36,93-42-108-36.ip86.fastwebnet.it,,Neutral,1,[object Object],1563061284,0,0,,fastwebnet.it,ip86.fastwebnet.it,consumer
+2.9690802667216443,93.42.114.26,x4.cargoconsult.net,,Good,1,[object Object],1563062810,3.5394708822893106,0,,cargoconsult.net,x4.cargoconsult.net,enterprise
+3.2095935610590542,93.42.115.46,mail.fhsrl.it,,Neutral,1,[object Object],1563063086,3.664509125022895,0,,fhsrl.it,mail.fhsrl.it,enterprise
+3.674769927187134,93.42.119.117,mail.zanuttaspa.it,,Good,1,[object Object],1563064181,4.062270006250898,0,,zanuttaspa.it,mail.zanuttaspa.it,enterprise
+3.050423974671284,93.42.126.148,93-42-126-148.ip86.fastwebnet.it,,Neutral,1,[object Object],1563066004,3.0627475153500248,0,,fastwebnet.it,ip86.fastwebnet.it,consumer
+3.0942411444795512,93.42.130.235,mail2.confindustria.al.it,,Good,1,[object Object],1563067115,3.664509125022895,0,,confindustria.al.it,mail2.confindustria.al.it,enterprise
+3.67002164273814,93.42.135.172,93-42-135-172.ip87.fastwebnet.it,,Good,1,[object Object],1563068332,3.5394708822893106,0,,fastwebnet.it,ip87.fastwebnet.it,consumer
+2.967522089015582,93.42.146.184,posta.aptgorizia.it,,Good,1,[object Object],1563071160,3.0627475153500248,0,,aptgorizia.it,posta.aptgorizia.it,enterprise
+3.1624673036852933,93.42.149.50,mail1.nemesiweb.net,,Neutral,1,[object Object],1563071794,0,0,,nemesiweb.net,mail1.nemesiweb.net,enterprise
+3.020413168860992,93.42.152.143,msrvapp.niuma.it,,Good,1,[object Object],1563072655,0,0,,niuma.it,msrvapp.niuma.it,enterprise
+3.063119586747735,93.42.162.250,mail.futurlab.it,,Poor,1,[object Object],1563075322,4.384512051422598,0,,futurlab.it,mail.futurlab.it,enterprise
+3.5533555819111413,93.42.179.179,93-42-179-179.ip87.fastwebnet.it,,Good,1,[object Object],1563079603,3.0627475153500248,0,,fastwebnet.it,ip87.fastwebnet.it,consumer
+3.961084906715305,93.42.182.142,93-42-182-142.ip87.fastwebnet.it,,Good,1,[object Object],1563080334,4.404736118692912,0,,fastwebnet.it,ip87.fastwebnet.it,consumer
+3.241617523940326,93.42.188.156,93-42-188-156.ip88.fastwebnet.it,,Good,1,[object Object],1563081884,3.7612400105869175,0,,fastwebnet.it,ip88.fastwebnet.it,consumer
+3.891173590423053,93.42.193.128,smtp120.mcontact.it,,Neutral,1,[object Object],1563083136,4.854696371343558,0,,mcontact.it,smtp120.mcontact.it,enterprise
+3.9199444153425578,93.42.193.129,smtp121.mcontact.it,,Neutral,1,[object Object],1563083137,4.9011641021358425,0,,mcontact.it,smtp121.mcontact.it,enterprise
+3.9000057128847354,93.42.193.130,smtp122.mcontact.it,,Poor,1,[object Object],1563083138,4.875220113008598,0,,mcontact.it,smtp122.mcontact.it,enterprise
+4.46084757184803,93.42.193.137,smtp129.mcontact.it,,Good,1,[object Object],1563083145,0,0,,mcontact.it,smtp129.mcontact.it,enterprise
+4.814638086323536,93.42.193.138,smtp130.mcontact.it,,Neutral,1,[object Object],1563083146,4.847646832657719,0,,mcontact.it,smtp130.mcontact.it,enterprise
+4.520268810521957,93.42.193.139,smtp131.mcontact.it,,Neutral,1,[object Object],1563083147,0,0,,mcontact.it,smtp131.mcontact.it,enterprise
+4.694973328575173,93.42.193.140,smtp132.mcontact.it,,Neutral,1,[object Object],1563083148,4.888394722530353,0,,mcontact.it,smtp132.mcontact.it,enterprise
+4.83323002073331,93.42.193.141,smtp133.mcontact.it,,Neutral,1,[object Object],1563083149,0,0,,mcontact.it,smtp133.mcontact.it,enterprise
+4.753003748899148,93.42.193.143,smtp135.mcontact.it,,Neutral,1,[object Object],1563083151,4.833174650569659,0,,mcontact.it,smtp135.mcontact.it,enterprise
+3.2074170367348085,93.42.193.212,smtp172.mcontact.it,,Neutral,1,[object Object],1563083220,3.5394708822893106,0,,mcontact.it,smtp172.mcontact.it,enterprise
+3.4640717883636465,93.42.193.213,smtp173.mcontact.it,,Neutral,1,[object Object],1563083221,3.0627475153500248,0,,mcontact.it,smtp173.mcontact.it,enterprise
+3.745435983281219,93.42.193.214,smtp174.mcontact.it,,Good,1,[object Object],1563083222,3.664509125022895,0,,mcontact.it,smtp174.mcontact.it,enterprise
+4.302786067320758,93.42.194.226,93-42-194-226.ip88.fastwebnet.it,,Poor,1,[object Object],1563083490,4.642091320048843,1,cbl.abuseat.org,fastwebnet.it,ip88.fastwebnet.it,consumer
+3.0618652162106224,93.42.195.149,esva.addafer.it,,Good,1,[object Object],1563083669,3.5394708822893106,0,,addafer.it,esva.addafer.it,enterprise
+3.116505367089583,93.42.208.2,93-42-208-2.ip88.fastwebnet.it,,Neutral,1,[object Object],1563086850,3.3631805425600065,0,,fastwebnet.it,ip88.fastwebnet.it,consumer
+3.0362931240522197,93.42.227.11,serverposta.salaroli.it,,Good,1,[object Object],1563091723,0,0,,salaroli.it,serverposta.salaroli.it,enterprise
+2.935160555758354,93.42.230.97,mail.alberghiera.it,,Neutral,1,[object Object],1563092577,0,0,,alberghiera.it,mail.alberghiera.it,enterprise
+3.2973702274192,93.42.230.190,mx1.bancater.it,,Good,1,[object Object],1563092670,3.3631805425600065,0,,bancater.it,mx1.bancater.it,enterprise
+2.930571685095212,93.43.7.226,mx.healthitalia.info,,Good,0,[object Object],1563101154,0,0,,healthitalia.info,mx.healthitalia.info,enterprise
+3.108557625670687,93.43.16.140,mail.qualityfoodgroup.com,,Neutral,1,[object Object],1563103372,3.5394708822893106,0,,qualityfoodgroup.com,mail.qualityfoodgroup.com,enterprise
+2.965958300686229,93.43.25.98,93-43-25-98.ip89.fastwebnet.it,,Neutral,1,[object Object],1563105634,0,0,,fastwebnet.it,ip89.fastwebnet.it,consumer
+3.6710379342668054,93.43.27.0,93-43-27-0.ip90.fastwebnet.it,,Good,1,[object Object],1563106048,3.5394708822893106,0,,fastwebnet.it,ip90.fastwebnet.it,consumer
+2.9344392129978463,93.43.33.218,93-43-33-218.ip90.fastwebnet.it,,Neutral,1,[object Object],1563107802,3.0627475153500248,0,,fastwebnet.it,ip90.fastwebnet.it,consumer
+3.2724880961322445,93.43.58.114,mx.gamco.it,,Good,1,[object Object],1563114098,4.238440886625329,0,,gamco.it,mx.gamco.it,enterprise
+3.064274260355688,93.43.59.2,93-43-59-2.ip90.fastwebnet.it,,Neutral,1,[object Object],1563114242,0,0,,fastwebnet.it,ip90.fastwebnet.it,consumer
+3.4419993775355144,93.43.60.151,smtp5.brauff.it,,Good,1,[object Object],1563114647,3.840500877953292,0,,brauff.it,smtp5.brauff.it,enterprise
+3.1858607915902146,93.43.63.118,b.mi.iliad.it,,Good,1,[object Object],1563115382,3.664509125022895,0,,iliad.it,mi.iliad.it,enterprise
+3.094830122610671,93.43.63.119,c.mi.iliad.it,,Good,1,[object Object],1563115383,3.664509125022895,0,,iliad.it,mi.iliad.it,enterprise
+3.726761628742011,93.43.65.181,mail2.autoarona.it,,Good,1,[object Object],1563115957,4.208449228738307,0,,autoarona.it,mail2.autoarona.it,enterprise
+3.911992285651537,93.43.88.245,smtp.graphistudio.com,,Good,1,[object Object],1563121909,4.825743303388583,0,,graphistudio.com,smtp.graphistudio.com,enterprise
+2.906396914204829,93.43.89.172,mail.sipec.com,,Neutral,1,[object Object],1563122092,0,0,,sipec.com,mail.sipec.com,enterprise
+2.928999983044652,93.43.94.153,mx2.brianzacque.it,,Good,1,[object Object],1563123353,3.0627475153500248,0,,brianzacque.it,mx2.brianzacque.it,enterprise
+3.6158200342743014,93.43.96.8,93-43-96-8.ip91.fastwebnet.it,,Poor,1,[object Object],1563123720,0,1,cbl.abuseat.org,fastwebnet.it,ip91.fastwebnet.it,consumer
+3.725673298214299,93.43.119.28,smtp1.anticorruzione.it,,Good,1,[object Object],1563129628,0,0,,anticorruzione.it,smtp1.anticorruzione.it,enterprise
+3.6587175274853454,93.43.119.29,smtp2.anticorruzione.it,,Good,1,[object Object],1563129629,0,0,,anticorruzione.it,smtp2.anticorruzione.it,enterprise
+3.0278513438164345,93.43.129.82,93-43-129-82.ip92.fastwebnet.it,,Neutral,1,[object Object],1563132242,0,0,,fastwebnet.it,ip92.fastwebnet.it,consumer
+3.29716149760522,93.43.177.204,93-43-177-204.ip93.fastwebnet.it,,Poor,1,[object Object],1563144652,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip93.fastwebnet.it,consumer
+3.8119702573000493,93.43.183.82,93-43-183-82.ip93.fastwebnet.it,,Poor,1,[object Object],1563146066,4.103706123028931,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip93.fastwebnet.it,consumer
+3.7427905672615105,93.43.203.71,93-43-203-71.ip93.fastwebnet.it,,Poor,1,[object Object],1563151175,4.618618954561423,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip93.fastwebnet.it,consumer
+3.0385712038949135,93.43.203.250,93-43-203-250.ip93.fastwebnet.it,,Poor,1,[object Object],1563151354,0,1,pbl.spamhaus.org,fastwebnet.it,ip93.fastwebnet.it,consumer
+3.005567877498474,93.43.224.62,93-43-224-62.ip94.fastwebnet.it,,Neutral,1,[object Object],1563156542,0,0,,fastwebnet.it,ip94.fastwebnet.it,consumer
+3.8512537024506,93.43.230.177,93-43-230-177.ip94.fastwebnet.it,,Neutral,1,[object Object],1563158193,0,0,,fastwebnet.it,ip94.fastwebnet.it,consumer
+2.9508412843160015,93.43.231.251,93-43-231-251.ip94.fastwebnet.it,,Neutral,1,[object Object],1563158523,0,0,,fastwebnet.it,ip94.fastwebnet.it,consumer
+2.9029076309042368,93.44.46.68,93-44-46-68.ip95.fastwebnet.it,,Poor,1,[object Object],1563176516,0,1,pbl.spamhaus.org,fastwebnet.it,ip95.fastwebnet.it,consumer
+3.054177648032058,93.44.50.133,93-44-50-133.ip95.fastwebnet.it,,Poor,1,[object Object],1563177605,0,1,pbl.spamhaus.org,fastwebnet.it,ip95.fastwebnet.it,consumer
+3.105010007745455,93.44.60.38,93-44-60-38.ip95.fastwebnet.it,,Poor,1,[object Object],1563180070,3.664509125022895,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip95.fastwebnet.it,consumer
+2.9029076309042368,93.44.77.195,93-44-77-195.ip96.fastwebnet.it,,Poor,1,[object Object],1563184579,0,1,pbl.spamhaus.org,fastwebnet.it,ip96.fastwebnet.it,consumer
+3.6857542878772365,93.44.81.138,93-44-81-138.ip96.fastwebnet.it,,Poor,1,[object Object],1563185546,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip96.fastwebnet.it,consumer
+3.690081153087983,93.44.88.97,93-44-88-97.ip96.fastwebnet.it,,Poor,1,[object Object],1563187297,4.176231734003883,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip96.fastwebnet.it,consumer
+3.5910996239766932,93.44.90.7,93-44-90-7.ip96.fastwebnet.it,,Poor,1,[object Object],1563187719,4.384512051422598,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip96.fastwebnet.it,consumer
+3.6037130040098617,93.44.94.177,93-44-94-177.ip96.fastwebnet.it,,Poor,1,[object Object],1563188913,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip96.fastwebnet.it,consumer
+3.494970439522181,93.44.98.159,93-44-98-159.ip96.fastwebnet.it,,Poor,1,[object Object],1563189919,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip96.fastwebnet.it,consumer
+3.0466375746730536,93.44.99.183,93-44-99-183.ip96.fastwebnet.it,,Poor,1,[object Object],1563190199,0,1,pbl.spamhaus.org,fastwebnet.it,ip96.fastwebnet.it,consumer
+3.1778394039672118,93.44.106.145,93-44-106-145.ip96.fastwebnet.it,,Poor,1,[object Object],1563191953,4.384512051422598,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip96.fastwebnet.it,consumer
+3.9993348704894642,93.44.108.148,93-44-108-148.ip96.fastwebnet.it,,Poor,1,[object Object],1563192468,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip96.fastwebnet.it,consumer
+2.9029076309042368,93.44.135.199,93-44-135-199.ip97.fastwebnet.it,,Neutral,1,[object Object],1563199431,0,0,,fastwebnet.it,ip97.fastwebnet.it,consumer
+2.948284763157257,93.44.188.1,93-44-188-1.ip98.fastwebnet.it,,Poor,1,[object Object],1563212801,3.664509125022895,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip98.fastwebnet.it,consumer
+3.476149931367997,93.44.188.73,93-44-188-73.ip98.fastwebnet.it,,Poor,1,[object Object],1563212873,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip98.fastwebnet.it,consumer
+3.137602494893647,93.44.189.14,93-44-189-14.ip98.fastwebnet.it,,Poor,1,[object Object],1563213070,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip98.fastwebnet.it,consumer
+4.246413799511675,93.44.192.156,93-44-192-156.ip98.fastwebnet.it,,Poor,1,[object Object],1563213980,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip98.fastwebnet.it,consumer
+2.957264122323508,93.44.197.14,93-44-197-14.ip98.fastwebnet.it,,Poor,1,[object Object],1563215118,3.5394708822893106,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip98.fastwebnet.it,consumer
+2.9080524224937587,93.44.197.27,93-44-197-27.ip98.fastwebnet.it,,Poor,1,[object Object],1563215131,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip98.fastwebnet.it,consumer
+2.944303935198224,93.45.33.244,93-45-33-244.ip100.fastwebnet.it,,Neutral,1,[object Object],1563238900,0,0,,fastwebnet.it,ip100.fastwebnet.it,consumer
+3.4618626936228365,93.45.48.181,93-45-48-181.ip100.fastwebnet.it,,Poor,1,[object Object],1563242677,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip100.fastwebnet.it,consumer
+3.315394897625914,93.45.49.77,93-45-49-77.ip100.fastwebnet.it,,Poor,1,[object Object],1563242829,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip100.fastwebnet.it,consumer
+3.4340105257495943,93.45.52.47,93-45-52-47.ip100.fastwebnet.it,,Poor,1,[object Object],1563243567,0,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip100.fastwebnet.it,consumer
+3.8653766771382676,93.45.52.201,93-45-52-201.ip100.fastwebnet.it,,Poor,1,[object Object],1563243721,4.3633597192724025,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip100.fastwebnet.it,consumer
+3.6281124232577358,93.45.55.45,93-45-55-45.ip101.fastwebnet.it,,Poor,1,[object Object],1563244333,4.176231734003883,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip101.fastwebnet.it,consumer
+3.586034118004614,93.45.65.62,93-45-65-62.ip101.fastwebnet.it,,Poor,1,[object Object],1563246910,0,1,cbl.abuseat.org,fastwebnet.it,ip101.fastwebnet.it,consumer
+3.1798218612786813,93.45.70.193,93-45-70-193.ip101.fastwebnet.it,,Neutral,1,[object Object],1563248321,0,0,,fastwebnet.it,ip101.fastwebnet.it,consumer
+3.103708187312031,93.45.85.61,93-45-85-61.ip101.fastwebnet.it,,Neutral,1,[object Object],1563252029,0,0,,fastwebnet.it,ip101.fastwebnet.it,consumer
+3.2920810273691186,93.45.85.225,93-45-85-225.ip101.fastwebnet.it,,Poor,1,[object Object],1563252193,0,1,cbl.abuseat.org,fastwebnet.it,ip101.fastwebnet.it,consumer
+3.317882510051558,93.45.86.249,93-45-86-249.ip101.fastwebnet.it,,Poor,1,[object Object],1563252473,0,1,cbl.abuseat.org,fastwebnet.it,ip101.fastwebnet.it,consumer
+4.0614177291075535,93.45.87.237,93-45-87-237.ip101.fastwebnet.it,,Poor,1,[object Object],1563252717,4.062270006250898,1,cbl.abuseat.org,fastwebnet.it,ip101.fastwebnet.it,consumer
+3.576436312990267,93.45.87.245,93-45-87-245.ip101.fastwebnet.it,,Poor,1,[object Object],1563252725,0,1,cbl.abuseat.org,fastwebnet.it,ip101.fastwebnet.it,consumer
+4.226144695436027,93.45.91.151,93-45-91-151.ip101.fastwebnet.it,,Poor,1,[object Object],1563253655,0,1,cbl.abuseat.org,fastwebnet.it,ip101.fastwebnet.it,consumer
+3.049032822954646,93.45.110.43,93-45-110-43.ip102.fastwebnet.it,,Neutral,1,[object Object],1563258411,0,0,,fastwebnet.it,ip102.fastwebnet.it,consumer
+3.6140390993150104,93.45.252.158,srvsbex01.sanbenedetto.it,,Good,1,[object Object],1563294878,4.238440886625329,0,,sanbenedetto.it,srvsbex01.sanbenedetto.it,enterprise
+3.3373743617435383,93.45.253.146,93-45-253-146.ip105.fastwebnet.it,,Neutral,1,[object Object],1563295122,3.0627475153500248,0,,fastwebnet.it,ip105.fastwebnet.it,consumer
+3.061063832681171,93.45.253.244,webmail.logeast.com,,Neutral,0,[object Object],1563295220,0,0,,logeast.com,webmail.logeast.com,enterprise
+3.0406489980826104,93.45.254.132,93-45-254-132.ip105.fastwebnet.it,,Neutral,1,[object Object],1563295364,3.9073339183737463,0,,fastwebnet.it,ip105.fastwebnet.it,consumer
+3.155090480837333,93.46.1.134,93-46-1-134.ip105.fastwebnet.it,,Neutral,1,[object Object],1563296134,3.664509125022895,0,,fastwebnet.it,ip105.fastwebnet.it,consumer
+2.966852583386846,93.46.3.98,mx.ats-montagna.it,,Neutral,1,[object Object],1563296610,3.3631805425600065,0,,ats-montagna.it,mx.ats-montagna.it,enterprise
+3.377400077089391,93.46.4.50,mail2.comune.spoleto.pg.it,,Neutral,1,[object Object],1563296818,3.5394708822893106,0,,spoleto.pg.it,comune.spoleto.pg.it,enterprise
+4.018917743119573,93.46.8.201,recorda.laremo.it,,Poor,1,[object Object],1563297993,4.477307664882027,1,cbl.abuseat.org,laremo.it,recorda.laremo.it,enterprise
+3.4422639247412095,93.46.9.122,93-46-9-122.ip105.fastwebnet.it,,Neutral,1,[object Object],1563298170,3.664509125022895,0,,fastwebnet.it,ip105.fastwebnet.it,consumer
+2.886704743674905,93.46.11.107,mail.fimalsrl.it,,Neutral,1,[object Object],1563298667,3.7612400105869175,0,,fimalsrl.it,mail.fimalsrl.it,enterprise
+2.8729557818519185,93.46.16.84,93-46-16-84.ip105.fastwebnet.it,,Neutral,1,[object Object],1563299924,0,0,,fastwebnet.it,ip105.fastwebnet.it,consumer
+2.9848897944864636,93.46.16.178,93-46-16-178.ip105.fastwebnet.it,,Neutral,1,[object Object],1563300018,0,0,,fastwebnet.it,ip105.fastwebnet.it,consumer
+3.409029394157006,93.46.16.198,mail.ats-insubria.it,,Good,0,[object Object],1563300038,4.3633597192724025,0,,ats-insubria.it,mail.ats-insubria.it,enterprise
+3.119138750011636,93.46.23.45,93-46-23-45.ip105.fastwebnet.it,,Neutral,1,[object Object],1563301677,0,0,,fastwebnet.it,ip105.fastwebnet.it,consumer
+2.953719417413345,93.46.32.115,93-46-32-115.ip105.fastwebnet.it,,Neutral,1,[object Object],1563304051,0,0,,fastwebnet.it,ip105.fastwebnet.it,consumer
+3.274531639125459,93.46.39.58,93-46-39-58.ip105.fastwebnet.it,,Neutral,1,[object Object],1563305786,3.0627475153500248,0,,fastwebnet.it,ip105.fastwebnet.it,consumer
+3.6562376393600204,93.46.122.10,93-46-122-10.ip107.fastwebnet.it,,Poor,1,[object Object],1563326986,4.44251110766769,1,cbl.abuseat.org,fastwebnet.it,ip107.fastwebnet.it,consumer
+2.982095512011054,93.46.127.210,93-46-127-210.ip107.fastwebnet.it,,Neutral,1,[object Object],1563328466,0,0,,fastwebnet.it,ip107.fastwebnet.it,consumer
+3.061146803033949,93.46.160.150,mx1.fmiparma.it,,Good,1,[object Object],1563336854,3.0627475153500248,0,,fmiparma.it,mx1.fmiparma.it,enterprise
+2.9595414058024905,93.46.165.66,93-46-165-66.ip108.fastwebnet.it,,Poor,1,[object Object],1563338050,0,1,cbl.abuseat.org,fastwebnet.it,ip108.fastwebnet.it,consumer
+3.2521563904329622,93.46.167.66,93-46-167-66.ip108.fastwebnet.it,,Neutral,1,[object Object],1563338562,3.840500877953292,0,,fastwebnet.it,ip108.fastwebnet.it,consumer
+3.1729395158130296,93.46.174.74,mailx3.aob.it,,Good,1,[object Object],1563340362,0,0,,aob.it,mailx3.aob.it,enterprise
+3.1228132609392167,93.46.175.74,mail.icasystem.it,,Good,1,[object Object],1563340618,3.7612400105869175,0,,icasystem.it,mail.icasystem.it,enterprise
+3.045148154379989,93.46.179.10,93-46-179-10.ip108.fastwebnet.it,,Neutral,1,[object Object],1563341578,0,0,,fastwebnet.it,ip108.fastwebnet.it,consumer
+4.598993350989748,93.46.189.106,93-46-189-106.ip109.fastwebnet.it,,Good,1,[object Object],1563344234,3.965389852948028,0,,fastwebnet.it,ip109.fastwebnet.it,consumer
+3.1216480139987075,93.46.189.162,mail.studiocoruzzi.it,,Neutral,1,[object Object],1563344290,3.3631805425600065,0,,studiocoruzzi.it,mail.studiocoruzzi.it,enterprise
+3.197237832854061,93.46.193.98,93-46-193-98.ip109.fastwebnet.it,,Poor,1,[object Object],1563345250,4.49366915946482,1,cbl.abuseat.org,fastwebnet.it,ip109.fastwebnet.it,consumer
+2.876946784744908,93.46.195.218,mail.milanistudio.it,,Neutral,1,[object Object],1563345882,3.3631805425600065,0,,milanistudio.it,mail.milanistudio.it,enterprise
+2.9663024735313632,93.46.203.36,home.extraflame.it,,Good,1,[object Object],1563347748,0,0,,extraflame.it,home.extraflame.it,enterprise
+2.9465240103223658,93.46.205.75,alpachem.com,,Neutral,1,[object Object],1563348299,3.965389852948028,0,,alpachem.com,.alpachem.com,enterprise
+2.886580754004696,93.46.209.148,93-46-209-148.ip109.fastwebnet.it,,Neutral,1,[object Object],1563349396,0,0,,fastwebnet.it,ip109.fastwebnet.it,consumer
+3.9598156251761205,93.46.214.224,smtp60.mcontact.it,,Neutral,1,[object Object],1563350752,4.9256288613781445,0,,mcontact.it,smtp60.mcontact.it,enterprise
+3.9717147069026506,93.46.214.225,smtp61.mcontact.it,,Poor,1,[object Object],1563350753,4.8948175605378585,0,,mcontact.it,smtp61.mcontact.it,enterprise
+3.97540592856676,93.46.214.226,smtp62.mcontact.it,,Poor,1,[object Object],1563350754,4.9011641021358425,0,,mcontact.it,smtp62.mcontact.it,enterprise
+4.160989843393753,93.46.214.240,smtp76.mcontact.it,,Poor,1,[object Object],1563350768,5.202194097799824,0,,mcontact.it,smtp76.mcontact.it,enterprise
+4.0505869303089685,93.46.214.241,smtp77.mcontact.it,,Poor,1,[object Object],1563350769,5.217649475335768,0,,mcontact.it,smtp77.mcontact.it,enterprise
+4.252188453649159,93.46.214.243,smtp79.mcontact.it,,Poor,1,[object Object],1563350771,5.111528552309173,0,,mcontact.it,smtp79.mcontact.it,enterprise
+3.158186771066735,93.46.219.86,relay.openesse.com,,Neutral,0,[object Object],1563351894,0,0,,openesse.com,relay.openesse.com,enterprise
+2.880629140890174,93.46.219.235,93-46-219-235.ip109.fastwebnet.it,,Neutral,1,[object Object],1563352043,0,0,,fastwebnet.it,ip109.fastwebnet.it,consumer
+3.01426479241099,93.46.220.10,smtp.dropsa.it,,Good,1,[object Object],1563352074,0,0,,dropsa.it,smtp.dropsa.it,enterprise
+3.0784810427749902,93.46.254.65,93-46-254-65.ip110.fastwebnet.it,,Neutral,1,[object Object],1563360833,0,0,,fastwebnet.it,ip110.fastwebnet.it,consumer
+2.8956212123553087,93.47.25.88,93-47-25-88.ip110.fastwebnet.it,,Neutral,1,[object Object],1563367768,0,0,,fastwebnet.it,ip110.fastwebnet.it,consumer
+3.0576343886541006,93.47.32.8,93-47-32-8.ip111.fastwebnet.it,,Poor,1,[object Object],1563369480,0,1,cbl.abuseat.org,fastwebnet.it,ip111.fastwebnet.it,consumer
+3.007606012810103,93.47.129.178,93-47-129-178.ip113.fastwebnet.it,,Neutral,1,[object Object],1563394482,0,0,,fastwebnet.it,ip113.fastwebnet.it,consumer
+2.972722670072898,93.47.129.198,mail.microarea.it,,Neutral,1,[object Object],1563394502,3.3631805425600065,0,,microarea.it,mail.microarea.it,enterprise
+3.1144800548452003,93.47.130.104,93-47-130-104.ip113.fastwebnet.it,,Neutral,1,[object Object],1563394664,0,0,,fastwebnet.it,ip113.fastwebnet.it,consumer
+3.076923786034142,93.47.133.219,93-47-133-219.ip113.fastwebnet.it,,Neutral,1,[object Object],1563395547,3.664509125022895,0,,fastwebnet.it,ip113.fastwebnet.it,consumer
+2.937666674794247,93.47.134.73,93-47-134-73.ip113.fastwebnet.it,,Neutral,1,[object Object],1563395657,0,0,,fastwebnet.it,ip113.fastwebnet.it,consumer
+3.3008476395762743,93.47.151.181,93-47-151-181.ip113.fastwebnet.it,,Neutral,1,[object Object],1563400117,3.0627475153500248,0,,fastwebnet.it,ip113.fastwebnet.it,consumer
+3.1902892989435614,93.47.152.234,mail.sews-cabind.it,,Good,1,[object Object],1563400426,4.062270006250898,0,,sews-cabind.it,mail.sews-cabind.it,enterprise
+2.9596636906074383,93.47.163.28,internet.policlinicodimonza.it,,Good,1,[object Object],1563403036,0,0,,policlinicodimonza.it,internet.policlinicodimonza.it,enterprise
+3.041127080622852,93.47.170.228,93-47-170-228.ip113.fastwebnet.it,,Neutral,1,[object Object],1563405028,3.3631805425600065,0,,fastwebnet.it,ip113.fastwebnet.it,consumer
+3.2168030656784947,93.47.172.26,posta.omni-net.biz,,Neutral,1,[object Object],1563405338,3.5394708822893106,0,,omni-net.biz,posta.omni-net.biz,enterprise
+3.3226791214058085,93.47.172.70,kerio.bsassociati.com,,Good,1,[object Object],1563405382,3.7612400105869175,0,,bsassociati.com,kerio.bsassociati.com,enterprise
+3.053263387939464,93.47.173.116,93-47-173-116.ip113.fastwebnet.it,,Poor,1,[object Object],1563405684,4.238440886625329,1,cbl.abuseat.org,fastwebnet.it,ip113.fastwebnet.it,consumer
+2.991042907141594,93.47.185.79,posta.valentincic-partners.it,,Neutral,0,[object Object],1563408719,3.3631805425600065,0,,valentincic-partners.it,posta.valentincic-partners.it,enterprise
+3.907782847297491,93.47.216.102,93-47-216-102.ip114.fastwebnet.it,,Poor,1,[object Object],1563416678,4.404736118692912,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip114.fastwebnet.it,consumer
+3.282635899918276,93.47.219.176,93-47-219-176.ip114.fastwebnet.it,,Poor,1,[object Object],1563417520,4.062270006250898,1,pbl.spamhaus.org,fastwebnet.it,ip114.fastwebnet.it,consumer
+3.175847855666699,93.47.225.142,93-47-225-142.ip114.fastwebnet.it,,Poor,1,[object Object],1563419022,0,1,pbl.spamhaus.org,fastwebnet.it,ip114.fastwebnet.it,consumer
+3.545421934288228,93.47.231.220,93-47-231-220.ip115.fastwebnet.it,,Poor,1,[object Object],1563420636,4.208449228738307,2,cbl.abuseat.org | pbl.spamhaus.org,fastwebnet.it,ip115.fastwebnet.it,consumer
+3.1956582102411573,93.49.169.170,93-49-169-170.ip286.fastwebnet.it,,Neutral,1,[object Object],1563535786,3.965389852948028,0,,fastwebnet.it,ip286.fastwebnet.it,consumer
+3.4929799217888533,93.49.170.35,mail.aslto3.piemonte.it,,Good,1,[object Object],1563535907,4.016592137008973,0,,aslto3.piemonte.it,mail.aslto3.piemonte.it,enterprise
+2.886311988220537,93.50.159.215,93-50-159-215.ip153.fastwebnet.it,,Poor,1,[object Object],1563598807,0,1,cbl.abuseat.org,fastwebnet.it,ip153.fastwebnet.it,consumer
+3.8993820592318666,93.50.165.11,93-50-165-11.ip153.fastwebnet.it,,Good,1,[object Object],1563600139,3.3631805425600065,0,,fastwebnet.it,ip153.fastwebnet.it,consumer
+2.8921867513016446,93.51.56.126,93-51-56-126.ip289.fastwebnet.it,,Neutral,1,[object Object],1563637886,3.5394708822893106,0,,fastwebnet.it,ip289.fastwebnet.it,consumer
+3.91539801655313,93.51.63.45,93-51-63-45.ip289.fastwebnet.it,,Poor,1,[object Object],1563639597,4.477307664882027,1,cbl.abuseat.org,fastwebnet.it,ip289.fastwebnet.it,consumer
+3.38325480850776,93.51.130.170,93-51-130-170.ip267.fastwebnet.it,,Neutral,1,[object Object],1563656874,3.5394708822893106,0,,fastwebnet.it,ip267.fastwebnet.it,consumer
+4.0505600114197735,93.51.139.19,mail.ceinorme.it,,Good,1,[object Object],1563659027,4.062270006250898,0,,ceinorme.it,mail.ceinorme.it,enterprise
+2.940286280370903,93.51.141.88,mail.sinelecservice.it,,Neutral,1,[object Object],1563659608,4.141530873617273,0,,sinelecservice.it,mail.sinelecservice.it,enterprise
+3.2521563904329622,93.51.142.181,93-51-142-181.ip267.fastwebnet.it,,Neutral,1,[object Object],1563659957,0,0,,fastwebnet.it,ip267.fastwebnet.it,consumer
+3.0717057239883903,93.51.145.178,93-51-145-178.ip267.fastwebnet.it,,Neutral,1,[object Object],1563660722,3.9073339183737463,0,,fastwebnet.it,ip267.fastwebnet.it,consumer
+3.416816604277824,93.51.147.136,posta.arsac.calabria.it,,Neutral,1,[object Object],1563661192,0,0,,arsac.calabria.it,posta.arsac.calabria.it,enterprise
+3.73671021767986,93.51.147.230,mx.focelda.it,,Good,1,[object Object],1563661286,3.9073339183737463,0,,focelda.it,mx.focelda.it,enterprise
+2.973281640407002,93.51.148.3,smtp.esu.pd.it,,Good,1,[object Object],1563661315,3.965389852948028,0,,esu.pd.it,smtp.esu.pd.it,enterprise
+3.462719160566787,93.51.148.148,mx1.digimax.it,,Good,1,[object Object],1563661460,3.9073339183737463,0,,digimax.it,mx1.digimax.it,enterprise
+3.502767496144459,93.51.154.146,email.carpoint.it,,Good,1,[object Object],1563662994,3.5394708822893106,0,,carpoint.it,email.carpoint.it,enterprise
+2.9132536161795666,93.51.157.136,mail2.magnith.com,,Neutral,1,[object Object],1563663752,3.3631805425600065,0,,magnith.com,mail2.magnith.com,enterprise
+3.005567877498474,93.51.165.227,mail.studiobisaglia.it,,Neutral,1,[object Object],1563665891,0,0,,studiobisaglia.it,mail.studiobisaglia.it,enterprise
+3.7714712014192973,93.51.166.99,ns2.betamtel.it,,Good,1,[object Object],1563666019,4.208449228738307,0,,betamtel.it,ns2.betamtel.it,enterprise
+3.03905157793718,93.51.172.147,mail.newchem.it,,Neutral,1,[object Object],1563667603,3.9073339183737463,0,,newchem.it,mail.newchem.it,enterprise
+3.682139059771962,93.51.173.179,mail.comune.arzignano.vi.it,,Neutral,1,[object Object],1563667891,4.5808273777485935,0,,arzignano.vi.it,comune.arzignano.vi.it,enterprise
+3.6844329640567746,93.51.177.210,93-51-177-210.ip268.fastwebnet.it,,Poor,1,[object Object],1563668946,4.553685638702441,1,cbl.abuseat.org,fastwebnet.it,ip268.fastwebnet.it,consumer
+2.8729557818519185,93.51.182.133,mail.tmaxservice.it,,Neutral,1,[object Object],1563670149,0,0,,tmaxservice.it,mail.tmaxservice.it,enterprise
+3.354293383603445,93.51.191.139,mail.unindustria.pn.it,,Good,1,[object Object],1563672459,3.9073339183737463,0,,unindustria.pn.it,mail.unindustria.pn.it,enterprise
+3.3414470065708266,93.51.200.30,mail.vason.it,,Good,1,[object Object],1563674654,0,0,,vason.it,mail.vason.it,enterprise
+3.1123346598927113,93.51.200.164,93-51-200-164.ip268.fastwebnet.it,,Neutral,1,[object Object],1563674788,3.0627475153500248,0,,fastwebnet.it,ip268.fastwebnet.it,consumer
+3.013956618204762,93.51.201.125,mail.leghorngroup.com,,Good,1,[object Object],1563675005,3.0627475153500248,0,,leghorngroup.com,mail.leghorngroup.com,enterprise
+3.159544822263583,93.51.202.124,mx.cercatoeassociati.com,,Good,1,[object Object],1563675260,3.0627475153500248,0,,cercatoeassociati.com,mx.cercatoeassociati.com,enterprise
+2.9847744111904695,93.51.205.215,93-51-205-215.ip268.fastwebnet.it,,Neutral,1,[object Object],1563676119,0,0,,fastwebnet.it,ip268.fastwebnet.it,consumer
+3.566371095503514,93.51.210.87,93-51-210-87.ip268.fastwebnet.it,,Poor,1,[object Object],1563677271,0,1,cbl.abuseat.org,fastwebnet.it,ip268.fastwebnet.it,consumer
+3.413960298811126,93.51.216.224,mail3.conai.org,,Good,1,[object Object],1563678944,3.5394708822893106,0,,conai.org,mail3.conai.org,enterprise
+3.1720299982410247,93.51.221.34,93-51-221-34.ip268.fastwebnet.it,,Neutral,1,[object Object],1563680034,0,0,,fastwebnet.it,ip268.fastwebnet.it,consumer
+3.3487741628280165,93.51.221.252,mail.frescomarket.it,,Good,1,[object Object],1563680252,3.664509125022895,0,,frescomarket.it,mail.frescomarket.it,enterprise
+2.901232356211179,93.51.222.218,93-51-222-218.ip268.fastwebnet.it,,Neutral,1,[object Object],1563680474,0,0,,fastwebnet.it,ip268.fastwebnet.it,consumer
+3.0310344192042558,93.51.223.118,93-51-223-118.ip268.fastwebnet.it,,Neutral,1,[object Object],1563680630,3.0627475153500248,0,,fastwebnet.it,ip268.fastwebnet.it,consumer
+3.5689168697060505,93.51.229.197,mailsecurity.meadinformatica.it,,Good,1,[object Object],1563682245,3.5394708822893106,0,,meadinformatica.it,mailsecurity.meadinformatica.it,enterprise
+3.051429073420507,93.51.231.49,93-51-231-49.ip269.fastwebnet.it,,Good,1,[object Object],1563682609,0,0,,fastwebnet.it,ip269.fastwebnet.it,consumer
+3.409792124986435,93.51.242.42,mail.zetaservice.com,,Good,1,[object Object],1563685418,3.9073339183737463,0,,zetaservice.com,mail.zetaservice.com,enterprise
+3.211759231814831,93.51.242.228,relay1.metellispa.it,,Good,1,[object Object],1563685604,3.0627475153500248,0,,metellispa.it,relay1.metellispa.it,enterprise
+3.663635222181951,93.51.244.246,mail.luigisalvadori.it,,Good,0,[object Object],1563686134,3.5394708822893106,0,,luigisalvadori.it,mail.luigisalvadori.it,enterprise
+4.092526004358171,93.51.246.162,93-51-246-162.ip269.fastwebnet.it,,Good,1,[object Object],1563686562,4.141530873617273,0,,fastwebnet.it,ip269.fastwebnet.it,consumer
+3.8562623405057233,93.51.247.8,qmailsrv2.plug-in.it,,Good,1,[object Object],1563686664,3.0627475153500248,0,,plug-in.it,qmailsrv2.plug-in.it,enterprise
+4.632485630917717,93.51.247.94,datevmail.it,,Good,1,[object Object],1563686750,4.642091320048843,0,,datevmail.it,.datevmail.it,enterprise
+3.155947220373652,93.54.23.223,93-54-23-223.ip127.fastwebnet.it,,Poor,1,[object Object],1563826143,4.460257789465848,1,cbl.abuseat.org,fastwebnet.it,ip127.fastwebnet.it,consumer
+4.466330628009573,93.54.42.205,93-54-42-205.ip127.fastwebnet.it,,Poor,1,[object Object],1563830989,4.695771793461178,1,cbl.abuseat.org,fastwebnet.it,ip127.fastwebnet.it,consumer
+3.1043595853129187,93.54.81.174,93-54-81-174.ip128.fastwebnet.it,,Neutral,1,[object Object],1563840942,3.664509125022895,0,,fastwebnet.it,ip128.fastwebnet.it,consumer
+2.93551154559673,93.54.103.179,93-54-103-179.ip129.fastwebnet.it,,Neutral,1,[object Object],1563846579,3.0627475153500248,0,,fastwebnet.it,ip129.fastwebnet.it,consumer
+3.1951913251049873,93.54.109.37,93-54-109-37.ip129.fastwebnet.it,,Poor,1,[object Object],1563847973,0,1,cbl.abuseat.org,fastwebnet.it,ip129.fastwebnet.it,consumer
+2.899410152931468,93.55.113.54,93-55-113-54.ip263.fastwebnet.it,,Neutral,1,[object Object],1563914550,3.5394708822893106,0,,fastwebnet.it,ip263.fastwebnet.it,consumer
+3.071003419038136,93.55.113.55,93-55-113-55.ip263.fastwebnet.it,,Neutral,1,[object Object],1563914551,3.3631805425600065,0,,fastwebnet.it,ip263.fastwebnet.it,consumer
+2.9136421770732532,93.55.113.56,93-55-113-56.ip263.fastwebnet.it,,Neutral,1,[object Object],1563914552,0,0,,fastwebnet.it,ip263.fastwebnet.it,consumer
+3.031138145474374,93.55.114.75,93-55-114-75.ip263.fastwebnet.it,,Neutral,1,[object Object],1563914827,3.0627475153500248,0,,fastwebnet.it,ip263.fastwebnet.it,consumer
+3.413161827654382,93.55.119.44,93-55-119-44.ip263.fastwebnet.it,,Neutral,1,[object Object],1563916076,0,0,,fastwebnet.it,ip263.fastwebnet.it,consumer
+3.2392383737394,93.55.124.114,mail2.beantech.it,,Neutral,1,[object Object],1563917426,3.965389852948028,0,,beantech.it,mail2.beantech.it,enterprise
+2.9029076309042368,93.56.0.164,mail.studiocentro.it,,Neutral,1,[object Object],1563951268,3.5394708822893106,0,,studiocentro.it,mail.studiocentro.it,enterprise
+3.3323088728911654,93.56.0.165,93-56-0-165.ip287.fastwebnet.it,,Neutral,1,[object Object],1563951269,0,0,,fastwebnet.it,ip287.fastwebnet.it,consumer
+3.138343948026547,93.56.5.34,zimbra-alt1.dottorgrandine.com,,Neutral,1,[object Object],1563952418,3.5394708822893106,0,,dottorgrandine.com,zimbra-alt1.dottorgrandine.com,enterprise
+3.430344578512921,93.56.8.133,mail.schueco.it,,Good,1,[object Object],1563953285,4.141530873617273,0,,schueco.it,mail.schueco.it,enterprise
+3.9031444397524377,93.56.11.158,mail.studavv.it,,Neutral,1,[object Object],1563954078,3.3631805425600065,0,,studavv.it,mail.studavv.it,enterprise
+3.123125064579094,93.56.13.34,93-56-13-34.ip287.fastwebnet.it,,Neutral,1,[object Object],1563954466,0,0,,fastwebnet.it,ip287.fastwebnet.it,consumer
+3.025816262756011,93.56.17.100,93-56-17-100.ip287.fastwebnet.it,,Neutral,1,[object Object],1563955556,3.3631805425600065,0,,fastwebnet.it,ip287.fastwebnet.it,consumer
+2.969746349585925,93.56.18.174,93-56-18-174.ip287.fastwebnet.it,,Neutral,1,[object Object],1563955886,0,0,,fastwebnet.it,ip287.fastwebnet.it,consumer
+3.1379038629138933,93.56.20.251,mail.cosmeticaitalia.it,,Neutral,1,[object Object],1563956475,3.664509125022895,0,,cosmeticaitalia.it,mail.cosmeticaitalia.it,enterprise
+2.873914419166848,93.56.24.2,l7ptrf.need.it,,Neutral,1,[object Object],1563957250,0,0,,need.it,l7ptrf.need.it,enterprise
+3.0309454912505145,93.56.24.150,93-56-24-150.ip287.fastwebnet.it,,Neutral,1,[object Object],1563957398,0,0,,fastwebnet.it,ip287.fastwebnet.it,consumer
+4.275516899899263,93.56.24.151,mail.trieste-marine-terminal.com,,Good,1,[object Object],1563957399,4.424060155846603,0,,trieste-marine-terminal.com,mail.trieste-marine-terminal.com,enterprise
+3.0037253417138774,93.56.24.152,93-56-24-152.ip287.fastwebnet.it,,Neutral,1,[object Object],1563957400,3.0627475153500248,0,,fastwebnet.it,ip287.fastwebnet.it,consumer
+3.009836969163269,93.56.24.180,93-56-24-180.ip287.fastwebnet.it,,Poor,1,[object Object],1563957428,0,1,cbl.abuseat.org,fastwebnet.it,ip287.fastwebnet.it,consumer
+3.0315231977256674,93.56.31.189,office.upavenezia.it,,Neutral,1,[object Object],1563959229,3.5394708822893106,0,,upavenezia.it,office.upavenezia.it,enterprise
+3.1675618532204566,93.56.31.211,mail.bettiniautomobili.it,,Poor,1,[object Object],1563959251,0,0,,bettiniautomobili.it,mail.bettiniautomobili.it,enterprise
+3.9187868428828887,93.56.33.166,mail.comini.eu,,Good,1,[object Object],1563959718,3.0627475153500248,0,,comini.eu,mail.comini.eu,enterprise
+3.164248477959787,93.56.34.66,93-56-34-66.ip287.fastwebnet.it,,Poor,1,[object Object],1563959874,4.539431073454606,1,cbl.abuseat.org,fastwebnet.it,ip287.fastwebnet.it,consumer
+3.060163969707255,93.56.47.61,mail.cittadellarte.it,,Good,1,[object Object],1563963197,3.0627475153500248,0,,cittadellarte.it,mail.cittadellarte.it,enterprise
+3.21504098385986,93.56.49.197,mailnew.briospa.com,,Good,1,[object Object],1563963845,3.9073339183737463,0,,briospa.com,mailnew.briospa.com,enterprise
+3.4849357672490315,93.57.9.114,smtpapp.coni.it,,Good,1,[object Object],1564019058,3.0627475153500248,0,,coni.it,smtpapp.coni.it,enterprise
+3.4503633955992794,93.57.9.118,smtpapp2.coni.it,,Good,1,[object Object],1564019062,3.664509125022895,0,,coni.it,smtpapp2.coni.it,enterprise
+3.462076968757257,93.57.10.43,ns2.mikonsenta.net,,Good,1,[object Object],1564019243,3.3631805425600065,0,,mikonsenta.net,ns2.mikonsenta.net,enterprise
+3.4699587027046666,93.57.10.120,mail.eroom.it,,Good,1,[object Object],1564019320,4.016592137008973,0,,eroom.it,mail.eroom.it,enterprise
+4.108338141915134,93.57.10.158,smtpadc.giocaevinci.com,,Neutral,1,[object Object],1564019358,3.5394708822893106,0,,giocaevinci.com,smtpadc.giocaevinci.com,enterprise
+3.1545778548208836,93.57.10.178,mail5.incomail.it,,Good,1,[object Object],1564019378,3.7612400105869175,0,,incomail.it,mail5.incomail.it,enterprise
+3.1824127931110175,93.57.10.237,mail.kenovo.store,,Neutral,1,[object Object],1564019437,3.3631805425600065,0,,kenovo.store,mail.kenovo.store,enterprise
+2.9404141080339015,93.57.18.116,93-57-18-116.ip162.fastwebnet.it,,Neutral,1,[object Object],1564021364,0,0,,fastwebnet.it,ip162.fastwebnet.it,consumer
+3.376919182546045,93.57.21.71,smtp.gbr.it,,Good,1,[object Object],1564022087,3.5394708822893106,0,,gbr.it,smtp.gbr.it,enterprise
+3.277213466884401,93.57.25.61,mx2.xcall.it,,Good,1,[object Object],1564023101,3.0627475153500248,0,,xcall.it,mx2.xcall.it,enterprise
+3.138343948026547,93.57.29.212,mail.giverviaggi.com,,Neutral,1,[object Object],1564024276,3.3631805425600065,0,,giverviaggi.com,mail.giverviaggi.com,enterprise
+3.0298769330551205,93.57.35.200,zimbra.waltertosto.it,,Good,1,[object Object],1564025800,0,0,,waltertosto.it,zimbra.waltertosto.it,enterprise
+3.1387257657411354,93.57.39.182,mail.conserva.com,,Good,0,[object Object],1564026806,3.840500877953292,0,,conserva.com,mail.conserva.com,enterprise
+3.8686887661205667,93.57.50.25,ww5.clickus.it,,Good,1,[object Object],1564029465,3.0627475153500248,0,,clickus.it,ww5.clickus.it,enterprise
+3.1794850601707294,93.57.53.5,mbox.fastrasporti.net,,Good,1,[object Object],1564030213,4.103706123028931,0,,fastrasporti.net,mbox.fastrasporti.net,enterprise
+3.08669340131706,93.57.67.64,93-57-67-64.ip163.fastwebnet.it,,Neutral,1,[object Object],1564033856,0,0,,fastwebnet.it,ip163.fastwebnet.it,consumer
+3.0408373964592945,93.57.69.53,mail.metmi.it,,Good,1,[object Object],1564034357,3.0627475153500248,0,,metmi.it,mail.metmi.it,enterprise
+4.075324792820779,93.57.73.130,smtp1.ilquotidianodelcommercialista.info,,Good,1,[object Object],1564035458,0,0,,ilquotidianodelcommercialista.info,smtp1.ilquotidianodelcommercialista.info,enterprise
+4.088312205546107,93.57.73.131,smtp2.ilquotidianodelcommercialista.info,,Good,1,[object Object],1564035459,0,0,,ilquotidianodelcommercialista.info,smtp2.ilquotidianodelcommercialista.info,enterprise
+4.072061844620182,93.57.73.132,smtp3.ilquotidianodelcommercialista.info,,Good,1,[object Object],1564035460,0,0,,ilquotidianodelcommercialista.info,smtp3.ilquotidianodelcommercialista.info,enterprise
+4.077362245921868,93.57.73.133,smtp4.ilquotidianodelcommercialista.info,,Good,1,[object Object],1564035461,0,0,,ilquotidianodelcommercialista.info,smtp4.ilquotidianodelcommercialista.info,enterprise
+3.8101331031313808,93.57.78.27,mx.scavolini.com,,Good,1,[object Object],1564036635,3.7612400105869175,0,,scavolini.com,mx.scavolini.com,enterprise
+3.531238011920955,93.57.78.28,mx.scavolini.com,,Good,1,[object Object],1564036636,4.062270006250898,0,,scavolini.com,mx.scavolini.com,enterprise
+3.1832277811906393,93.57.78.134,mail.fiorini.biz,,Good,1,[object Object],1564036742,3.3631805425600065,0,,fiorini.biz,mail.fiorini.biz,enterprise
+3.146019607379483,93.57.79.203,mail.saces.it,,Neutral,1,[object Object],1564037067,3.7612400105869175,0,,saces.it,mail.saces.it,enterprise
+3.0128608302705873,93.57.80.122,mx-fast-1.grafspa.it,,Neutral,1,[object Object],1564037242,3.3631805425600065,0,,grafspa.it,mx-fast-1.grafspa.it,enterprise
+4.137688290160876,93.57.92.60,mail3.ebaraeurope.com,,Good,1,[object Object],1564040252,4.931543690388116,0,,ebaraeurope.com,mail3.ebaraeurope.com,enterprise
+3.0027141415320138,93.57.92.78,serversc.ienindustrie.com,,Good,1,[object Object],1564040270,3.5394708822893106,0,,ienindustrie.com,serversc.ienindustrie.com,enterprise
+3.172447542795966,93.57.97.200,mx.gruppomarbo.com,,Good,1,[object Object],1564041672,3.3631805425600065,0,,gruppomarbo.com,mx.gruppomarbo.com,enterprise
+2.8849656587138672,93.57.98.39,dns-lbe.ids-spa.it,,Good,1,[object Object],1564041767,0,0,,ids-spa.it,dns-lbe.ids-spa.it,enterprise
+2.921379425000738,93.57.108.116,smtp.venetogaranzie.net,,Neutral,1,[object Object],1564044404,3.664509125022895,0,,venetogaranzie.net,smtp.venetogaranzie.net,enterprise
+4.035242061745734,93.58.113.223,93-58-113-223.ip158.fastwebnet.it,,Poor,1,[object Object],1564111327,3.0627475153500248,1,cbl.abuseat.org,fastwebnet.it,ip158.fastwebnet.it,consumer
+2.955786270523527,93.61.6.171,93-61-6-171.ip144.fastwebnet.it,,Neutral,1,[object Object],1564280491,0,0,,fastwebnet.it,ip144.fastwebnet.it,consumer
+3.183363463970483,93.61.14.26,93-61-14-26.ip144.fastwebnet.it,,Poor,1,[object Object],1564282394,0,1,cbl.abuseat.org,fastwebnet.it,ip144.fastwebnet.it,consumer
+3.374130205788678,93.61.31.151,93-61-31-151.ip144.fastwebnet.it,,Poor,1,[object Object],1564286871,3.0627475153500248,1,cbl.abuseat.org,fastwebnet.it,ip144.fastwebnet.it,consumer
+3.3872081228842905,93.61.51.69,93-61-51-69.ip145.fastwebnet.it,,Poor,1,[object Object],1564291909,4.3633597192724025,1,cbl.abuseat.org,fastwebnet.it,ip145.fastwebnet.it,consumer
+3.1679837136701763,93.61.57.215,93-61-57-215.ip145.fastwebnet.it,,Poor,1,[object Object],1564293591,0,1,cbl.abuseat.org,fastwebnet.it,ip145.fastwebnet.it,consumer
+3.4903836803714814,93.61.66.140,93-61-66-140.ip145.fastwebnet.it,,Poor,1,[object Object],1564295820,0,1,cbl.abuseat.org,fastwebnet.it,ip145.fastwebnet.it,consumer
+3.127075121994731,93.61.73.166,93-61-73-166.ip145.fastwebnet.it,,Poor,1,[object Object],1564297638,4.5094792244022885,1,cbl.abuseat.org,fastwebnet.it,ip145.fastwebnet.it,consumer
+3.317085568917158,93.61.104.16,93-61-104-16.ip146.fastwebnet.it,,Neutral,1,[object Object],1564305424,3.0627475153500248,0,,fastwebnet.it,ip146.fastwebnet.it,consumer
+2.982095512011054,93.61.107.247,93-61-107-247.ip146.fastwebnet.it,,Poor,1,[object Object],1564306423,0,1,cbl.abuseat.org,fastwebnet.it,ip146.fastwebnet.it,consumer
+2.877221407331812,93.61.120.125,93-61-120-125.ip146.fastwebnet.it,,Neutral,1,[object Object],1564309629,0,0,,fastwebnet.it,ip146.fastwebnet.it,consumer
+3.170011568299498,93.61.146.232,93-61-146-232.ip147.fastwebnet.it,,Neutral,1,[object Object],1564316392,0,0,,fastwebnet.it,ip147.fastwebnet.it,consumer
+2.9283809691010547,93.61.149.153,93-61-149-153.ip147.fastwebnet.it,,Neutral,1,[object Object],1564317081,0,0,,fastwebnet.it,ip147.fastwebnet.it,consumer
+3.5734670923267298,93.62.44.155,93-62-44-155.ip20.fastwebnet.it,,Good,1,[object Object],1564355739,3.9073339183737463,0,,fastwebnet.it,ip20.fastwebnet.it,consumer
+2.991156637202412,93.62.50.10,beagle.infoservizi.net,,Neutral,1,[object Object],1564357130,3.664509125022895,0,,infoservizi.net,beagle.infoservizi.net,enterprise
+3.4180462974970873,93.62.50.46,smtpf.liberobit.net,,Good,1,[object Object],1564357166,3.9073339183737463,0,,liberobit.net,smtpf.liberobit.net,enterprise
+3.1587614247819427,93.62.50.50,smtp.bytelnet.it,,Good,1,[object Object],1564357170,3.3631805425600065,0,,bytelnet.it,smtp.bytelnet.it,enterprise
+4.113558220761378,93.62.51.10,mx03.hwgsrl.it,,Good,1,[object Object],1564357386,4.460257789465848,0,,hwgsrl.it,mx03.hwgsrl.it,enterprise
+4.040376400407433,93.62.51.152,smtp.telemat.it,,Good,1,[object Object],1564357528,3.3631805425600065,0,,telemat.it,smtp.telemat.it,enterprise
+3.8760943494680213,93.62.51.155,vdbimmail01.mimesi.com,,Good,1,[object Object],1564357531,4.3633597192724025,0,,mimesi.com,vdbimmail01.mimesi.com,enterprise
+3.089552150973297,93.62.51.243,mail.coopge.it,,Neutral,1,[object Object],1564357619,3.0627475153500248,0,,coopge.it,mail.coopge.it,enterprise
+3.3122807204928186,93.62.58.245,93-62-58-245.ip21.fastwebnet.it,,Neutral,1,[object Object],1564359413,0,0,,fastwebnet.it,ip21.fastwebnet.it,consumer
+4.7817082221529486,93.62.63.8,smtp15.mmm.it,,Neutral,1,[object Object],1564360456,4.778314693546246,0,,mmm.it,smtp15.mmm.it,enterprise
+4.783827808383231,93.62.63.12,smtp20.mmm.it,,Neutral,1,[object Object],1564360460,4.761287785129829,0,,mmm.it,smtp20.mmm.it,enterprise
+3.6313867798025945,93.62.70.155,mx004.fastweb.it,,Good,1,[object Object],1564362395,3.9073339183737463,0,,fastweb.it,mx004.fastweb.it,corporate
+3.6001703877511364,93.62.70.156,mx003.fastweb.it,,Good,1,[object Object],1564362396,4.176231734003883,0,,fastweb.it,mx003.fastweb.it,corporate
+3.5872381100099306,93.62.70.157,mx002.fastweb.it,,Good,1,[object Object],1564362397,4.062270006250898,0,,fastweb.it,mx002.fastweb.it,corporate
+3.6496650969687527,93.62.70.158,mx001.fastweb.it,,Good,1,[object Object],1564362398,4.404736118692912,0,,fastweb.it,mx001.fastweb.it,corporate
+2.888189865174232,93.62.72.229,93-62-72-229.ip21.fastwebnet.it,,Poor,1,[object Object],1564362981,3.5394708822893106,1,cbl.abuseat.org,fastwebnet.it,ip21.fastwebnet.it,consumer
+3.9928266596681836,93.62.73.20,93-62-73-20.ip21.fastwebnet.it,,Poor,1,[object Object],1564363028,4.460257789465848,1,cbl.abuseat.org,fastwebnet.it,ip21.fastwebnet.it,consumer
+3.6260161567669225,93.62.97.187,93-62-97-187.ip21.fastwebnet.it,,Good,1,[object Object],1564369339,3.664509125022895,0,,fastwebnet.it,ip21.fastwebnet.it,consumer
+3.1669228741789333,93.62.117.38,mail.fidimpresaveneto.it,,Good,1,[object Object],1564374310,0,0,,fidimpresaveneto.it,mail.fidimpresaveneto.it,enterprise
+3.5539917023666945,93.62.122.134,93-62-122-134.ip22.fastwebnet.it,,Good,1,[object Object],1564375686,3.9073339183737463,0,,fastwebnet.it,ip22.fastwebnet.it,consumer
+3.1670637469458036,93.62.127.131,mx.labiennale.org,,Neutral,1,[object Object],1564376963,3.0627475153500248,0,,labiennale.org,mx.labiennale.org,enterprise
+2.9609020660409997,93.62.127.194,mail.gapitalia.it,,Neutral,1,[object Object],1564377026,3.7612400105869175,0,,gapitalia.it,mail.gapitalia.it,enterprise
+3.104922507597698,93.62.129.164,93-62-129-164.ip22.fastwebnet.it,,Neutral,1,[object Object],1564377508,3.6865167372241863,0,,fastwebnet.it,ip22.fastwebnet.it,consumer
+2.884571326644236,93.62.130.118,mail.recordit.it,,Neutral,1,[object Object],1564377718,3.3851881547612983,0,,recordit.it,mail.recordit.it,enterprise
+3.871047130263351,93.62.131.46,mbox.sendsmtp.ml,,Good,1,[object Object],1564377902,4.198239346205174,0,,sendsmtp.ml,mbox.sendsmtp.ml,enterprise
+3.4885063832314964,93.62.133.72,mail2.abaco-tech.it,,Good,1,[object Object],1564378440,3.084755127551316,0,,abaco-tech.it,mail2.abaco-tech.it,enterprise
+3.422208625676684,93.62.133.207,mail.idcloud.it,,Good,1,[object Object],1564378575,3.862508490154583,0,,idcloud.it,mail.idcloud.it,enterprise
+3.3248392688475352,93.62.133.231,mail-231.innovazionedigitale.it,,Neutral,1,[object Object],1564378599,0,0,,innovazionedigitale.it,mail-231.innovazionedigitale.it,enterprise
+3.9169521830891694,93.62.133.232,mail-232.innovazionedigitale.it,,Good,1,[object Object],1564378600,4.499315277083319,0,,innovazionedigitale.it,mail-232.innovazionedigitale.it,enterprise
+3.3670442037468233,93.62.133.236,mail-236.innovazionedigitale.it,,Good,1,[object Object],1564378604,3.6865167372241863,0,,innovazionedigitale.it,mail-236.innovazionedigitale.it,enterprise
+3.7783853794293214,93.62.133.241,mail-241.innovazionedigitale.it,,Good,1,[object Object],1564378609,4.4822654016671395,0,,innovazionedigitale.it,mail-241.innovazionedigitale.it,enterprise
+3.464601832338026,93.62.133.242,mail-242.innovazionedigitale.it,,Good,1,[object Object],1564378610,3.783247622788209,0,,innovazionedigitale.it,mail-242.innovazionedigitale.it,enterprise
+3.5963930699051296,93.62.133.250,sh-alpitour.fastweb.idcloud.it,,Good,1,[object Object],1564378618,3.084755127551316,0,,idcloud.it,fastweb.idcloud.it,enterprise
+3.372249629521147,93.62.136.110,93-62-136-110.ip22.fastwebnet.it,,Good,1,[object Object],1564379246,3.6865167372241863,0,,fastwebnet.it,ip22.fastwebnet.it,consumer
+3.424975472690446,93.62.136.136,mail.mefsrl.it,,Neutral,1,[object Object],1564379272,4.08427761845219,0,,mefsrl.it,mail.mefsrl.it,enterprise
+3.374392434526787,93.62.144.69,mail.apkappa.it,,Neutral,1,[object Object],1564381253,3.6865167372241863,0,,apkappa.it,mail.apkappa.it,enterprise
+3.186130475299131,93.62.146.130,watch.psf.it,,Good,1,[object Object],1564381826,3.783247622788209,0,,psf.it,watch.psf.it,enterprise
+3.2744724184964853,93.62.151.26,mx-fast-1.grafsynergy.com,,Neutral,1,[object Object],1564383002,3.862508490154583,0,,grafsynergy.com,mx-fast-1.grafsynergy.com,enterprise
+3.0357217320563534,93.62.151.125,mail2.rotolitolombarda.it,,Good,1,[object Object],1564383101,3.084755127551316,0,,rotolitolombarda.it,mail2.rotolitolombarda.it,enterprise
+3.4563320368822885,93.62.151.138,it-mpx201.rastaban.it,,Good,1,[object Object],1564383114,4.038599749210265,0,,rastaban.it,it-mpx201.rastaban.it,enterprise
+3.4141566206076983,93.62.151.139,it-mpx202.rastaban.it,,Good,1,[object Object],1564383115,4.125713735230223,0,,rastaban.it,it-mpx202.rastaban.it,enterprise
+3.365352300861297,93.62.160.222,mail.barthitaliana.com,,Good,1,[object Object],1564385502,3.9873974651493196,0,,barthitaliana.com,mail.barthitaliana.com,enterprise
+3.9574976550511276,93.62.161.125,93-62-161-125.ip23.fastwebnet.it,,Neutral,1,[object Object],1564385661,4.260448498826621,0,,fastwebnet.it,ip23.fastwebnet.it,consumer
+3.098715227256387,93.62.161.236,mx2.neologistica.it,,Good,1,[object Object],1564385772,3.084755127551316,0,,neologistica.it,mx2.neologistica.it,enterprise
+2.961928458973316,93.62.165.60,smtp.bcp.it,,Good,1,[object Object],1564386620,3.862508490154583,0,,bcp.it,smtp.bcp.it,enterprise
+3.2825860783647163,93.62.179.26,mail1.integradm.it,,Good,1,[object Object],1564390170,4.08427761845219,0,,integradm.it,mail1.integradm.it,enterprise
+3.2774824215187306,93.62.180.242,93-62-180-242.ip23.fastwebnet.it,,Good,1,[object Object],1564390642,0,0,,fastwebnet.it,ip23.fastwebnet.it,consumer
+3.167908025296298,93.62.183.18,93-62-183-18.ip23.fastwebnet.it,,Neutral,1,[object Object],1564391186,3.783247622788209,0,,fastwebnet.it,ip23.fastwebnet.it,consumer
+3.4213467685565124,93.62.183.74,mail.ui.lecco.it,,Good,1,[object Object],1564391242,3.862508490154583,0,,ui.lecco.it,mail.ui.lecco.it,enterprise
+3.274531639125459,93.62.183.107,mail2.renord.com,,Good,1,[object Object],1564391275,3.084755127551316,0,,renord.com,mail2.renord.com,enterprise
+3.2772639085672512,93.62.183.203,out.lechler.it,,Good,1,[object Object],1564391371,3.3851881547612983,0,,lechler.it,out.lechler.it,enterprise
+3.3390838396061824,93.62.187.11,mail.molmed.com,,Good,1,[object Object],1564392203,0,0,,molmed.com,mail.molmed.com,enterprise
+2.915154251519001,93.62.187.133,mailsrv.gpini.it,,Good,1,[object Object],1564392325,3.5614784944906024,0,,gpini.it,mailsrv.gpini.it,enterprise
+3.857269555902328,93.62.188.187,mail.unicomm.it,,Good,1,[object Object],1564392635,3.9293415305750377,0,,unicomm.it,mail.unicomm.it,enterprise
+3.8461730163879535,93.62.188.188,mail1.unicomm.it,,Good,1,[object Object],1564392636,4.163538485818565,0,,unicomm.it,mail1.unicomm.it,enterprise
+4.004501104293608,93.62.193.36,smtp.gls-italy.com,,Good,1,[object Object],1564393764,4.288427460813301,0,,gls-italy.com,smtp.gls-italy.com,enterprise
+3.5499635642585945,93.62.197.251,mail2.sace.it,,Good,1,[object Object],1564395003,3.862508490154583,0,,sace.it,mail2.sace.it,enterprise
+3.049032822954646,93.62.200.162,93-62-200-162.ip24.fastwebnet.it,,Neutral,1,[object Object],1564395682,4.783295397331121,0,,fastwebnet.it,ip24.fastwebnet.it,consumer
+3.1178786602391724,93.62.202.50,mail.tpservice.it,,Good,1,[object Object],1564396082,3.084755127551316,0,,tpservice.it,mail.tpservice.it,enterprise
+3.7829090601607955,93.62.202.254,antispam.softeco.it,,Good,1,[object Object],1564396286,4.363068936586154,0,,softeco.it,antispam.softeco.it,enterprise
+3.029594513428289,93.62.208.125,mx01.hsacco.it,,Good,0,[object Object],1564397693,3.783247622788209,0,,hsacco.it,mx01.hsacco.it,enterprise
+3.071354713476899,93.62.208.126,93-62-208-126.ip24.fastwebnet.it,,Neutral,1,[object Object],1564397694,3.084755127551316,0,,fastwebnet.it,ip24.fastwebnet.it,consumer
+3.7172731771722956,93.62.208.140,smtp2.gisnet.it,,Good,1,[object Object],1564397708,4.125713735230223,0,,gisnet.it,smtp2.gisnet.it,enterprise
+3.1107340490415067,93.62.208.143,mail5.gisnet.it,,Neutral,1,[object Object],1564397711,3.084755127551316,0,,gisnet.it,mail5.gisnet.it,enterprise
+3.2041366342617077,93.62.208.146,mail3.gisnet.it,,Good,1,[object Object],1564397714,3.5614784944906024,0,,gisnet.it,mail3.gisnet.it,enterprise
+3.060247112137279,93.62.208.155,smtp-tf001.gisnet.it,,Neutral,1,[object Object],1564397723,3.3851881547612983,0,,gisnet.it,smtp-tf001.gisnet.it,enterprise
+3.6203532446101847,93.62.216.66,email.contributieuropa.com,,Good,1,[object Object],1564399682,4.385367331473694,0,,contributieuropa.com,email.contributieuropa.com,enterprise
+4.14170396531818,93.62.216.68,mail.contributieuropa.com,,Good,1,[object Object],1564399684,4.546700327977765,0,,contributieuropa.com,mail.contributieuropa.com,enterprise
+3.0616028568507474,93.62.226.204,smtp.asl.pavia.it,,Neutral,1,[object Object],1564402380,0,0,,asl.pavia.it,smtp.asl.pavia.it,enterprise
+3.8777406030245043,93.62.227.198,gate.eigver.it,,Good,1,[object Object],1564402630,4.314782744629547,0,,eigver.it,gate.eigver.it,enterprise
+3.1467581939528535,93.62.227.234,mail.asst-spedalicivili.it,,Good,1,[object Object],1564402666,3.862508490154583,0,,asst-spedalicivili.it,mail.asst-spedalicivili.it,enterprise
+2.89979124498484,93.62.232.225,mail.dolphinitalia.it,,Neutral,1,[object Object],1564403937,3.084755127551316,0,,dolphinitalia.it,mail.dolphinitalia.it,enterprise
+2.9146508114283174,93.62.233.175,mlerb01.elettromeccanicagalli.it,,Neutral,1,[object Object],1564404143,3.084755127551316,0,,elettromeccanicagalli.it,mlerb01.elettromeccanicagalli.it,enterprise
+3.2970570950664206,93.62.240.248,smtp.alsco.it,,Good,1,[object Object],1564406008,3.9293415305750377,0,,alsco.it,smtp.alsco.it,enterprise
+3.125456483520902,93.62.245.73,smtpout.aomelegnano.it,,Good,1,[object Object],1564407113,3.783247622788209,0,,aomelegnano.it,smtpout.aomelegnano.it,enterprise
+3.120238337367909,93.62.251.143,mail.quanta.com,,Neutral,1,[object Object],1564408719,0,0,,quanta.com,mail.quanta.com,enterprise
+3.040373499512159,93.63.26.39,93-63-26-39.ip25.fastwebnet.it,,Poor,1,[object Object],1564416551,0,1,cbl.abuseat.org,fastwebnet.it,ip25.fastwebnet.it,consumer
+3.260457820451596,93.63.29.216,93-63-29-216.ip25.fastwebnet.it,,Neutral,1,[object Object],1564417496,0,0,,fastwebnet.it,ip25.fastwebnet.it,consumer
+4.049214777609741,93.63.75.62,93-63-75-62.ip26.fastwebnet.it,,Poor,1,[object Object],1564429118,3.5614784944906024,1,cbl.abuseat.org,fastwebnet.it,ip26.fastwebnet.it,consumer
+3.279008941480203,93.63.91.152,server.morship.com,,Neutral,1,[object Object],1564433304,0,0,,morship.com,server.morship.com,enterprise
+3.696137744955311,93.63.95.91,,,Poor,,[object Object],1564434267,3.3851881547612983,0,,,,enterprise
+3.245921640134712,93.63.134.51,mail.grupposistematica.it,,Good,1,[object Object],1564444211,0,0,,grupposistematica.it,mail.grupposistematica.it,enterprise
+2.928756234381384,93.63.134.59,cmail.grupposistematica.it,,Good,1,[object Object],1564444219,3.084755127551316,0,,grupposistematica.it,cmail.grupposistematica.it,enterprise
+3.580637176459986,93.63.140.66,mail1.tampieri.com,,Good,1,[object Object],1564445762,4.230456840939598,0,,tampieri.com,mail1.tampieri.com,enterprise
+4.617787167420791,93.63.140.210,srvexchange.4ts.it,,Good,1,[object Object],1564445906,4.727773726558185,0,,4ts.it,srvexchange.4ts.it,enterprise
+2.8991492129257095,93.63.144.86,mail.tardini.int,,Good,0,[object Object],1564446806,3.9873974651493196,0,,tardini.int,mail.tardini.int,enterprise
+4.39470637989252,93.63.146.100,93-63-146-100.ip28.fastwebnet.it,,Good,1,[object Object],1564447332,5.145017002184627,0,,fastwebnet.it,ip28.fastwebnet.it,consumer
+3.1904843928730555,93.63.151.170,93-63-151-170.ip28.fastwebnet.it,,Good,1,[object Object],1564448682,3.862508490154583,0,,fastwebnet.it,ip28.fastwebnet.it,consumer
+2.9840319285642596,93.63.153.53,93-63-153-53.ip28.fastwebnet.it,,Neutral,1,[object Object],1564449077,3.084755127551316,0,,fastwebnet.it,ip28.fastwebnet.it,consumer
+3.966343755949807,93.63.159.173,mail2.faacgroup.com,,Good,1,[object Object],1564450733,3.9873974651493196,0,,faacgroup.com,mail2.faacgroup.com,enterprise
+3.071786686141535,93.63.162.60,orange01.crazynetwork.it,,Neutral,1,[object Object],1564451388,3.5614784944906024,0,,crazynetwork.it,orange01.crazynetwork.it,enterprise
+3.1086443965568864,93.63.169.33,zimbra.winrent.it,,Neutral,1,[object Object],1564453153,3.084755127551316,0,,winrent.it,zimbra.winrent.it,enterprise
+2.9100933944433685,93.63.171.235,93-63-171-235.ip28.fastwebnet.it,,Neutral,1,[object Object],1564453867,3.5614784944906024,0,,fastwebnet.it,ip28.fastwebnet.it,consumer
+3.2042659403780878,93.63.175.114,mail.bea-italy.com,,Neutral,0,[object Object],1564454770,0,0,,bea-italy.com,mail.bea-italy.com,enterprise
+4.344051907190291,93.63.177.86,m1.stradeanas.it,,Good,1,[object Object],1564455254,4.615812740293528,0,,stradeanas.it,m1.stradeanas.it,enterprise
+4.324150095501288,93.63.177.87,m1.stradeanas.it,,Good,1,[object Object],1564455255,4.546700327977765,0,,stradeanas.it,m1.stradeanas.it,enterprise
+3.143132781886704,93.63.179.82,libra.gruppoladoria.it,,Good,1,[object Object],1564455762,3.084755127551316,0,,gruppoladoria.it,libra.gruppoladoria.it,enterprise
+3.6866689685438048,93.63.180.8,mail2.siwebsrl.com,,Good,1,[object Object],1564455944,3.862508490154583,0,,siwebsrl.com,mail2.siwebsrl.com,enterprise
+2.9062586698993798,93.63.185.34,93-63-185-34.ip29.fastwebnet.it,,Poor,1,[object Object],1564457250,3.5614784944906024,1,cbl.abuseat.org,fastwebnet.it,ip29.fastwebnet.it,consumer
+3.3073201534608128,93.63.187.47,93-63-187-47.ip29.fastwebnet.it,,Neutral,1,[object Object],1564457775,3.5614784944906024,0,,fastwebnet.it,ip29.fastwebnet.it,consumer
+2.921627348084197,93.63.193.14,mail.soavimeiep.it,,Neutral,1,[object Object],1564459278,3.084755127551316,0,,soavimeiep.it,mail.soavimeiep.it,enterprise
+3.0466375746730536,93.63.194.66,www.comunestabia.it,,Poor,0,[object Object],1564459586,0,0,,comunestabia.it,www.comunestabia.it,enterprise
+3.024840235330815,93.63.195.148,smtp.mashfrog.com,,Neutral,1,[object Object],1564459924,3.084755127551316,0,,mashfrog.com,smtp.mashfrog.com,enterprise
+3.1523307762287534,93.63.196.140,mail.4-flying.com,,Neutral,1,[object Object],1564460172,3.3851881547612983,0,,4-flying.com,mail.4-flying.com,enterprise
+3.2793939172471793,93.63.201.234,93-63-201-234.ip29.fastwebnet.it,,Neutral,1,[object Object],1564461546,0,0,,fastwebnet.it,ip29.fastwebnet.it,consumer
+3.2196824830690085,93.63.221.212,mx2.asl-rme.it,,Neutral,0,[object Object],1564466644,3.862508490154583,0,,asl-rme.it,mx2.asl-rme.it,enterprise
+3.271713960047751,93.63.223.41,mail.toscana-aeroporti.com,,Good,1,[object Object],1564466985,3.6865167372241863,0,,toscana-aeroporti.com,mail.toscana-aeroporti.com,enterprise
+3.8943359626389644,93.63.226.155,mx2.marina.difesa.it,,Good,1,[object Object],1564467867,4.038599749210265,0,,difesa.it,marina.difesa.it,enterprise
+3.3677955666528057,93.63.234.92,webmail.cordivari.it,,Neutral,1,[object Object],1564469852,4.08427761845219,0,,cordivari.it,webmail.cordivari.it,enterprise
+3.5465403228313854,93.63.244.55,mail.sace.it,,Good,1,[object Object],1564472375,3.6865167372241863,0,,sace.it,mail.sace.it,enterprise
+3.691090525560985,93.63.246.10,mail.starhotels.it,,Good,1,[object Object],1564472842,3.9293415305750377,0,,starhotels.it,mail.starhotels.it,enterprise
+3.002397658018716,93.63.251.117,mail.mazzonilb.it,,Good,0,[object Object],1564474229,3.084755127551316,0,,mazzonilb.it,mail.mazzonilb.it,enterprise
+2.921627348084197,93.63.252.70,mail.nerimotori.com,,Neutral,1,[object Object],1564474438,0,0,,nerimotori.com,mail.nerimotori.com,enterprise
+3.008824318575369,93.63.252.154,mail.lighthouse-geo.com,,Good,1,[object Object],1564474522,3.783247622788209,0,,lighthouse-geo.com,mail.lighthouse-geo.com,enterprise
+3.6955958727532314,93.63.254.121,mailcdr1.comune.roma.it,,Good,1,[object Object],1564475001,4.230456840939598,0,,comune.roma.it,mailcdr1.comune.roma.it,enterprise
+3.70253750113942,93.63.254.122,mailcdr2.comune.roma.it,,Good,1,[object Object],1564475002,4.163538485818565,0,,comune.roma.it,mailcdr2.comune.roma.it,enterprise
+2.8777701320879423,151.0.142.10,mail.teatroregio.torino.it,,Neutral,1,[object Object],2533395978,3.3851881547612983,0,,teatroregio.torino.it,mail.teatroregio.torino.it,enterprise
+3.2140308607109636,151.0.142.90,151-0-142-90.ip281.fastwebnet.it,,Poor,1,[object Object],2533396058,0,1,cbl.abuseat.org,fastwebnet.it,ip281.fastwebnet.it,consumer
+3.3707541958629443,151.0.145.98,151-0-145-98.ip281.fastwebnet.it,,Poor,1,[object Object],2533396834,4.71777940566247,1,cbl.abuseat.org,fastwebnet.it,ip281.fastwebnet.it,consumer
+3.0021918199900077,151.0.147.181,mailsvr.starktools.com,,Neutral,1,[object Object],2533397429,3.3851881547612983,0,,starktools.com,mailsvr.starktools.com,enterprise
+3.3114734237329047,151.0.149.71,151-0-149-71.ip281.fastwebnet.it,,Neutral,1,[object Object],2533397831,0,0,,fastwebnet.it,ip281.fastwebnet.it,consumer
+3.900123925600804,151.0.149.95,mailnew.porto.trieste.it,,Good,1,[object Object],2533397855,3.9293415305750377,0,,porto.trieste.it,mailnew.porto.trieste.it,enterprise
+3.7788517928791725,151.0.155.178,151-0-155-178.ip281.fastwebnet.it,,Good,1,[object Object],2533399474,4.855182262770951,0,,fastwebnet.it,ip281.fastwebnet.it,consumer
+3.552575842864465,151.0.165.103,mx0.itacaservice.it,,Good,1,[object Object],2533401959,4.038599749210265,0,,itacaservice.it,mx0.itacaservice.it,enterprise
+3.648064470518745,151.0.165.104,mx1.itacaservice.it,,Good,1,[object Object],2533401960,3.862508490154583,0,,itacaservice.it,mx1.itacaservice.it,enterprise
+3.2823119576096143,151.0.168.13,n8linux.numero8.it,,Neutral,1,[object Object],2533402637,3.5614784944906024,0,,numero8.it,n8linux.numero8.it,enterprise
+2.9007125063940564,151.0.169.178,etrn.ascomoderzo.it,,Neutral,1,[object Object],2533403058,3.3851881547612983,0,,ascomoderzo.it,etrn.ascomoderzo.it,enterprise
+3.1671395825898583,151.0.181.179,aspmx.pierantoni.it,,Good,1,[object Object],2533406131,3.862508490154583,0,,pierantoni.it,aspmx.pierantoni.it,enterprise
+3.268389095034752,151.0.181.218,151-0-181-218.ip282.fastwebnet.it,,Neutral,1,[object Object],2533406170,3.6865167372241863,0,,fastwebnet.it,ip282.fastwebnet.it,consumer
+4.76819313245112,151.0.183.35,smtp20.mcontact.it,,Neutral,1,[object Object],2533406499,4.791880581566889,0,,mcontact.it,smtp20.mcontact.it,enterprise
+4.770014512473767,151.0.183.36,smtp21.mcontact.it,,Neutral,1,[object Object],2533406500,4.862468681319879,0,,mcontact.it,smtp21.mcontact.it,enterprise
+3.5822520670275284,151.0.183.45,smtp30.mcontact.it,,Good,1,[object Object],2533406509,3.3851881547612983,0,,mcontact.it,smtp30.mcontact.it,enterprise
+3.51591572880253,151.0.183.46,smtp31.mcontact.it,,Good,1,[object Object],2533406510,0,0,,mcontact.it,smtp31.mcontact.it,enterprise
+3.785423455298445,151.0.183.66,151-0-183-66.ip282.fastwebnet.it,,Good,1,[object Object],2533406530,4.953551302589408,0,,fastwebnet.it,ip282.fastwebnet.it,consumer
+3.08669340131706,151.0.183.115,mx01.dastech.biz,,Good,1,[object Object],2533406579,3.3851881547612983,0,,dastech.biz,mx01.dastech.biz,enterprise
+3.1127277533013697,151.0.183.223,151-0-183-223.ip282.fastwebnet.it,,Neutral,1,[object Object],2533406687,3.5614784944906024,0,,fastwebnet.it,ip282.fastwebnet.it,consumer
+4.186057884619195,151.0.185.40,mail.intemaweb.com,,Good,1,[object Object],2533407016,4.652537446002033,0,,intemaweb.com,mail.intemaweb.com,enterprise
+3.3589779065655434,151.0.185.235,mail.steam.it,,Neutral,1,[object Object],2533407211,3.9873974651493196,0,,steam.it,mail.steam.it,enterprise
+2.9730615258478252,151.0.189.131,mail.comune.jesolo.ve.it,,Neutral,1,[object Object],2533408131,3.084755127551316,0,,jesolo.ve.it,comune.jesolo.ve.it,enterprise
+3.0406489980826104,151.0.189.249,posta.piemmeonline.it,,Good,1,[object Object],2533408249,3.6865167372241863,0,,piemmeonline.it,posta.piemmeonline.it,enterprise
+2.8929817333261787,151.0.190.212,mercury.politecnica.it,,Good,1,[object Object],2533408468,3.084755127551316,0,,politecnica.it,mercury.politecnica.it,enterprise
+3.310010260408537,151.0.193.180,mail.gruppomarseglia.com,,Neutral,1,[object Object],2533409204,3.862508490154583,0,,gruppomarseglia.com,mail.gruppomarseglia.com,enterprise
+2.95474524073494,151.0.193.245,edge1.aqp.it,,Neutral,1,[object Object],2533409269,3.084755127551316,0,,aqp.it,edge1.aqp.it,enterprise
+2.90665353693745,151.0.193.246,edge2.aqp.it,,Neutral,1,[object Object],2533409270,3.084755127551316,0,,aqp.it,edge2.aqp.it,enterprise
+2.9508412843160015,151.0.195.85,151-0-195-85.ip282.fastwebnet.it,,Neutral,1,[object Object],2533409621,0,0,,fastwebnet.it,ip282.fastwebnet.it,consumer
+3.019820482746987,151.0.203.51,mail.cmbsrl.com,,Neutral,0,[object Object],2533411635,0,0,,cmbsrl.com,mail.cmbsrl.com,enterprise
+3.9389601334669604,151.0.205.18,mail1.fiditalia.it,,Good,1,[object Object],2533412114,4.260448498826621,0,,fiditalia.it,mail1.fiditalia.it,enterprise
+3.926077253825971,151.0.205.19,mail2.fiditalia.it,,Good,1,[object Object],2533412115,4.230456840939598,0,,fiditalia.it,mail2.fiditalia.it,enterprise
+3.7865204058594757,151.0.209.110,webmail.fdm-spa.com,,Good,1,[object Object],2533413230,4.038599749210265,0,,fdm-spa.com,webmail.fdm-spa.com,enterprise
+2.9071466163994666,151.0.209.121,srvinmail04.fdmservices.it,,Good,1,[object Object],2533413241,3.084755127551316,0,,fdmservices.it,srvinmail04.fdmservices.it,enterprise
+3.7154656086102213,151.0.216.222,151-0-216-222.ip282.fastwebnet.it,,Good,1,[object Object],2533415134,3.3851881547612983,0,,fastwebnet.it,ip282.fastwebnet.it,consumer
+3.5920494811059336,151.0.217.76,mail.anmil.it,,Good,1,[object Object],2533415244,0,0,,anmil.it,mail.anmil.it,enterprise
+3.108718757806181,151.0.217.214,ermes.andrearaneri.it,,Good,1,[object Object],2533415382,3.862508490154583,0,,andrearaneri.it,ermes.andrearaneri.it,enterprise
+3.228254988248609,151.0.222.229,mail.prixquality.com,,Good,1,[object Object],2533416677,3.6865167372241863,0,,prixquality.com,mail.prixquality.com,enterprise
+3.741759029499665,151.0.223.100,151-0-223-100.ip282.fastwebnet.it,,Good,1,[object Object],2533416804,4.589457456477282,0,,fastwebnet.it,ip282.fastwebnet.it,consumer
+3.1249195735585458,151.0.224.116,mail.professionalshow.com,,Neutral,1,[object Object],2533417076,3.084755127551316,0,,professionalshow.com,mail.professionalshow.com,enterprise
+3.086354302332011,151.0.226.10,newsletter.ordineavvocati.bari.it,,Good,1,[object Object],2533417482,3.5614784944906024,0,,ordineavvocati.bari.it,newsletter.ordineavvocati.bari.it,enterprise
+2.9730615258478252,151.0.226.90,151-0-226-90.ip283.fastwebnet.it,,Neutral,1,[object Object],2533417562,3.084755127551316,0,,fastwebnet.it,ip283.fastwebnet.it,consumer
+3.1629707066940957,151.0.228.187,mail.ediltec.com,,Neutral,1,[object Object],2533418171,3.6865167372241863,0,,ediltec.com,mail.ediltec.com,enterprise
+4.596530930804903,151.0.239.225,mx-out.consorzionordovest.coop.it,,Neutral,1,[object Object],2533421025,4.640626566762715,0,,coop.it,consorzionordovest.coop.it,enterprise
+3.030025501229087,151.0.240.27,binettimail.binettispa.com,,Neutral,1,[object Object],2533421083,0,0,,binettispa.com,binettimail.binettispa.com,enterprise
+3.3089956079216396,151.0.240.117,mx1.eurospace.it,,Good,1,[object Object],2533421173,3.6865167372241863,0,,eurospace.it,mx1.eurospace.it,enterprise
+3.0524459585256465,151.0.242.180,mailsrv.studioarmandarossi.it,,Neutral,1,[object Object],2533421748,3.084755127551316,0,,studioarmandarossi.it,mailsrv.studioarmandarossi.it,enterprise
+3.146905760657046,151.0.243.213,smtp.adriagaming.com,,Good,1,[object Object],2533422037,4.230456840939598,0,,adriagaming.com,smtp.adriagaming.com,enterprise
+4.561532815224471,151.0.245.55,mailout.namirial.it,,Good,1,[object Object],2533422391,4.756421218078603,0,,namirial.it,mailout.namirial.it,enterprise
+3.9226708862602786,151.0.254.154,mx3.regione.sicilia.it,,Good,1,[object Object],2533424794,4.260448498826621,0,,regione.sicilia.it,mx3.regione.sicilia.it,enterprise
+3.06623292048904,151.0.255.245,mail.gv3.it,,Neutral,1,[object Object],2533425141,3.6865167372241863,0,,gv3.it,mail.gv3.it,enterprise
+4.20117295250841,185.22.84.10,mx.infocloudservices.it,,Good,1,[object Object],3105248266,4.652537446002033,0,,infocloudservices.it,mx.infocloudservices.it,enterprise
+4.127658019093554,185.36.73.91,smtpadc.cellulari.net,,Neutral,1,[object Object],3106163035,3.084755127551316,0,,cellulari.net,smtpadc.cellulari.net,enterprise
+2.915018767355711,185.36.73.141,mail.insotec.com,,Neutral,1,[object Object],3106163085,3.6865167372241863,0,,insotec.com,mail.insotec.com,enterprise
+4.020744113116377,185.36.74.55,smtp4.node3-001.server365.it,,Poor,0,[object Object],3106163255,4.446067768047895,1,cbl.abuseat.org,server365.it,node3-001.server365.it,enterprise
+3.9505327978909315,185.43.16.253,185-43-16-253.ip295.fastwebnet.it,,Poor,1,[object Object],3106607357,4.464518719868982,1,cbl.abuseat.org,fastwebnet.it,ip295.fastwebnet.it,consumer
+4.151235449730309,185.213.115.29,newsletter.padovanet.it,,Good,1,[object Object],3117773597,0,0,,padovanet.it,newsletter.padovanet.it,enterprise
+3.7648146345129,185.213.115.59,posta.comune.padova.it,,Good,1,[object Object],3117773627,4.198239346205174,0,,comune.padova.it,posta.comune.padova.it,enterprise
+3.42702868077752,193.27.28.22,mail-out.sistinf.it,,Good,1,[object Object],3239779350,3.9293415305750377,0,,sistinf.it,mail-out.sistinf.it,enterprise
+3.2865044768131133,193.169.20.30,mv30.mailvox.it,,Neutral,1,[object Object],3249083422,3.9293415305750377,0,,mailvox.it,mv30.mailvox.it,enterprise
+3.23894465242585,193.169.20.31,mv31.mailvox.it,,Neutral,1,[object Object],3249083423,3.862508490154583,0,,mailvox.it,mv31.mailvox.it,enterprise
+3.3062441459293392,193.169.20.32,mv32.mailvox.it,,Good,1,[object Object],3249083424,3.9293415305750377,0,,mailvox.it,mv32.mailvox.it,enterprise
+3.3040445830619403,193.169.20.33,mv33.mailvox.it,,Neutral,1,[object Object],3249083425,4.260448498826621,0,,mailvox.it,mv33.mailvox.it,enterprise
+3.3420557088075604,193.169.20.34,mv34.mailvox.it,,Neutral,1,[object Object],3249083426,4.038599749210265,0,,mailvox.it,mv34.mailvox.it,enterprise
+3.374392434526787,193.169.20.35,mv35.mailvox.it,,Good,1,[object Object],3249083427,3.6865167372241863,0,,mailvox.it,mv35.mailvox.it,enterprise
+3.2740915215118065,193.169.20.36,mv36.mailvox.it,,Neutral,1,[object Object],3249083428,3.862508490154583,0,,mailvox.it,mv36.mailvox.it,enterprise
+3.291552614344527,193.169.20.37,mv37.mailvox.it,,Neutral,1,[object Object],3249083429,3.9873974651493196,0,,mailvox.it,mv37.mailvox.it,enterprise
+3.3232693188899867,193.169.20.38,mv38.mailvox.it,,Good,1,[object Object],3249083430,3.9873974651493196,0,,mailvox.it,mv38.mailvox.it,enterprise
+3.573768752115463,193.169.20.39,mv39.vmesp.com,,Good,1,[object Object],3249083431,3.3851881547612983,0,,vmesp.com,mv39.vmesp.com,enterprise
+3.687921476247856,193.169.20.40,mv40.vmesp.com,,Good,1,[object Object],3249083432,3.783247622788209,0,,vmesp.com,mv40.vmesp.com,enterprise
+3.6560549412499,193.169.20.41,mv41.vmesp.com,,Good,1,[object Object],3249083433,3.783247622788209,0,,vmesp.com,mv41.vmesp.com,enterprise
+3.493179384608856,193.169.20.42,mv42.vmesp.com,,Good,1,[object Object],3249083434,3.6865167372241863,0,,vmesp.com,mv42.vmesp.com,enterprise
+3.6003781688630325,193.169.20.43,mv43.vmesp.com,,Good,1,[object Object],3249083435,3.783247622788209,0,,vmesp.com,mv43.vmesp.com,enterprise
+3.6649765056433963,193.169.20.44,mv44.vmesp.com,,Good,1,[object Object],3249083436,3.6865167372241863,0,,vmesp.com,mv44.vmesp.com,enterprise
+3.6562165627308687,193.169.20.45,mv45.vmesp.com,,Good,1,[object Object],3249083437,3.5614784944906024,0,,vmesp.com,mv45.vmesp.com,enterprise
+3.646784734300122,193.169.20.46,mv46.vmesp.com,,Good,1,[object Object],3249083438,3.5614784944906024,0,,vmesp.com,mv46.vmesp.com,enterprise
+3.6599173523817257,193.169.20.47,mv47.vmesp.com,,Good,1,[object Object],3249083439,3.783247622788209,0,,vmesp.com,mv47.vmesp.com,enterprise
+3.002603398534735,193.169.20.49,mv49.mailrouter.it,,Good,1,[object Object],3249083441,3.6865167372241863,0,,mailrouter.it,mv49.mailrouter.it,enterprise
+2.9146508114283174,193.169.20.52,mv52.mailrouter.it,,Good,1,[object Object],3249083444,3.9293415305750377,0,,mailrouter.it,mv52.mailrouter.it,enterprise
+3.076323351150856,193.169.20.55,mv55.mymailer.it,,Neutral,1,[object Object],3249083447,3.783247622788209,0,,mymailer.it,mv55.mymailer.it,enterprise
+2.953595447125081,193.169.20.56,mv56.mymailer.it,,Neutral,1,[object Object],3249083448,3.3851881547612983,0,,mymailer.it,mv56.mymailer.it,enterprise
+3.071084512210233,193.169.20.57,mv57.mymailer.it,,Neutral,1,[object Object],3249083449,3.5614784944906024,0,,mymailer.it,mv57.mymailer.it,enterprise
+3.1430640861444057,193.169.20.58,mv58.mymailer.it,,Neutral,1,[object Object],3249083450,3.5614784944906024,0,,mymailer.it,mv58.mymailer.it,enterprise
+3.001684725740579,193.169.20.59,mv59.mymailer.it,,Neutral,1,[object Object],3249083451,3.5614784944906024,0,,mymailer.it,mv59.mymailer.it,enterprise
+3.7431817950703814,195.135.201.102,mail.dmonweb.com,,Good,1,[object Object],3280456038,3.9293415305750377,0,,dmonweb.com,mail.dmonweb.com,enterprise
+3.0385712038949135,213.140.0.214,out.teatroallascala.org,,Neutral,1,[object Object],3582722262,0,0,,teatroallascala.org,out.teatroallascala.org,enterprise
+3.873695184401909,213.140.4.192,smtp17.mmm.it,,Neutral,1,[object Object],3582723264,4.446067768047895,0,,mmm.it,smtp17.mmm.it,enterprise
+4.720675460454276,213.140.4.203,smtp10.mmm.it,,Good,1,[object Object],3582723275,0,0,,mmm.it,smtp10.mmm.it,enterprise
+4.710904204877906,213.140.4.212,smtp8.mmm.it,,Neutral,1,[object Object],3582723284,4.832516832267561,0,,mmm.it,smtp8.mmm.it,enterprise
+3.9071820965254536,213.140.4.213,smtp9.mmm.it,,Good,1,[object Object],3582723285,4.314782744629547,0,,mmm.it,smtp9.mmm.it,enterprise
+4.778179309000282,213.140.4.219,smtp22.mmm.it,,Good,1,[object Object],3582723291,0,0,,mmm.it,smtp22.mmm.it,enterprise
+3.2106728466383423,213.140.4.220,smtp.mmm.it,,Good,1,[object Object],3582723292,3.6865167372241863,0,,mmm.it,smtp.mmm.it,enterprise
+4.7248348609584,213.140.4.221,smtp12.mmm.it,,Good,1,[object Object],3582723293,0,0,,mmm.it,smtp12.mmm.it,enterprise
+4.727695297432776,213.140.4.222,smtp13.mmm.it,,Good,1,[object Object],3582723294,0,0,,mmm.it,smtp13.mmm.it,enterprise
+3.6953455496752614,213.140.15.200,mailserver2.techint.it,,Good,1,[object Object],3582726088,3.5614784944906024,0,,techint.it,mailserver2.techint.it,enterprise
+3.6922495427273496,213.140.15.212,mailserver3.techint.it,,Good,1,[object Object],3582726100,3.5614784944906024,0,,techint.it,mailserver3.techint.it,enterprise
+2.8785919214597695,213.140.24.136,mailweb.datasys.it,,Good,0,[object Object],3582728328,3.783247622788209,0,,datasys.it,mailweb.datasys.it,enterprise
+3.422792269990224,213.140.27.196,smtp1.popolarebari.it,,Good,1,[object Object],3582729156,3.862508490154583,0,,popolarebari.it,smtp1.popolarebari.it,enterprise
+3.4080227735001993,213.140.27.197,smtp2.popolarebari.it,,Good,1,[object Object],3582729157,4.038599749210265,0,,popolarebari.it,smtp2.popolarebari.it,enterprise
+3.019028974289467,213.140.28.4,mail.uni.com,,Good,1,[object Object],3582729220,3.6865167372241863,0,,uni.com,mail.uni.com,enterprise
+3.204454857014105,213.156.44.237,mail-io-b.arsed.it,,Good,1,[object Object],3583782125,0,0,,arsed.it,mail-io-b.arsed.it,enterprise
+3.5587309381396963,213.156.55.195,mx1.messinaline.it,,Good,1,[object Object],3583784899,3.9293415305750377,0,,messinaline.it,mx1.messinaline.it,enterprise
+3.8144175309608137,213.156.57.204,mail.finsea.it,,Good,1,[object Object],3583785420,4.230456840939598,0,,finsea.it,mail.finsea.it,enterprise
+3.185455951768984,213.156.57.236,213-156-57-236.ip.fastwebnet.it,,Neutral,0,[object Object],3583785452,0,0,,fastwebnet.it,ip.fastwebnet.it,consumer
+2.883615142552072,213.156.61.234,relay01.amt.genova.it,,Good,1,[object Object],3583786474,3.3851881547612983,0,,amt.genova.it,relay01.amt.genova.it,enterprise
+3.070827665202415,213.156.62.160,mx1.cost.it,,Good,1,[object Object],3583786656,3.084755127551316,0,,cost.it,mx1.cost.it,enterprise
