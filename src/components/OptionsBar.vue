@@ -5,11 +5,11 @@
         <fw-button>Upload data</fw-button>
       </b-col>
       <b-col>
-        <fw-select label="Area by" :value="areaBy" @input="setAreaBy" :options="areaOptions">
+        <fw-select label="Area by" :value="areaBy" @change="setAreaBy" :options="areaOptions">
         </fw-select>
       </b-col>
       <b-col>
-        <fw-select label="Color by" :value="colorBy" @input="setColorBy" :options="colorOptions"></fw-select>
+        <fw-select label="Color by" :value="colorBy" @change="setColorBy" :options="colorOptions"></fw-select>
       </b-col>
     </b-row>
   </b-container>
