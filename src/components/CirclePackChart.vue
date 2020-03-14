@@ -1,18 +1,22 @@
 <template>
-  <g
+  <svg
     id="main-chart"
     ref="mainChart"
-    :transform="'translate(' + x + ',' + y + ')'"
+    :x="x"
+    :y="y"
     :height="height"
     :width="width"
   >
-  </g>
+  </svg>
 </template>
 
 <script>
 import * as d3 from "d3";
 import { groups } from "d3-array";
-import { mapState } from 'vuex'
+import { mapState, mapMutations } from 'vuex'
+import tippy from 'tippy.js'
+import Vue from 'vue'
+import ChartTooltip from './commons/ChartTooltip'
 
 export default {
   name: "CirclePackChart",
@@ -51,7 +55,7 @@ export default {
       // TODO: Improve the color scale for blacklist
       let maxval = d3.max(csvData, d => parseInt(d.blacklists_count))
       let blacklistScale = d3.scaleLinear()
-        .domain([0, maxval/2, maxval])
+        .domain([0, 1, maxval])
         .range(["#00E4A2", "#EAEA6A", "#D4003D"])
 
       this.colorScales = {
@@ -63,9 +67,11 @@ export default {
     },
     draw() {
       let self = this;
-      let vHeight = this.height; //1000 //this.$el.clientHeight
-      let vWidth = this.width; //this.$el.clientWidth
+      let vHeight = this.height;
+      let vWidth = this.width;
       let rad = Math.min(vWidth, vHeight);
+      let rooted = false // show or hide broader circle
+
       var svg = d3
         .select(this.$refs.mainChart)
         .attr("width", vWidth)
@@ -113,7 +119,7 @@ export default {
 
       const node = svg
         .selectAll("g")
-        .data(root.descendants())
+        .data(root.descendants().slice(rooted ? 0 : 1).reverse())
         .enter()
         .append("g")
         .attr("transform", d => `translate(${d.x + 1},${d.y + 1})`);
@@ -138,7 +144,18 @@ export default {
       leaves
         .select("path")
         .attr("stroke", "none")
-        .attr("fill", d => this.colorScales[self.colorBy](d.data[self.colorBy]));
+        .attr("fill", d => this.colorScales[self.colorBy](d.data[self.colorBy]))
+        .on('mouseover', function (d) {
+          tippy(this, {
+            content: d.data.hostname //self.tooltipContent(d)
+          })
+          d3.select(this)
+            .attr("stroke", "black")
+        })
+        .on('mouseout', function (d) {
+          d3.select(this).attr("stroke", "none")
+          //this._tippy && this._tippy.destroy()
+        })
 
       const internal = node.filter(d => d.children && d.children.length > 1);
 
@@ -161,6 +178,10 @@ export default {
           return d.data[0];
         });
 
+      //scale to fit
+      let box = this.$refs.mainChart.getBBox()
+      this.$refs.mainChart.setAttribute("viewBox", `${box.x - 1} ${box.y - 1} ${box.width + 2} ${box.height + 2}`)
+
       // .on("mouseover", function(d, i) {
       //   let el = d3.select(this).attr("fill", '#00f')
       //   self.nodeInfo = d.data.name || d.data.hostname
@@ -169,6 +190,19 @@ export default {
       //   let el = d3.select(this).attr("fill", self.color(d.height))
       //   self.nodeInfo = ''
       // })
+    },
+    tooltipContent (item) {
+      var ComponentClass = Vue.extend(ChartTooltip)
+      if (item) {
+        var instance = new ComponentClass({
+          propsData: {
+            'item': item.data,
+          },
+        })
+        instance.$mount()
+        return instance.$el
+      }
+      return ''
     }
   },
   watch: {
@@ -188,4 +222,11 @@ export default {
 };
 </script>
 
-<style scoped lang="stylus"></style>
+<style lang="stylus">
+svg
+  g, path
+    user-select: none
+    outline: none !important
+
+
+</style>
