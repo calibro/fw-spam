@@ -13,7 +13,7 @@
 <script>
 import * as d3 from "d3";
 import { groups } from "d3-array";
-import { mapState, mapMutations } from 'vuex'
+import { mapState, mapGetters, mapMutations } from 'vuex'
 import tippy from 'tippy.js'
 import Vue from 'vue'
 import ChartTooltip from './commons/ChartTooltip'
@@ -28,19 +28,17 @@ export default {
     };
   },
   mounted() {
-    this.init();
+    this.$store.dispatch('data/loadData')
   },
   computed: {
-    ...mapState(['colorBy', 'areaBy'])
+    ...mapState(['colorBy', 'areaBy']),
+    ...mapGetters({
+      filteredData: 'data/filteredData'
+    })
   },
   methods: {
-    async init() {
-      const csvData = await d3.csv("/data/data.csv");
-
-      /*csvData.forEach(el => {
-        el.value =
-          (Math.pow(10, el.lastmonth) / Math.pow(10, 10)) * Math.pow(10, 8);
-      });*/
+    init() {
+      let csvData = this.filteredData
 
       const heirarchy = groups(
         csvData,
@@ -217,6 +215,13 @@ export default {
     },
     colorBy() {
       this.draw();
+    },
+    filteredData: {
+      deep: true,
+      // We have to move our method to a handler field
+      handler () {
+        this.init()
+      }
     }
   }
 };

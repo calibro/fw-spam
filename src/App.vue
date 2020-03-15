@@ -10,6 +10,7 @@
       <div class="slide-box">
         <slide-container ref="slide"></slide-container>
       </div>
+      <filter-sidebar></filter-sidebar>
     </div>
     <div class="export-bar-container item-container">
       <export-bar @export="doExport"></export-bar>
@@ -21,13 +22,15 @@
 import SlideContainer from './components/SlideContainer.vue'
 import OptionsBar from './components/OptionsBar.vue'
 import ExportBar from './components/ExportBar.vue'
+import FilterSidebar from './components/FilterSidebar.vue'
 
 export default {
   name: 'app',
   components: {
     SlideContainer,
     ExportBar,
-    OptionsBar
+    OptionsBar,
+    FilterSidebar
   },
   methods: {
     doExport () {
@@ -74,6 +77,7 @@ body
     background #f2f2f2
     max-height: calc(100vh - 40px - 90px - 90px)
     overflow: hidden;
+    position relative
     .slide-box
       width 80%
       margin 15px auto
