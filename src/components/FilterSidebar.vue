@@ -29,7 +29,7 @@
           <div class="filter-according-toggle" v-b-toggle.accordion-3 role="tab">Last day volume<b-icon-chevron-up class="caret"></b-icon-chevron-up></div>
           <b-collapse id="accordion-3" visible accordion="filter-accordion" role="tabpanel">
             <div class="filter-body">
-                <range-filter></range-filter>
+                <range-filter :range="lastdayRangeOptions" :value="lastdayRangeValue" :onChange="this['data/setLastdayRange']"></range-filter>
             </div>
           </b-collapse>
         </div>
@@ -37,7 +37,7 @@
           <div class="filter-according-toggle" v-b-toggle.accordion-4 role="tab">Last month volume<b-icon-chevron-up class="caret"></b-icon-chevron-up></div>
           <b-collapse id="accordion-4" visible accordion="filter-accordion" role="tabpanel">
             <div class="filter-body">
-              <range-filter></range-filter>
+              <range-filter :range="lastmonthRangeOptions" :value="lastmonthRangeValue" :onChange="this['data/setLastmonthRange']"></range-filter>
             </div>
           </b-collapse>
         </div>
@@ -45,7 +45,7 @@
           <div class="filter-according-toggle" v-b-toggle.accordion-5 role="tab">Blacklist<b-icon-chevron-up class="caret"></b-icon-chevron-up></div>
           <b-collapse id="accordion-5" visible accordion="filter-accordion" role="tabpanel">
             <div class="filter-body">
-              <checkbox-filter></checkbox-filter>
+              <checkbox-filter :options="blacklistsOptions" :value="blacklistsValue" :onChange="this['data/setBlacklists']"></checkbox-filter>
             </div>
           </b-collapse>
         </div>
@@ -75,11 +75,20 @@ export default {
     ...mapState({
       reputationValue: state => state.data.filters.reputation,
       reputationOptions: state => state.data.filterOptions.reputation,
+      blacklistsValue: state => state.data.filters.blacklists,
+      blacklistsOptions: state => state.data.filterOptions.blacklists,
+      lastdayRangeValue: state => state.data.filters.lastdayRange,
+      lastdayRangeOptions: state => state.data.filterOptions.lastdayRange,
+      lastmonthRangeValue: state => state.data.filters.lastmonthRange,
+      lastmonthRangeOptions: state => state.data.filterOptions.lastmonthRange,
     })
   },
   methods: {
     ...mapMutations([
-      'data/setReputation', // -> this['some/nested/module/foo']()
+      'data/setReputation',
+      'data/setBlacklists',
+      'data/setLastdayRange',
+      'data/setLastmonthRange',
       'data/resetFilters'
     ]),
     toggleSidebar () {

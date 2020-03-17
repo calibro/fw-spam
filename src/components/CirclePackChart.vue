@@ -78,7 +78,11 @@ export default {
       d3.select(this.$refs.mainChart)
         .selectAll("*")
         .remove();
-
+      if(this.chartData.length == 0) {
+        svg.append('text')
+        .style("font-size", "10px")
+        .text('No data in your selection')
+      }
       const circle = d3
         .arc()
         .innerRadius(0)
@@ -145,7 +149,12 @@ export default {
         .attr("fill", d => this.colorScales[self.colorBy](d.data[self.colorBy]))
         .on('mouseover', function (d) {
           tippy(this, {
-            content: d.data.hostname //self.tooltipContent(d)
+            content: '<div><strong>'+ d.data.hostname +'</strong></div>' +
+                     '<div>Last day: '+ parseFloat(d.data.lastday).toFixed(2) +'</div>'+
+                     '<div>Last month: '+ parseFloat(d.data.lastmonth).toFixed(2) +'</div>'+
+                     '<div>Reputation: '+ d.data.email_score_name +'</div>'+
+                     '<div>Blacklists: '+ d.data.blacklists_count +'</div>',
+            allowHTML: true
           })
           d3.select(this)
             .attr("stroke", "black")
