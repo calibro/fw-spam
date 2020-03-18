@@ -3,8 +3,8 @@ import * as d3 from "d3";
 const initialFilters = {
   reputation: ['poor', 'neutral', 'good'],
   blacklists: [],
-  lastdayRange: [],
-  lastmonthRange: []
+  lastdayRange: [0,10],
+  lastmonthRange: [0,10]
 }
 
 export default {
@@ -73,10 +73,11 @@ export default {
       state.filters.lastmonthRange = val
     },
     resetFilters (state) {
-      state.filters = Object.assign({}, initialFilters)
-      state.filters.blacklists = state.filterOptions.blacklists.map(e => e.value)
-      state.filters.lastdayRange = state.filterOptions.lastdayRange
-      state.filters.lastmonthRange = state.filterOptions.lastmonthRange
+      let resetFilters = Object.assign({}, initialFilters)
+      resetFilters.blacklists = state.filterOptions.blacklists.map(e => e.value)
+      resetFilters.lastdayRange = state.filterOptions.lastdayRange
+      resetFilters.lastmonthRange = state.filterOptions.lastmonthRange
+      state.filters = Object.assign({}, resetFilters)
 
     }
   },

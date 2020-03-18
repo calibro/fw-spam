@@ -31,7 +31,9 @@ export default {
   },
   methods: {
     change (val) {
-      this.onChange([this.$refs.minInput.localValue, this.$refs.maxInput.localValue])
+      let min = parseFloat(this.$refs.minInput.localValue)
+      let max = parseFloat(this.$refs.maxInput.localValue)
+      this.onChange([min, max])
     }
   }
 }
