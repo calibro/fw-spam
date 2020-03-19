@@ -6,17 +6,16 @@
     :y="y"
     :height="height"
     :width="width"
-  >
-  </svg>
+  ></svg>
 </template>
 
 <script>
 import * as d3 from "d3";
 import { groups } from "d3-array";
-import { mapState, mapMutations } from 'vuex'
-import tippy from 'tippy.js'
-import Vue from 'vue'
-import ChartTooltip from './commons/ChartTooltip'
+import { mapState, mapMutations } from "vuex";
+import tippy from "tippy.js";
+import Vue from "vue";
+import ChartTooltip from "./commons/ChartTooltip";
 
 export default {
   name: "CirclePackChart",
@@ -31,16 +30,11 @@ export default {
     this.init();
   },
   computed: {
-    ...mapState(['colorBy', 'areaBy'])
+    ...mapState(["colorBy", "areaBy"])
   },
   methods: {
     async init() {
-      const csvData = await d3.csv("/data/data.csv");
-
-      /*csvData.forEach(el => {
-        el.value =
-          (Math.pow(10, el.lastmonth) / Math.pow(10, 10)) * Math.pow(10, 8);
-      });*/
+      const csvData = await d3.csv("/data/data.csv", d3.autoType);
 
       const heirarchy = groups(
         csvData,
@@ -48,20 +42,39 @@ export default {
         d => d.second_level_domain
       );
 
-      let reputarionScale = d3.scaleOrdinal()
-      .domain(["Poor", "Neutral", "Good"])
-      .range(["#D4003D", "#EAEA6A", "#00E4A2"])
+      const sizeScaleLastmonth = d3
+        .scaleLinear()
+        .domain(d3.extent(csvData, d => d.lastmonth))
+        .range([1.0, 100.0]);
+
+      const sizeScaleLastday = d3
+        .scaleLinear()
+        .domain(d3.extent(csvData, d => d.lastday))
+        .range([1, 100.0]);
+
+      let reputationScale = d3
+        .scaleOrdinal()
+        .domain([...new Set(csvData.map(d => d.email_score_name))])
+        .range(["#D4003D", "#EAEA6A", "#00E4A2"]);
 
       // TODO: Improve the color scale for blacklist
-      let maxval = d3.max(csvData, d => parseInt(d.blacklists_count))
-      let blacklistScale = d3.scaleLinear()
-        .domain([0, 1, maxval])
-        .range(["#00E4A2", "#EAEA6A", "#D4003D"])
+      let domainBlackList = d3.extent(csvData, d => +d.blacklists_count);
+
+      // let blacklistScale = d3
+      //   .scaleSequential(d3.interpolateYlOrRd)
+      //   .domain(d3.extent(csvData, d => +d.blacklists_count));
+
+      let blacklistScale = d3
+        .scaleLinear()
+        .domain([0, 1, domainBlackList[1]])
+        .range(["rgb(221,221,221)", "rgb(253, 137, 60)", "rgb(128, 0, 38)"]);
 
       this.colorScales = {
-        'email_score_name': reputarionScale,
-        'blacklists_count': blacklistScale
-      }
+        email_score_name: reputationScale,
+        blacklists_count: blacklistScale,
+        lastday: sizeScaleLastday,
+        lastmonth: sizeScaleLastmonth
+      };
 
       this.chartData = heirarchy;
     },
@@ -70,7 +83,7 @@ export default {
       let vHeight = this.height;
       let vWidth = this.width;
       let rad = Math.min(vWidth, vHeight);
-      let rooted = false // show or hide broader circle
+      let rooted = false; // show or hide broader circle
 
       var svg = d3
         .select(this.$refs.mainChart)
@@ -88,9 +101,12 @@ export default {
         .startAngle(-Math.PI)
         .endAngle(Math.PI);
 
-      const getValue = (el) =>{
-        return (Math.pow(10, el[self.areaBy]) / Math.pow(10, 10)) * Math.pow(10, 8);
-      }
+      const getValue = el => {
+        return (
+          (Math.pow(10, el[self.areaBy]) / Math.pow(10, 10)) * Math.pow(10, 8)
+        );
+      };
+
       const root = d3
         .pack()
         .size([vWidth, vHeight])
@@ -100,10 +116,11 @@ export default {
             Array.isArray(d) ? d[1] : undefined
           )
           .sum(d => {
-            return getValue(d)
+            //return getValue(d);
+            return self.colorScales[self.areaBy](d[self.areaBy]);
           })
           .sort((a, b) => {
-            return b.value - a.value
+            return b.value - a.value;
           })
       );
 
@@ -112,14 +129,22 @@ export default {
         .range([6, 14])
         .domain(
           d3.extent(
-            root.descendants().filter(d => d.children && d.children.length > 1),
+            root
+              .descendants()
+              .slice(rooted ? 0 : 1)
+              .filter(d => d.children && d.children.length > 1),
             d => d.r
           )
         );
 
       const node = svg
         .selectAll("g")
-        .data(root.descendants().slice(rooted ? 0 : 1).reverse())
+        .data(
+          root
+            .descendants()
+            .slice(rooted ? 0 : 1)
+            .reverse()
+        )
         .enter()
         .append("g")
         .attr("transform", d => `translate(${d.x + 1},${d.y + 1})`);
@@ -145,17 +170,16 @@ export default {
         .select("path")
         .attr("stroke", "none")
         .attr("fill", d => this.colorScales[self.colorBy](d.data[self.colorBy]))
-        .on('mouseover', function (d) {
+        .on("mouseover", function(d) {
           tippy(this, {
             content: d.data.hostname //self.tooltipContent(d)
-          })
-          d3.select(this)
-            .attr("stroke", "black")
+          });
+          d3.select(this).attr("stroke", "black");
         })
-        .on('mouseout', function (d) {
-          d3.select(this).attr("stroke", "none")
+        .on("mouseout", function(d) {
+          d3.select(this).attr("stroke", "none");
           //this._tippy && this._tippy.destroy()
-        })
+        });
 
       const internal = node.filter(d => d.children && d.children.length > 1);
 
@@ -179,8 +203,11 @@ export default {
         });
 
       //scale to fit
-      let box = this.$refs.mainChart.getBBox()
-      this.$refs.mainChart.setAttribute("viewBox", `${box.x - 1} ${box.y - 1} ${box.width + 2} ${box.height + 2}`)
+      let box = this.$refs.mainChart.getBBox();
+      this.$refs.mainChart.setAttribute(
+        "viewBox",
+        `${box.x - 1} ${box.y - 1} ${box.width + 2} ${box.height + 2}`
+      );
 
       // .on("mouseover", function(d, i) {
       //   let el = d3.select(this).attr("fill", '#00f')
@@ -191,18 +218,18 @@ export default {
       //   self.nodeInfo = ''
       // })
     },
-    tooltipContent (item) {
-      var ComponentClass = Vue.extend(ChartTooltip)
+    tooltipContent(item) {
+      var ComponentClass = Vue.extend(ChartTooltip);
       if (item) {
         var instance = new ComponentClass({
           propsData: {
-            'item': item.data,
-          },
-        })
-        instance.$mount()
-        return instance.$el
+            item: item.data
+          }
+        });
+        instance.$mount();
+        return instance.$el;
       }
-      return ''
+      return "";
     }
   },
   watch: {
@@ -227,6 +254,4 @@ svg
   g, path
     user-select: none
     outline: none !important
-
-
 </style>
