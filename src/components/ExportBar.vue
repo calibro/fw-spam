@@ -11,7 +11,11 @@
         <fw-select label="Slide size" :value="slideSize" @change="setSlideSize" :options="slideSizeOptions"></fw-select>
       </b-col>
       <b-col>
-        <fw-button class="export-button" @click="onExport">Export slide</fw-button>
+        <b-dropdown class="export-button" dropup right text="Export slide" variant="warning">
+          <b-dropdown-item @click="() => onExport('svg')">SVG</b-dropdown-item>
+          <b-dropdown-item @click="() => onExport('png')">PNG</b-dropdown-item>
+        </b-dropdown>
+        <!--<fw-button class="" @click="onExport"></fw-button>-->
       </b-col>
     </b-row>
   </b-container>
@@ -37,8 +41,8 @@ export default {
   methods: {
     ...mapMutations(['setSildeTitle', 'setSlideSource', 'setSlideSize']),
 
-    onExport () {
-      this.$emit('export')
+    onExport (format) {
+      this.$emit('export', format)
     }
   }
 }

@@ -8,7 +8,7 @@
 
 <script>
 import {saveSvgAsPng} from 'save-svg-as-png'
-
+import saveSVG from '@/utils/saveSVG'
 import CirclePackChart from './CirclePackChart.vue'
 import { mapState, mapGetters } from 'vuex'
 
@@ -36,8 +36,13 @@ export default {
     },
   },
   methods: {
-    exportImage () {
-      saveSvgAsPng(this.$refs.mainSlide, "chart.png")
+    exportImage (format) {
+      switch(format) {
+        case 'png':
+          saveSvgAsPng(this.$refs.mainSlide, "chart.png")
+        case 'svg':
+          saveSVG(this.$refs.mainSlide)
+      }
     }
   },
   watch: {

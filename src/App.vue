@@ -33,8 +33,8 @@ export default {
     FilterSidebar
   },
   methods: {
-    doExport () {
-      this.$refs.slide.exportImage()
+    doExport (format) {
+      this.$refs.slide.exportImage(format)
     }
   }
 }
