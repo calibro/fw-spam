@@ -187,7 +187,22 @@ export default {
         .on("mouseout", function(d) {
           d3.select(this).attr("stroke", "none");
           //this._tippy && this._tippy.destroy()
-        });
+        })
+        .on("click", function(d) {
+          let parent = d3.select(this.parentNode)
+          if (parent.selectAll('.node-label').size() > 0) {
+            parent.selectAll('.node-label').remove()
+          } else{
+            parent.append("text")
+              .attr("fill", "black")
+              .attr("class", "node-label")
+              .attr("font-size", d => textScale(d.r) + "px")
+              .attr("text-anchor", "middle")
+              .attr("font-family", "'Arial', sans-serif")
+              .text(d.data.hostname)
+            parent.raise()
+          }
+        })
 
       const internal = node.filter(d => d.children && d.children.length > 1);
 
