@@ -20,30 +20,23 @@ import ChartTooltip from './commons/ChartTooltip'
 export default {
   name: "CirclePackChart",
   props: ["x", "y", "height", "width"],
-  data() {
-    return {
-      chartData: {},
-      nodeInfo: ""
-    };
-  },
   mounted() {
     this.$store.dispatch('data/loadData')
   },
   computed: {
-    ...mapState(['colorBy', 'areaBy']),
+    ...mapState({
+        colorBy: state => state.colorBy,
+        areaBy: state => state.areaBy,
+        csvData: state => state.data.csvData
+      }),
     ...mapGetters({
-      filteredData: 'data/filteredData'
+      filteredData: 'data/filteredData',
+      hierarchyData: 'data/filteredHierarchy',
     })
   },
   methods: {
     init() {
-      let csvData = this.filteredData
-
-      const heirarchy = groups(
-        csvData,
-        d => d.category,
-        d => d.second_level_domain
-      );
+      let csvData = this.csvData
 
       const sizeScaleLastmonth = d3
         .scaleLinear()
@@ -78,10 +71,11 @@ export default {
         lastday: sizeScaleLastday,
         lastmonth: sizeScaleLastmonth
       };
-
-      this.chartData = heirarchy;
+      this.initialized = true
     },
     draw() {
+      !this.initialized && this.init()
+
       let self = this;
       let vHeight = this.height;
       let vWidth = this.width;
@@ -96,7 +90,8 @@ export default {
       d3.select(this.$refs.mainChart)
         .selectAll("*")
         .remove();
-      if(this.chartData.length == 0) {
+
+      if(this.hierarchyData.length == 0) {
         svg.append('text')
         .style("font-size", "10px")
         .text('No data in your selection')
@@ -119,8 +114,8 @@ export default {
         .size([vWidth, vHeight])
         .padding(10)(
         d3
-          .hierarchy([null, this.chartData], d =>
-            Array.isArray(d) ? d[1] : undefined
+          .hierarchy({children: this.hierarchyData}, d =>
+            d.children
           )
           .sum(d => {
             //return getValue(d);
@@ -212,7 +207,7 @@ export default {
         .attr("xlink:href", d => "#" + d.id)
         .attr("startOffset", "50%")
         .text(d => {
-          return d.data[0];
+          return d.data.name;
         });
 
       //scale to fit
@@ -246,7 +241,7 @@ export default {
     }
   },
   watch: {
-    chartData() {
+    hierarchyData() {
       this.draw();
     },
     height() {
@@ -257,13 +252,6 @@ export default {
     },
     colorBy() {
       this.draw();
-    },
-    filteredData: {
-      deep: true,
-      // We have to move our method to a handler field
-      handler () {
-        this.init()
-      }
     }
   }
 };

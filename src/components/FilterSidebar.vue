@@ -14,7 +14,9 @@
         <div class="filter-block">
           <div class="filter-according-toggle" v-b-toggle.accordion-1 role="tab">Hierachy<b-icon-chevron-up class="caret"></b-icon-chevron-up></div>
           <b-collapse id="accordion-1" visible accordion="filter-accordion" role="tabpanel">
-            <div class="filter-body">hello</div>
+            <div class="filter-body">
+              <hierarchy-filter :excludeHierarchy="excludeHierarchy" :onChange="this['data/toggleExcludeHierarchy']"></hierarchy-filter>
+            </div>
           </b-collapse>
         </div>
         <div class="filter-block">
@@ -58,13 +60,16 @@
 import ClickOutside from 'vue-click-outside'
 import CheckboxFilter from './filters/CheckboxFilter'
 import RangeFilter from './filters/RangeFilter'
+import HierarchyFilter from './filters/HierarchyFilter'
+
 import { mapState, mapMutations } from 'vuex'
 
 export default {
   name: 'FilterSidebar',
   components: {
     RangeFilter,
-    CheckboxFilter
+    CheckboxFilter,
+    HierarchyFilter
   },
   data () {
     return {
@@ -81,6 +86,7 @@ export default {
       lastdayRangeOptions: state => state.data.filterOptions.lastdayRange,
       lastmonthRangeValue: state => state.data.filters.lastmonthRange,
       lastmonthRangeOptions: state => state.data.filterOptions.lastmonthRange,
+      excludeHierarchy: state => state.data.filterOptions.excludeHierarchy,
     })
   },
   methods: {
@@ -89,7 +95,8 @@ export default {
       'data/setBlacklists',
       'data/setLastdayRange',
       'data/setLastmonthRange',
-      'data/resetFilters'
+      'data/resetFilters',
+      'data/toggleExcludeHierarchy'
     ]),
     toggleSidebar () {
       this.isOpen = !this.isOpen
