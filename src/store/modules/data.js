@@ -1,5 +1,6 @@
 import * as d3 from "d3";
 import { groups } from "d3-array";
+import Vue from 'vue'
 
 const initialFilters = {
   reputation: ['poor', 'neutral', 'good'],
@@ -19,21 +20,24 @@ const makeHierarchy = (data) => {
   ), ([name, children]) => ({
     level: 'category',
     name,
-    checked: true,
     children: Array.from(children, ([name, children]) => ({
       level: 'second_level_domain',
       name,
-      checked: true,
       children: children.map(e => ({
         ...e,
         level: 'second_level_domain',
         name: e.hostname,
-        checked: true
       }))
     }))
   }))
 }
 
+let passFilterHierarchy = (state, el) => {
+  let r = state.filters.excludeHierarchy.reduce((acc, excluedEl) => {
+    return acc && el[hierarchyLevels[excluedEl.level]] != excluedEl.name
+  }, true)
+  return r
+}
 export default {
   namespaced: true,
   state: {
@@ -54,23 +58,19 @@ export default {
   },
   getters: {
     filteredHierarchy: state => {
-      let passFilterHierarchy = (el) => {
-        let r = state.filters.excludeHierarchy.reduce((acc, excluedEl) => {
-          return acc && el[hierarchyLevels[excluedEl.level]] != excluedEl.name
-        }, true)
-        return r
-      }
-
       let h = makeHierarchy(state.csvData.filter(el => {
         return (
           state.filters.reputation.includes(el.email_score_name.toLowerCase()) &&
           state.filters.blacklists.includes(el.blacklists_count) &&
           (!state.filters.lastdayRange || (parseFloat(el.lastday) > parseFloat(state.filters.lastdayRange[0]) && parseFloat(el.lastday) < parseFloat(state.filters.lastdayRange[1]))) &&
           (!state.filters.lastmonthRange || (parseFloat(el.lastmonth) > parseFloat(state.filters.lastmonthRange[0]) && parseFloat(el.lastmonth) < parseFloat(state.filters.lastmonthRange[1]))) &&
-          (state.filters.excludeHierarchy.length == 0 || passFilterHierarchy(el))
+          (state.filters.excludeHierarchy.length == 0 || passFilterHierarchy(state, el))
         )
       }))
       return h
+    },
+    isNodeInHierarchy: (state) => (node) => {
+      return state.filters.excludeHierarchy.length == 0 || passFilterHierarchy(state, node)
     }
   },
   mutations: {
@@ -78,9 +78,7 @@ export default {
       state.csvData = data
       state.loaded = true
 
-
       state.hierarchy = makeHierarchy(data)
-
 
       let blVals = [...new Set(data.map(x => x.blacklists_count))].sort((a,b) => a - b)
       state.filterOptions.blacklists = blVals.map(el => {
@@ -113,12 +111,14 @@ export default {
       state.filters.lastmonthRange = val
     },
     toggleExcludeHierarchy (state, val) {
-      let findIndex = state.filters.excludeHierarchy.findIndex(e => e.level == val.level && e.name == val.name)
+      let exHierarchy = state.filters.excludeHierarchy
+      let findIndex = exHierarchy.findIndex(e => e.level == val.level && e.name == val.name)
       if (findIndex >= 0) {
-        state.filters.excludeHierarchy.splice(findIndex)
+        exHierarchy.splice(findIndex)
       } else {
-        state.filters.excludeHierarchy.push(val)
+        exHierarchy.push(val)
       }
+      Vue.set(state.filters, 'excludeHierarchy', exHierarchy)
     },
     resetFilters (state) {
       let resetFilters = Object.assign({}, initialFilters)

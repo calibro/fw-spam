@@ -86,7 +86,7 @@ export default {
       lastdayRangeOptions: state => state.data.filterOptions.lastdayRange,
       lastmonthRangeValue: state => state.data.filters.lastmonthRange,
       lastmonthRangeOptions: state => state.data.filterOptions.lastmonthRange,
-      excludeHierarchy: state => state.data.filterOptions.excludeHierarchy,
+      excludeHierarchy: state => state.data.filters.excludeHierarchy,
     })
   },
   methods: {
