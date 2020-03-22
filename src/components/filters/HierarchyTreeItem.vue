@@ -12,7 +12,7 @@
     </div>
     <transition name="fade">
       <div class="children-container" v-show="openTree">
-        <hierarchy-tree-item v-for="child in children" :item="child" :level="level+1" :excludeHierarchy="excludeHierarchy" :onChange="onChange"></hierarchy-tree-item>
+        <hierarchy-tree-item v-for="(child, index) in children" :item="child" :level="level+1" :excludeHierarchy="excludeHierarchy" :onChange="onChange" :key="child.name + '-'+ index"></hierarchy-tree-item>
       </div>
     </transition>
   </div>

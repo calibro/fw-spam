@@ -112,16 +112,12 @@ export default {
     setLastmonthRange (state, val) {
       state.filters.lastmonthRange = val
     },
-    uncheckHierarchyElement (state, val) {
-      let findIndex = state.filters.excludeHierarchy.findIndex(e => e.level == val.level && e.name == val.name)
-      if (findIndex == -1) {
-        state.filters.excludeHierarchy.push(val)
-      }
-    },
-    checkHierarchyElement(state, val) {
+    toggleExcludeHierarchy (state, val) {
       let findIndex = state.filters.excludeHierarchy.findIndex(e => e.level == val.level && e.name == val.name)
       if (findIndex >= 0) {
         state.filters.excludeHierarchy.splice(findIndex)
+      } else {
+        state.filters.excludeHierarchy.push(val)
       }
     },
     resetFilters (state) {

@@ -1,6 +1,6 @@
 <template>
   <div class="hierarchy-filter">
-    <hierarchy-tree-item v-for="child in hierarchy" :item="child" :level="0" :excludeHierarchy="excludeHierarchy" :onChange="onChange"></hierarchy-tree-item>
+    <hierarchy-tree-item v-for="(child, index) in hierarchy" :item="child" :level="0" :excludeHierarchy="excludeHierarchy" :onChange="onChange" :key="child.name +'-'+ index"></hierarchy-tree-item>
   </div>
 </template>
 
