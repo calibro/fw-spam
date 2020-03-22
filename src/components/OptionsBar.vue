@@ -1,8 +1,8 @@
 <template>
   <b-container class="options-bar">
     <b-row>
-      <b-col>
-        <fw-button>Upload data</fw-button>
+      <b-col sm="6">
+        <data-selector></data-selector>
       </b-col>
       <b-col>
         <fw-select label="Area by" :value="areaBy" @change="setAreaBy" :options="areaOptions">
@@ -17,9 +17,13 @@
 
 <script>
 import { mapState, mapMutations } from 'vuex'
+import DataSelector from './DataSelector'
 
 export default {
   name: 'OptionsBar',
+  components: {
+    DataSelector
+  },
   data () {
     return {
       areaOptions: [

@@ -112,12 +112,16 @@ export default {
     setLastmonthRange (state, val) {
       state.filters.lastmonthRange = val
     },
-    toggleExcludeHierarchy (state, val) {
+    uncheckHierarchyElement (state, val) {
+      let findIndex = state.filters.excludeHierarchy.findIndex(e => e.level == val.level && e.name == val.name)
+      if (findIndex == -1) {
+        state.filters.excludeHierarchy.push(val)
+      }
+    },
+    checkHierarchyElement(state, val) {
       let findIndex = state.filters.excludeHierarchy.findIndex(e => e.level == val.level && e.name == val.name)
       if (findIndex >= 0) {
         state.filters.excludeHierarchy.splice(findIndex)
-      } else {
-        state.filters.excludeHierarchy.push(val)
       }
     },
     resetFilters (state) {
@@ -130,9 +134,14 @@ export default {
     }
   },
   actions: {
-    async loadData({state, commit}) {
+    async loadTestData({state, commit}) {
       state.loaded = false
       const csvData = await d3.csv("/data/data.csv", d3.autoType);
+      commit('setData', csvData)
+    },
+    async loadData({state, commit}, filename) {
+      state.loaded = false
+      let csvData = await d3.csv(process.env.VUE_APP_SCRAPER_URL + "data/" + filename, d3.autoType);
       commit('setData', csvData)
     }
   }

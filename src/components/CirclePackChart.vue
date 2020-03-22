@@ -21,7 +21,7 @@ export default {
   name: "CirclePackChart",
   props: ["x", "y", "height", "width"],
   mounted() {
-    this.$store.dispatch('data/loadData')
+    this.$store.dispatch('data/loadTestData')
   },
   computed: {
     ...mapState({
