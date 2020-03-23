@@ -24,6 +24,9 @@ export default {
       selectedRemote: null,
     }
   },
+  mounted () {
+    this.$store.dispatch('loadRemoteFileList')
+  },
   computed: {
     ...mapState(['remoteFileList'])
   },
