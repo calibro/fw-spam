@@ -157,7 +157,6 @@ export default {
       Vue.set(state.filters, "excludeHierarchy", exHierarchy);
     },
     resetFilters(state) {
-      debugger
       let resetFilters = Object.assign({}, initialFilters);
       resetFilters.blacklists = state.filterOptions.blacklists.map(
         e => e.value
