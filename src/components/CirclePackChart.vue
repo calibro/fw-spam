@@ -12,31 +12,31 @@
 <script>
 import * as d3 from "d3";
 import { groups } from "d3-array";
-import { mapState, mapGetters, mapMutations } from 'vuex'
-import tippy from 'tippy.js'
-import Vue from 'vue'
-import ChartTooltip from './commons/ChartTooltip'
+import { mapState, mapGetters, mapMutations } from "vuex";
+import tippy from "tippy.js";
+import Vue from "vue";
+import ChartTooltip from "./commons/ChartTooltip";
 
 export default {
   name: "CirclePackChart",
   props: ["x", "y", "height", "width"],
   mounted() {
-    this.$store.dispatch('data/loadTestData')
+    this.$store.dispatch("data/loadTestData");
   },
   computed: {
     ...mapState({
-        colorBy: state => state.colorBy,
-        areaBy: state => state.areaBy,
-        csvData: state => state.data.csvData
-      }),
+      colorBy: state => state.colorBy,
+      areaBy: state => state.areaBy,
+      csvData: state => state.data.csvData
+    }),
     ...mapGetters({
-      filteredData: 'data/filteredData',
-      hierarchyData: 'data/filteredHierarchy',
+      filteredData: "data/filteredData",
+      hierarchyData: "data/filteredHierarchy"
     })
   },
   methods: {
     init() {
-      let csvData = this.csvData
+      let csvData = this.csvData;
 
       const sizeScaleLastmonth = d3
         .scaleLinear()
@@ -50,7 +50,8 @@ export default {
 
       let reputationScale = d3
         .scaleOrdinal()
-        .domain([...new Set(csvData.map(d => d.email_score_name))])
+        //.domain([...new Set(csvData.map(d => d.email_score_name))])
+        .domain(["Poor", "Neutral", "Good"])
         .range(["#D4003D", "#EAEA6A", "#00E4A2"]);
 
       // TODO: Improve the color scale for blacklist
@@ -62,7 +63,8 @@ export default {
 
       let blacklistScale = d3
         .scaleLinear()
-        .domain([0, 1, domainBlackList[1]])
+        //.domain([0, 1, domainBlackList[1]])
+        .domain([0, 1, 3])
         .range(["rgb(221,221,221)", "rgb(253, 137, 60)", "rgb(128, 0, 38)"]);
 
       this.colorScales = {
@@ -71,10 +73,10 @@ export default {
         lastday: sizeScaleLastday,
         lastmonth: sizeScaleLastmonth
       };
-      this.initialized = true
+      this.initialized = true;
     },
     draw() {
-      !this.initialized && this.init()
+      !this.initialized && this.init();
 
       let self = this;
       let vHeight = this.height;
@@ -91,10 +93,11 @@ export default {
         .selectAll("*")
         .remove();
 
-      if(this.hierarchyData.length == 0) {
-        svg.append('text')
-        .style("font-size", "10px")
-        .text('No data in your selection')
+      if (this.hierarchyData.length == 0) {
+        svg
+          .append("text")
+          .style("font-size", "10px")
+          .text("No data in your selection");
       }
       const circle = d3
         .arc()
@@ -114,9 +117,7 @@ export default {
         .size([vWidth, vHeight])
         .padding(10)(
         d3
-          .hierarchy({children: this.hierarchyData}, d =>
-            d.children
-          )
+          .hierarchy({ children: this.hierarchyData }, d => d.children)
           .sum(d => {
             //return getValue(d);
             return self.colorScales[self.areaBy](d[self.areaBy]);
@@ -174,35 +175,46 @@ export default {
         .attr("fill", d => this.colorScales[self.colorBy](d.data[self.colorBy]))
         .on("mouseover", function(d) {
           tippy(this, {
-            content: '<div><strong>'+ d.data.hostname +'</strong></div>' +
-                     '<div>Last day: '+ parseFloat(d.data.lastday).toFixed(2) +'</div>'+
-                     '<div>Last month: '+ parseFloat(d.data.lastmonth).toFixed(2) +'</div>'+
-                     '<div>Reputation: '+ d.data.email_score_name +'</div>'+
-                     '<div>Blacklists: '+ d.data.blacklists_count +'</div>',
+            content:
+              "<div><strong>" +
+              d.data.hostname +
+              "</strong></div>" +
+              "<div>Last day: " +
+              parseFloat(d.data.lastday).toFixed(2) +
+              "</div>" +
+              "<div>Last month: " +
+              parseFloat(d.data.lastmonth).toFixed(2) +
+              "</div>" +
+              "<div>Reputation: " +
+              d.data.email_score_name +
+              "</div>" +
+              "<div>Blacklists: " +
+              d.data.blacklists_count +
+              "</div>",
             allowHTML: true
-          })
-          d3.select(this)
-            .attr("stroke", "black")
+          });
+          d3.select(this).attr("stroke", "black");
         })
         .on("mouseout", function(d) {
           d3.select(this).attr("stroke", "none");
           //this._tippy && this._tippy.destroy()
         })
         .on("click", function(d) {
-          let parent = d3.select(this.parentNode)
-          if (parent.selectAll('.node-label').size() > 0) {
-            parent.selectAll('.node-label').remove()
-          } else{
-            parent.append("text")
+          let parent = d3.select(this.parentNode);
+          if (parent.selectAll(".node-label").size() > 0) {
+            parent.selectAll(".node-label").remove();
+          } else {
+            parent
+              .append("text")
               .attr("fill", "black")
               .attr("class", "node-label")
               .attr("font-size", d => textScale(d.r) + "px")
               .attr("text-anchor", "middle")
               .attr("font-family", "'Arial', sans-serif")
-              .text(d.data.hostname)
-            parent.raise()
+              .text(d.data.hostname);
+            parent.raise();
           }
-        })
+        });
 
       const internal = node.filter(d => d.children && d.children.length > 1);
 
