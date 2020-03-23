@@ -1,5 +1,7 @@
 module.exports = {
-  baseUrl: process.env.NODE_ENV === 'production'
-      ? `${process.cwd()}/dist/`
-      : '/'
-}
+  baseUrl:
+    process.env.NODE_ENV === "production"
+      ? //? `${process.cwd()}/dist/`
+        `/fw-spam/`
+      : "/"
+};
