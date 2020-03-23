@@ -1,5 +1,5 @@
 module.exports = {
-  baseUrl:
+  publicPath:
     process.env.NODE_ENV === "production"
       ? //? `${process.cwd()}/dist/`
         `/fw-spam/`

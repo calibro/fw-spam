@@ -10,6 +10,7 @@
     "electron-dev": "vue-cli-service build && electron app.js",
     "electron:build": "vue-cli-service electron:build -wml",
     "electron:serve": "vue-cli-service electron:serve",
+    "gh-pages": "vue-cli-service gh-pages",
     "postinstall": "electron-builder install-app-deps",
     "postuninstall": "electron-builder install-app-deps"
   },
@@ -35,6 +36,7 @@
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
     "vue-cli-plugin-electron-builder": "^1.4.6",
+    "vue-cli-plugin-gh-pages": "~1.0.0",
     "vue-template-compiler": "^2.6.10"
   },
   "postcss": {
