@@ -1,12 +1,18 @@
 <template>
-  <svg
+<svg :x="x"
+  :y="y"
+  :height="height"
+  :width="width"
+  ref="mainSVG">
+    <svg
     id="main-chart"
     ref="mainChart"
-    :x="x"
-    :y="y"
     :height="height"
     :width="width"
-  ></svg>
+    >
+    </svg>
+  <svg id="legend" ref="legend" :x="x" :y="height-400" height="300" :width="height"></svg>
+</svg>
 </template>
 
 <script>
@@ -237,12 +243,82 @@ export default {
           return d.data.name;
         });
 
+      //legends
+      let maxminRadius = d3.extent(leaves.nodes(), d => d3.select(d).datum().r)
+      let maxminValues = d3.extent(leaves.nodes(), d => d3.select(d).datum().data[self.areaBy])
+
+      let legHeight = maxminRadius[1] * 2 + 100
+      let legend = d3.select(this.$refs.legend)
+        .attr("height", legHeight)
+        .attr("y", vHeight - legHeight -10)
+        .attr("stroke", "#ccc")
+      legend.selectAll("*").remove()
+
+      let legendSizes = legend.selectAll(".legend-size")
+          .data(maxminRadius)
+
+      let legendSizesEnter = legendSizes.enter()
+      .append('g')
+      .attr('class','legend-size')
+      .attr("transform", (d,i) => `translate(${(i) * Math.max(120, maxminRadius[0] + maxminRadius[1] + 70) + d+1}, ${maxminRadius[1] + 5})`)
+
+      legendSizesEnter
+          .append("path")
+          .attr("stroke", "#000")
+          .attr("fill", "#ccc")
+          .attr("d", d => circle(d))
+
+      legendSizesEnter
+        .append("text")
+        .attr("text-anchor", "start")
+        .attr("font-family", "'Arial', sans-serif")
+        .attr('font-size', '28px')
+        .attr('alignment-baseline', 'middle')
+        .attr("transform", (d,i) => `translate(${d + 5}, 0)`)
+        .text((d,i) => maxminValues[i].toFixed(2))
+
+
+      /*legendSizes.selectAll(".legend-size-circle")
+          .attr("d", d => circle(d))
+          .attr("stroke", "#000")
+          .attr("fill", "#fca")*/
+
+      /*legendSizes.selectAll("g")
+          .enter()
+          .append("text")
+          .attr("transform", (d,i) => `translate(${d + 5}, ${maxminRadius[1] / 2})`)
+          .text((d,i) => maxminValues[i].toFixed(2))*/
+
+      let colorDomain = self.colorScales[self.colorBy].domain()
+      let legendColors = legend.selectAll(".legend-color")
+          .data(colorDomain)
+          .enter()
+          .append('g')
+          .attr('class','legend-color')
+          .attr("transform", (d,i) => `translate(${i * 160}, ${maxminRadius[1] * 2 + 100})`)
+
+      legendColors
+          .append('circle')
+          .attr('r', 15)
+          .attr('cx', 15)
+          .attr('cy', -15)
+          .attr('fill', d => self.colorScales[self.colorBy](d))
+      
+      legendColors
+        .append('text')
+        .attr('font-size', '28px')
+        .attr("font-family", "'Arial', sans-serif")
+        .attr("transform", (d,i) => `translate(35, -6)`)
+        .text(d => d)
+  
       //scale to fit
       let box = this.$refs.mainChart.getBBox();
       this.$refs.mainChart.setAttribute(
         "viewBox",
         `${box.x - 1} ${box.y - 1} ${box.width + 2} ${box.height + 2}`
       );
+
+      
 
       // .on("mouseover", function(d, i) {
       //   let el = d3.select(this).attr("fill", '#00f')
