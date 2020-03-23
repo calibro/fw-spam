@@ -141,13 +141,16 @@ export default {
     setLastmonthRange(state, val) {
       state.filters.lastmonthRange = val;
     },
+    setExcludeHierarchy(state, val) {
+      Vue.set(state.filters, "excludeHierarchy", val);
+    },
     toggleExcludeHierarchy(state, val) {
       let exHierarchy = state.filters.excludeHierarchy;
       let findIndex = exHierarchy.findIndex(
         e => e.level == val.level && e.name == val.name
       );
-      if (findIndex >= 0) {
-        exHierarchy.splice(findIndex);
+      if (findIndex >= 0 || val.forceCheck) {
+        exHierarchy.splice(findIndex, 1);
       } else {
         exHierarchy.push(val);
       }

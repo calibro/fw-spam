@@ -6,7 +6,7 @@
         :checked="isChecked"
         :name="label"
         class="item-checkbox"
-        @change="toggleCheckbox"
+        @click="toggleCheckbox"
         v-indeterminate="isIndeterminate"
         />
       {{label}}
@@ -69,8 +69,9 @@ export default {
         el.children && el.children.forEach(c => recursiveToggle(c, val))
       }*/
       //recursiveToggle(this.item, val)
-      this.onChange({level: this.item.level, name: this.label})
+      this.onChange(this, val)
     },
+
     countCheckedChildren () {
       if (this.isNotLeaf) {
         this.checkedChildren= this.$refs.childrenList ? this.$refs.childrenList.filter(c => {
