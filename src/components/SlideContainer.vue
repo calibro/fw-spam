@@ -1,8 +1,8 @@
 <template>
   <svg id="main-slide" ref="mainSlide" preserveAspectRatio :width="svgWidth" :height="svgHeight" :viewBox="'0 0 ' + slideSizeArray.join(' ')">
-    <text x="25" y="50" font-size="32">{{sildeTitle}}</text>
+    <text x="25" y="50" font-size="32px" font-family="'Arial', sans-serif">{{sildeTitle}}</text>
     <circle-pack-chart x="25" y="40" :width="slideSizeArray[0]" :height="slideSizeArray[1] - 100"></circle-pack-chart>
-    <text x="25" :y="slideSizeArray[1] - 25" font-size="16">{{slideSource}}</text>
+    <text x="25" :y="slideSizeArray[1] - 25" font-size="16px" font-family="'Arial', sans-serif">{{slideSource}}</text>
   </svg>
 </template>
 
@@ -40,6 +40,7 @@ export default {
       switch(format) {
         case 'png':
           saveSvgAsPng(this.$refs.mainSlide, "chart.png")
+          break
         case 'svg':
           saveSVG(this.$refs.mainSlide)
       }
