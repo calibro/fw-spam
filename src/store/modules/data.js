@@ -10,10 +10,8 @@ const initialFilters = {
   excludeHierarchy: []
 };
 
-const hierarchyLevels = ["category", "second_level_domain", "hostname"];
-
 const makeHierarchy = data => {
-  return Array.from(
+  let hier = Array.from(
     groups(
       data,
       d => d.category,
@@ -27,17 +25,21 @@ const makeHierarchy = data => {
         name,
         children: children.map(e => ({
           ...e,
-          level: "second_level_domain",
+          level: "hostname",
           name: e.hostname
         }))
       }))
     })
-  );
-};
+  )
+  if (hier.length == 1 && !hier[0].name){
+    hier = hier[0].children
+  }
+  return hier
+}
 
 let passFilterHierarchy = (state, el) => {
   let r = state.filters.excludeHierarchy.reduce((acc, excluedEl) => {
-    return acc && el[hierarchyLevels[excluedEl.level]] != excluedEl.name;
+    return acc && el[excluedEl.level] != excluedEl.name;
   }, true);
   return r;
 };
