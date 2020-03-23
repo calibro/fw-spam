@@ -1,6 +1,6 @@
 <template>
   <div class="hierarchy-filter">
-    <hierarchy-tree-item v-for="(child, index) in hierarchy" :item="child" :level="0" :excludeHierarchy="excludeHierarchy" :onChange="onChange" :key="child.name +'-'+ index"></hierarchy-tree-item>
+    <hierarchy-tree-item v-for="(child, index) in hierarchy" :item="child" :level="0" :excludeHierarchy="excludeHierarchy" :onChange="changedNode" :key="child.name +'-'+ index"></hierarchy-tree-item>
   </div>
 </template>
 
@@ -18,6 +18,25 @@ export default {
   computed: {
     hierarchy () {
       return this.$store.state.data.hierarchy
+    }
+  },
+  methods: {
+    changedNode (node, checked) {
+      debugger
+      if(checked && node.level > 0 && !node.$parent.isChecked) {
+        let nodeList = this.excludeHierarchy
+
+        nodeList.splice(nodeList.findIndex(el => el.name == node.item.name),1)
+        nodeList.splice(nodeList.findIndex(el => el.name == node.$parent.item.name),1)
+        node.$parent.item.children && node.$parent.item.children.forEach(sibling => {
+          if (sibling.name != node.item.name) {
+            nodeList.push(sibling)
+          }
+        });
+        this.$store.commit('data/setExcludeHierarchy', nodeList)
+      } else {
+        this.$store.commit('data/toggleExcludeHierarchy',node.item)
+      }
     }
   }
 }
