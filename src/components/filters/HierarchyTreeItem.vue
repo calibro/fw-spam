@@ -38,7 +38,7 @@ export default {
   },
   computed: {
     isNotLeaf () {
-      return this.item.children && this.item.children.length > 0
+      return this.item.level != 'hostname'
     },
     label () {
       return this.item.name ///this.isNotLeaf ? this.item[0] :  this.item.hostname
@@ -89,9 +89,7 @@ export default {
   watch: {
     excludeHierarchy () {
       if(this.isNotLeaf) {
-        Vue.nextTick(() => {
-          this.isNotLeaf && this.countCheckedChildren()
-        })
+        this.countCheckedChildren()
       }
     }
   },
