@@ -236,7 +236,7 @@ export default {
               d3.select(this).attr("stroke", "none").classed('has-label', false);
               parent.selectAll(".node-label").remove();
             } else {
-              d3.select(this).attr("stroke", "#222").attr('class', 'has-label');
+              d3.select(this).attr("stroke", "#222").classed('has-label', true);
               parent
                 .append("text")
                 .attr("fill", "black")
