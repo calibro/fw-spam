@@ -47,8 +47,13 @@ export default {
   namespaced: true,
   state: {
     loaded: false,
+    fetchingData: false,
     csvData: [],
     hierarchy: [],
+    selectedDataSource: {
+      localFile: null,
+      remoteFileUrl: null
+    },
     filters: Object.assign({}, initialFilters),
     filterOptions: {
       reputation: [
@@ -96,8 +101,9 @@ export default {
   },
   mutations: {
     setData(state, data) {
+      state.loaded = true
+      state.fetchingData = false
       state.csvData = data;
-      state.loaded = true;
 
       state.hierarchy = makeHierarchy(data);
 
@@ -169,17 +175,50 @@ export default {
   },
   actions: {
     async loadTestData({ state, commit }) {
-      state.loaded = false;
+      state.loaded = false
+      state.fetchingData = true
+
       const csvData = await d3.csv("./data/data.csv", d3.autoType);
       commit("setData", csvData);
+      commit("resetFilters")
+    },
+    loadDataFromFile({ state, commit }, file) {
+      if (file) {
+        state.loaded = false
+        state.fetchingData = true
+        state.selectedDataSource = {
+          localFile: file,
+          remoteFileUrl: null
+        }
+        var reader = new FileReader();
+        reader.onloadend = async function(evt) {
+          var dataUrl = evt.target.result;
+          // The following call results in an "Access denied" error in IE.
+          let csvData = await d3.csv(
+            dataUrl,
+            d3.autoType
+          )
+          commit("setData", csvData);
+          commit("resetFilters")
+
+        }
+        reader.readAsDataURL(file)
+      }
     },
     async loadData({ state, commit }, filename) {
-      state.loaded = false;
+      state.loaded = false
+      state.fetchingData = true
+      state.selectedDataSource = {
+        localFile: null,
+        remoteFileUrl: filename
+      }
       let csvData = await d3.csv(
         process.env.VUE_APP_SCRAPER_URL + "data/" + filename,
         d3.autoType
       );
       commit("setData", csvData);
+      commit("resetFilters")
+
     }
   }
 };

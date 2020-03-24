@@ -36,7 +36,7 @@ export default {
     }
   },
   computed: {
-    ...mapState(['sildeTitle', 'slideSource', 'slideSize'])
+    ...mapState(['slideTitle', 'slideSource', 'slideSize'])
   },
   methods: {
     ...mapMutations(['setSildeTitle', 'setSlideSource', 'setSlideSize']),

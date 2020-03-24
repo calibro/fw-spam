@@ -26,9 +26,6 @@ import ChartTooltip from "./commons/ChartTooltip";
 export default {
   name: "CirclePackChart",
   props: ["x", "y", "height", "width"],
-  mounted() {
-    this.$store.dispatch("data/loadTestData");
-  },
   computed: {
     ...mapState({
       colorBy: state => state.colorBy,
@@ -39,6 +36,9 @@ export default {
       filteredData: "data/filteredData",
       hierarchyData: "data/filteredHierarchy"
     })
+  },
+  mounted () {
+    this.draw()
   },
   methods: {
     init() {
@@ -277,7 +277,7 @@ export default {
         let legHeight = maxminRadius[1] * 2 + 100
         let legend = d3.select(this.$refs.legend)
           .attr("height", legHeight)
-          .attr("y", vHeight - legHeight -10)
+          .attr("y", this.height - legHeight -10)
           .attr("stroke", "#ccc")
         legend.selectAll("*").remove()
 
@@ -366,7 +366,7 @@ export default {
       this.draw();
     },
     height() {
-      this.draw();
+      this.draw()
     },
     areaBy() {
       this.draw();

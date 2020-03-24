@@ -1,9 +1,13 @@
 <template>
-  <svg id="main-slide" ref="mainSlide" preserveAspectRatio :width="svgWidth" :height="svgHeight" :viewBox="'0 0 ' + slideSizeArray.join(' ')">
+  <svg v-if="!fetchingData" id="main-slide" ref="mainSlide" preserveAspectRatio :width="svgWidth" :height="svgHeight" :viewBox="'0 0 ' + slideSizeArray.join(' ')">
     <text x="25" y="50" font-size="32px" font-family="'Arial', sans-serif">{{sildeTitle}}</text>
     <circle-pack-chart x="25" y="40" :width="slideSizeArray[0]" :height="slideSizeArray[1] - 100"></circle-pack-chart>
     <text x="25" :y="slideSizeArray[1] - 25" font-size="16px" font-family="'Arial', sans-serif">{{slideSource}}</text>
   </svg>
+  <div v-else class="loading-container">
+    <b-spinner label="Loading..."></b-spinner>
+    Loading...
+  </div>
 </template>
 
 <script>
@@ -23,10 +27,15 @@ export default {
     CirclePackChart
   },
   mounted (){
+    //this.$store.dispatch("data/loadTestData");
     this.svgHeight = this.$el.parentNode.clientHeight
   },
   computed: {
-    ...mapState(['sildeTitle', 'slideSource']),
+    ...mapState({
+      sildeTitle : state => state.sildeTitle,
+      slideSource : state => state.slideSource,
+      fetchingData: state => state.data.fetchingData
+    }),
     ...mapGetters(['slideSizeArray']),
     aspectRatio () {
       return this.slideSizeArray[0] / this.slideSizeArray[1]
@@ -57,4 +66,11 @@ export default {
 <style lang="stylus" scoped>
 #main-slide
   background-color #ffffff
+.loading-container
+  display flex
+  flex-direction column
+  align-items: center
+  justify-content: center
+  height: 100%
+
 </style>
