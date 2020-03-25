@@ -72,9 +72,7 @@ export default {
 
       this.colorScales = {
         email_score_name: reputationScale,
-        blacklists_count: blacklistScale,
-        lastday: sizeScaleLastday,
-        lastmonth: sizeScaleLastmonth
+        blacklists_count: blacklistScale
       };
       this.initialized = true;
     },
@@ -122,15 +120,33 @@ export default {
           );
         };
 
+        const hierarchy = d3.hierarchy(
+          { children: this.hierarchyData },
+          d => d.children
+        );
+
+        const sizeScaleLastmonth = d3
+          .scaleLinear()
+          .domain(d3.extent(hierarchy.leaves(), d => d.data.lastmonth))
+          .range([1.0, 100.0]);
+
+        const sizeScaleLastday = d3
+          .scaleLinear()
+          .domain(d3.extent(hierarchy.leaves(), d => d.data.lastday))
+          .range([1, 100.0]);
+
+        const sizeScales = {
+          lastday: sizeScaleLastday,
+          lastmonth: sizeScaleLastmonth
+        };
+
         const root = d3
           .pack()
           .size([vWidth, vHeight])
           .padding(10)(
-          d3
-            .hierarchy({ children: this.hierarchyData }, d => d.children)
+          hierarchy
             .sum(d => {
-              //return getValue(d);
-              return self.colorScales[self.areaBy](d[self.areaBy]);
+              return sizeScales[self.areaBy](d[self.areaBy]);
             })
             .sort((a, b) => {
               return b.value - a.value;
@@ -172,7 +188,7 @@ export default {
             .descendants()
             .slice(rooted ? 0 : 1)
             .reverse(),
-          d => d.data.level + d.data.name + d.data.ip
+          d => d.data.level + d.data.name + (d.data.ip ? d.data.ip : "group")
         );
 
         let nodeEnter = node

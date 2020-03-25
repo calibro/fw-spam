@@ -15,7 +15,7 @@ const makeHierarchy = data => {
     groups(
       data,
       d => d.category,
-      d => d.second_level_domain
+      d => (d.second_level_domain ? d.second_level_domain : d.ip)
     ),
     ([name, children]) => ({
       level: "category",
@@ -34,6 +34,7 @@ const makeHierarchy = data => {
   if (hier.length == 1 && !hier[0].name) {
     hier = hier[0].children;
   }
+  console.log(hier);
   return hier;
 };
 
