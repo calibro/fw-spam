@@ -3,17 +3,22 @@
     <div class="fw-header item-container">
       <div>Infosec Data Visualization Lab</div>
     </div>
-    <div class="options-bar-container item-container">
-      <options-bar></options-bar>
-    </div>
-    <div class="slide-container item-container">
-      <div class="slide-box">
-        <slide-container ref="slide"></slide-container>
+    <div v-if="showApp" class="ui-body">
+      <div class="options-bar-container item-container">
+        <options-bar></options-bar>
       </div>
-      <filter-sidebar></filter-sidebar>
+      <div class="slide-container item-container">
+        <div class="slide-box" v-resize="onResize">
+          <slide-container ref="slide"></slide-container>
+        </div>
+        <filter-sidebar></filter-sidebar>
+      </div>
+      <div class="export-bar-container item-container">
+        <export-bar @export="doExport"></export-bar>
+      </div>
     </div>
-    <div class="export-bar-container item-container">
-      <export-bar @export="doExport"></export-bar>
+    <div v-else class="load-data-ui">
+      <data-selector></data-selector>
     </div>
   </div>
 </template>
@@ -23,6 +28,8 @@ import SlideContainer from './components/SlideContainer.vue'
 import OptionsBar from './components/OptionsBar.vue'
 import ExportBar from './components/ExportBar.vue'
 import FilterSidebar from './components/FilterSidebar.vue'
+import DataSelector from './components/DataSelector.vue'
+import resize from 'vue-resize-directive'
 
 export default {
   name: 'app',
@@ -30,12 +37,24 @@ export default {
     SlideContainer,
     ExportBar,
     OptionsBar,
-    FilterSidebar
+    FilterSidebar,
+    DataSelector
+  },
+  computed: {
+    showApp () {
+      return this.$store.state.data.csvData.length > 0 || this.$store.state.data.fetchingData
+    }
   },
   methods: {
     doExport (format) {
       this.$refs.slide.exportImage(format)
+    },
+    onResize () {
+      this.$refs.slide.resize()
     }
+  },
+  directives: {
+      resize
   }
 }
 </script>
@@ -61,6 +80,15 @@ body
     color #ffc107
     align-items: center;
     display: flex;
+  .ui-body
+    display: flex
+    height:calc(100vh - 40px)
+    flex-direction column
+  .load-data-ui
+    display: flex
+    height: 50vh
+    justify-content center
+    align-content center
 
   .options-bar-container, .export-bar-container
     min-height 90px
@@ -71,7 +99,7 @@ body
     margin-top auto
     border-top 1px solid #ccc
   .slide-container
-    height auto
+    height 100%
     display flex
     flex 1 0 auto
     background #f2f2f2

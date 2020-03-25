@@ -76,14 +76,14 @@ export default {
             ) &&
             state.filters.blacklists.includes(el.blacklists_count) &&
             (!state.filters.lastdayRange ||
-              (parseFloat(el.lastday) >
+              (parseFloat(el.lastday) >=
                 parseFloat(state.filters.lastdayRange[0]) &&
-                parseFloat(el.lastday) <
+                parseFloat(el.lastday) <=
                   parseFloat(state.filters.lastdayRange[1]))) &&
             (!state.filters.lastmonthRange ||
-              (parseFloat(el.lastmonth) >
+              (parseFloat(el.lastmonth) >=
                 parseFloat(state.filters.lastmonthRange[0]) &&
-                parseFloat(el.lastmonth) <
+                parseFloat(el.lastmonth) <=
                   parseFloat(state.filters.lastmonthRange[1]))) &&
             (state.filters.excludeHierarchy.length == 0 ||
               passFilterHierarchy(state, el))
