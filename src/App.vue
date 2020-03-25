@@ -8,7 +8,7 @@
         <options-bar></options-bar>
       </div>
       <div class="slide-container item-container">
-        <div class="slide-box">
+        <div class="slide-box" v-resize="onResize">
           <slide-container ref="slide"></slide-container>
         </div>
         <filter-sidebar></filter-sidebar>
@@ -29,6 +29,7 @@ import OptionsBar from './components/OptionsBar.vue'
 import ExportBar from './components/ExportBar.vue'
 import FilterSidebar from './components/FilterSidebar.vue'
 import DataSelector from './components/DataSelector.vue'
+import resize from 'vue-resize-directive'
 
 export default {
   name: 'app',
@@ -47,7 +48,13 @@ export default {
   methods: {
     doExport (format) {
       this.$refs.slide.exportImage(format)
+    },
+    onResize () {
+      this.$refs.slide.resize()
     }
+  },
+  directives: {
+      resize
   }
 }
 </script>

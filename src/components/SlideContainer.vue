@@ -28,7 +28,7 @@ export default {
   },
   mounted (){
     //this.$store.dispatch("data/loadTestData");
-    this.svgHeight = this.$el.parentNode.clientHeight
+    this.resize()
   },
   computed: {
     ...mapState({
@@ -53,10 +53,8 @@ export default {
         case 'svg':
           saveSVG(this.$refs.mainSlide)
       }
-    }
-  },
-  watch: {
-    '$el.parentNode.clientHeight' () {
+    },
+    resize () {
       this.svgHeight = this.$el.parentNode.clientHeight
     }
   }
