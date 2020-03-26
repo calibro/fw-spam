@@ -232,6 +232,9 @@ export default {
                 "</div>" +
                 "<div>Blacklists: " +
                 d.data.blacklists_count +
+                (d.data.blacklists_count
+                  ? " - " + d.data.blacklists_sources.replace(/ \|/g, ", ")
+                  : "") +
                 "</div>",
               allowHTML: true
             });
