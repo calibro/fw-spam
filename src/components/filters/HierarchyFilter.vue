@@ -6,12 +6,13 @@
         <span @click="selectAll" class="select-all">Select all</span> / <span @click="deselectAll" class="select-all">Deselect all</span>
       </div>
     </div>
-    <hierarchy-tree-item v-for="(child, index) in filteredHierarchy" :item="child" :level="0" :excludeHierarchy="excludeHierarchy" :onChange="changedNode" :key="child.name +'-'+ index"></hierarchy-tree-item>
+    <hierarchy-tree-item v-for="(child, index) in filteredHierarchy" :item="child" :level="0" :excludeNodes="excludeNodes" :onChange="changedNode" :key="child.name +'-'+ index"></hierarchy-tree-item>
   </div>
 </template>
 
 <script>
 import * as d3 from "d3";
+import _ from 'underscore'
 import { groups } from "d3-array";
 import HierarchyTreeItem from './HierarchyTreeItem';
 
@@ -20,7 +21,7 @@ export default {
   components: {
     HierarchyTreeItem
   },
-  props: ['excludeHierarchy', 'onChange'],
+  props: ['excludeNodes', 'onChange'],
   data () {
     return {
       searchTerm: ''
@@ -30,6 +31,7 @@ export default {
     filteredHierarchy () {
       let self = this
       let data = JSON.parse(JSON.stringify(this.hierarchy))
+  
       let recursiveFilter = (el) => {
         let hasMatchingChildren = false
         if (el.children) {
@@ -39,6 +41,7 @@ export default {
         return (el.name && el.name.includes(self.searchTerm)) || hasMatchingChildren
       }
       return this.searchTerm ? data.filter(recursiveFilter) : data
+      return data
 
     },
     hierarchy () {
@@ -46,8 +49,8 @@ export default {
     }
   },
   methods: {
-    changedNode (node, checked) {
-      // Check parent in hierarchy and remove the category filter if active
+    changedNode (clickedNode, checked) {
+      /*// Check parent in hierarchy and remove the category filter if active
       if(checked && node.level > 0 && !node.$parent.isChecked) {
         let nodeList = this.excludeHierarchy
 
@@ -61,13 +64,43 @@ export default {
         this.$store.commit('data/setExcludeHierarchy', nodeList)
       } else {
         this.$store.commit('data/toggleExcludeHierarchy',node.item)
+      }*/
+
+      let excludedNodes = this.excludeNodes
+      // check/uncheck Leaves
+      if(!clickedNode.children){
+        if (checked) {
+          excludedNodes = _.without(excludedNodesm, clickedNode.item.nodeId)
+        } else{
+          excludedNodes.push(clickedNode.item.nodeId)
+        }
+      } 
+      // check/uncheck branches
+      else {
+        let h = d3.hierarchy(clickedNode, d => d.children)
+        let nodes = h.leaves()
+        if (checked) {
+          excludedNodes = _.difference(excludedNodes, nodes.map(e => e.data.nodeId))
+
+        } else {
+          excludedNodes = _.union(excludedNodes, nodes.map(e => e.data.nodeId))
+        }
+        /*nodes.forEach(node => {
+          const ind = excludedNodes.findIndex(el => el.name == node.data.name && el.ip == node.data.ip)
+          if (checked) {
+            excludedNodes.splice(ind, 1)
+          } else{
+            ind < 0 && excludedNodes.push(node.data)
+          }
+        });*/
       }
+      this.$store.commit('data/setExcludeNodes', excludedNodes)
     },
     selectAll () {
-      this.$store.commit('data/setExcludeHierarchy', [])
+      this.changedNode({children: this.filteredHierarchy}, true)
     },
     deselectAll () {
-      this.$store.commit('data/setExcludeHierarchy', Array.from(this.hierarchy))
+      this.changedNode({children: this.filteredHierarchy}, false)
     }
   }
 }

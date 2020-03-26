@@ -15,7 +15,7 @@
           <div class="filter-according-toggle" v-b-toggle.accordion-1 role="tab">Hierachy<b-icon-chevron-up class="caret"></b-icon-chevron-up></div>
           <b-collapse id="accordion-1" visible accordion="filter-accordion" role="tabpanel">
             <div class="filter-body">
-              <hierarchy-filter :excludeHierarchy="excludeHierarchy" :onChange="this['data/toggleExcludeHierarchy']"></hierarchy-filter>
+              <hierarchy-filter :excludeNodes="excludeNodes" :onChange="this['data/toggleExcludeNodes']"></hierarchy-filter>
             </div>
           </b-collapse>
         </div>
@@ -86,7 +86,7 @@ export default {
       lastdayRangeOptions: state => state.data.filterOptions.lastdayRange,
       lastmonthRangeValue: state => state.data.filters.lastmonthRange,
       lastmonthRangeOptions: state => state.data.filterOptions.lastmonthRange,
-      excludeHierarchy: state => state.data.filters.excludeHierarchy,
+      excludeNodes: state => state.data.filters.excludeNodes,
     })
   },
   methods: {
@@ -96,7 +96,7 @@ export default {
       'data/setLastdayRange',
       'data/setLastmonthRange',
       'data/resetFilters',
-      'data/toggleExcludeHierarchy'
+      'data/toggleExcludeNodes'
     ]),
     toggleSidebar () {
       this.isOpen = !this.isOpen

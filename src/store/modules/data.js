@@ -7,7 +7,7 @@ const initialFilters = {
   blacklists: [],
   lastdayRange: [0, 10],
   lastmonthRange: [0, 10],
-  excludeHierarchy: []
+  excludeNodes: []
 };
 
 const makeHierarchy = data => {
@@ -26,7 +26,8 @@ const makeHierarchy = data => {
         children: children.map(e => ({
           ...e,
           level: "hostname",
-          name: e.hostname ? e.hostname: e.ip
+          name: e.hostname ? e.hostname: e.ip,
+          nodeId: e.hostname + e.ip
         }))
       }))
     })
@@ -39,10 +40,7 @@ const makeHierarchy = data => {
 };
 
 let passFilterHierarchy = (state, el) => {
-  let r = state.filters.excludeHierarchy.reduce((acc, excluedEl) => {
-    return acc && el[excluedEl.level] != excluedEl.name;
-  }, true);
-  return r;
+  return !state.filters.excludeNodes.includes(el.hostname + el.ip);
 };
 export default {
   namespaced: true,
@@ -86,7 +84,7 @@ export default {
                 parseFloat(state.filters.lastmonthRange[0]) &&
                 parseFloat(el.lastmonth) <=
                   parseFloat(state.filters.lastmonthRange[1]))) &&
-            (state.filters.excludeHierarchy.length == 0 ||
+            (state.filters.excludeNodes.length == 0 ||
               passFilterHierarchy(state, el))
           );
         })
@@ -95,9 +93,30 @@ export default {
     },
     isNodeInHierarchy: state => node => {
       return (
-        state.filters.excludeHierarchy.length == 0 ||
-        passFilterHierarchy(state, node)
+        state.filters.excludeNodes.length == 0 || passFilterHierarchy(state, node)
       );
+    },
+    isNodeChecked: state => node => {
+      let isChecked = false
+      if (node.children){
+        let h = d3.hierarchy(node, d=> d.children)
+        let leaves = h.leaves()
+        let checkedChildren = leaves.filter(n => passFilterHierarchy(state, n.data))
+        isChecked = checkedChildren.length > 0
+      } else {
+        isChecked = passFilterHierarchy(state, node)
+      }
+      return isChecked
+    },
+    isNodeIndeterminate: state => node => {
+      let isIndetermine = false
+      if (node.children){
+        let h = d3.hierarchy(node, d=> d.children)
+        let leaves = h.leaves()
+        let checkedChildren = leaves.filter(n => passFilterHierarchy(state, n.data))
+        isIndetermine = checkedChildren.length > 0 && (leaves.length > checkedChildren.length)
+      }
+      return isIndetermine
     }
   },
   mutations: {
@@ -148,11 +167,11 @@ export default {
     setLastmonthRange(state, val) {
       state.filters.lastmonthRange = val;
     },
-    setExcludeHierarchy(state, val) {
-      Vue.set(state.filters, "excludeHierarchy", val);
+    setExcludeNodes(state, val) {
+      Vue.set(state.filters, "excludeNodes", val);
     },
-    toggleExcludeHierarchy(state, val) {
-      let exHierarchy = state.filters.excludeHierarchy;
+    toggleExcludeNode(state, val) {
+      let exHierarchy = state.filters.excludeNodes;
       let findIndex = exHierarchy.findIndex(
         e => e.level == val.level && e.name == val.name
       );
@@ -161,7 +180,7 @@ export default {
       } else {
         exHierarchy.push(val);
       }
-      Vue.set(state.filters, "excludeHierarchy", exHierarchy);
+      Vue.set(state.filters, "excludeNodes", exHierarchy);
     },
     resetFilters(state) {
       let resetFilters = Object.assign({}, initialFilters);
@@ -170,7 +189,7 @@ export default {
       );
       resetFilters.lastdayRange = state.filterOptions.lastdayRange;
       resetFilters.lastmonthRange = state.filterOptions.lastmonthRange;
-      resetFilters.excludeHierarchy = [];
+      resetFilters.excludeNodes = [];
       state.filters = Object.assign({}, resetFilters);
     }
   },
