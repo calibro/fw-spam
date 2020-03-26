@@ -1,20 +1,18 @@
 <template>
   <svg :x="x" :y="y" :height="height" :width="width" ref="mainSVG">
     <svg id="main-chart" ref="mainChart" :height="height" :width="width"></svg>
-    <svg
+    <g
       id="legend"
       ref="legend"
-      :x="x"
-      :y="height - 400"
-      height="300"
-      :width="height"
-    ></svg>
+      :transform="'translate(0,' + (height - 100) + ')'"
+    ></g>
   </svg>
 </template>
 
 <script>
 import * as d3 from "d3";
 import { groups } from "d3-array";
+import d3Legend from "d3-svg-legend";
 import { mapState, mapGetters, mapMutations } from "vuex";
 import tippy from "tippy.js";
 import Vue from "vue";
@@ -41,32 +39,13 @@ export default {
     init() {
       let csvData = this.csvData;
 
-      const sizeScaleLastmonth = d3
-        .scaleLinear()
-        .domain(d3.extent(csvData, d => d.lastmonth))
-        .range([1.0, 100.0]);
-
-      const sizeScaleLastday = d3
-        .scaleLinear()
-        .domain(d3.extent(csvData, d => d.lastday))
-        .range([1, 100.0]);
-
       let reputationScale = d3
         .scaleOrdinal()
-        //.domain([...new Set(csvData.map(d => d.email_score_name))])
         .domain(["Poor", "Neutral", "Good"])
         .range(["#D4003D", "#EAEA6A", "#00E4A2"]);
 
-      // TODO: Improve the color scale for blacklist
-      let domainBlackList = d3.extent(csvData, d => +d.blacklists_count);
-
-      // let blacklistScale = d3
-      //   .scaleSequential(d3.interpolateYlOrRd)
-      //   .domain(d3.extent(csvData, d => +d.blacklists_count));
-
       let blacklistScale = d3
         .scaleLinear()
-        //.domain([0, 1, domainBlackList[1]])
         .domain([0, 1, 3])
         .range(["rgb(221,221,221)", "rgb(253, 137, 60)", "rgb(128, 0, 38)"]);
 
@@ -74,6 +53,14 @@ export default {
         email_score_name: reputationScale,
         blacklists_count: blacklistScale
       };
+
+      this.legendLabels = {
+        lastmonth: "last month volume",
+        lastday: "last day volume",
+        email_score_name: "reputation",
+        blacklists_count: "blacklist count"
+      };
+
       this.initialized = true;
     },
     draw() {
@@ -85,14 +72,10 @@ export default {
       let rad = Math.min(vWidth, vHeight);
       let rooted = false; // show or hide broader circle
 
-      var svg = d3
+      const svg = d3
         .select(this.$refs.mainChart)
         .attr("width", vWidth)
         .attr("height", vHeight);
-
-      /*d3.select(this.$refs.mainChart)
-        .selectAll("*")
-        .remove();*/
 
       if (this.hierarchyData.length == 0) {
         svg.selectAll("*").remove();
@@ -183,7 +166,7 @@ export default {
             )
           );
 
-        let node = svg.selectAll("g").data(
+        let node = svg.selectAll(".node-g").data(
           root
             .descendants()
             .slice(rooted ? 0 : 1)
@@ -311,79 +294,117 @@ export default {
             return d.data.name;
           });
 
-        //legends
-        let maxminRadius = d3.extent(
-          leaves.nodes(),
-          d => d3.select(d).datum().r
-        );
-        let maxminValues = d3.extent(
-          leaves.nodes(),
-          d => d3.select(d).datum().data[self.areaBy]
-        );
-
-        let legHeight = maxminRadius[1] * 2 + 100;
-        let legend = d3
+        const legendColorCont = d3
           .select(this.$refs.legend)
-          .attr("height", legHeight)
-          .attr("y", this.height - legHeight - 10)
-          .attr("stroke", "#ccc");
-        legend.selectAll("*").remove();
+          .select(".legendColor");
 
-        let legendSizes = legend.selectAll(".legend-size").data(maxminRadius);
+        const legendOrdinal = d3Legend
+          .legendColor()
+          .shapePadding(10)
+          .title(self.legendLabels[self.colorBy])
+          .scale(self.colorScales[self.colorBy]);
 
-        let legendSizesEnter = legendSizes
-          .enter()
-          .append("g")
-          .attr("class", "legend-size")
-          .attr(
-            "transform",
-            (d, i) =>
-              `translate(${i *
-                Math.max(120, maxminRadius[0] + maxminRadius[1] + 70) +
-                d +
-                1}, ${maxminRadius[1] + 5})`
-          );
+        if (self.colorBy === "blacklists_count") {
+          legendOrdinal
+            .cells(self.colorScales[self.colorBy].domain())
+            .labelFormat(d3.format(".0f"));
+        }
 
-        legendSizesEnter
-          .append("path")
-          .attr("stroke", "#000")
-          .attr("fill", "#ccc")
-          .attr("d", d => circle(d));
+        if (legendColorCont.empty()) {
+          d3.select(this.$refs.legend)
+            .append("g")
+            .attr("class", "legendColor");
 
-        legendSizesEnter
-          .append("text")
-          .attr("text-anchor", "start")
+          d3.select(this.$refs.legend)
+            .select(".legendColor")
+            .call(legendOrdinal);
+
+          d3.select(this.$refs.legend)
+            .select(".legendColor")
+            .selectAll("text")
+            .attr("font-family", "'Arial', sans-serif");
+        } else {
+          legendColorCont.call(legendOrdinal);
+          legendColorCont
+            .selectAll("text")
+            .attr("font-family", "'Arial', sans-serif");
+        }
+
+        //size legends
+
+        const sizeLegendDomain = d3.extent(hierarchy.leaves(), d => d.r);
+        const sizeLegendRange = d3.extent(
+          hierarchy.leaves(),
+          d => d.data[self.areaBy]
+        );
+
+        const sizeLegendScale = d3
+          .scaleLinear()
+          .domain(sizeLegendDomain)
+          .range(sizeLegendRange);
+
+        const sizeLegendCircles = [5, 20, 40];
+
+        const sizeLegendCirclesData = sizeLegendCircles.map(d => {
+          return { r: d, label: sizeLegendScale(d) };
+        });
+
+        if (
+          d3
+            .select(this.$refs.legend)
+            .select(".legendSize")
+            .empty()
+        ) {
+          d3.select(this.$refs.legend)
+            .append("g")
+            .attr("class", "legendSize")
+            .attr("transform", "translate(150,0)")
+            .append("text")
+            .attr("class", "legendTitle")
+            .text(self.legendLabels[self.areaBy])
+            .attr("font-family", "'Arial', sans-serif");
+        }
+
+        const legendSizeCont = d3
+          .select(this.$refs.legend)
+          .select(".legendSize");
+
+        const nodeLegend = legendSizeCont
+          .selectAll("g")
+          .data(sizeLegendCirclesData)
+          .join("g")
+          .attr("transform", "translate(0," + 19 + ")");
+
+        nodeLegend
+          .selectAll("circle")
+          .data(d => [d])
+          .join("circle")
+          .attr("fill", "none")
+          .attr("stroke", "#ccc")
+          .attr("cx", d3.max(sizeLegendCircles))
+          .attr("r", d => d.r)
+          .attr("cy", d => d3.max(sizeLegendCircles) * 2 - d.r);
+
+        nodeLegend
+          .selectAll("line")
+          .data(d => [d])
+          .join("line")
+          .attr("stroke", "#ccc")
+          .attr("stroke-dasharray", "3 3")
+          .attr("x1", d3.max(sizeLegendCircles))
+          .attr("y1", d => d3.max(sizeLegendCircles) * 2 - d.r * 2)
+          .attr("x2", d3.max(sizeLegendCircles) * 2 + 8)
+          .attr("y2", d => d3.max(sizeLegendCircles) * 2 - d.r * 2);
+
+        nodeLegend
+          .selectAll("text")
+          .data(d => [d])
+          .join("text")
           .attr("font-family", "'Arial', sans-serif")
-          .attr("font-size", "28px")
-          .attr("alignment-baseline", "middle")
-          .attr("transform", (d, i) => `translate(${d + 5}, 0)`)
-          .text((d, i) => maxminValues[i].toFixed(2));
-
-        let colorDomain = self.colorScales[self.colorBy].domain();
-        let legendColors = legend
-          .selectAll(".legend-color")
-          .data(colorDomain)
-          .enter()
-          .append("g")
-          .attr("class", "legend-color")
-          .attr(
-            "transform",
-            (d, i) => `translate(${i * 160}, ${maxminRadius[1] * 2 + 100})`
-          );
-
-        legendColors
-          .append("circle")
-          .attr("r", 15)
-          .attr("cx", 15)
-          .attr("cy", -15)
-          .attr("fill", d => self.colorScales[self.colorBy](d));
-
-        legendColors
-          .append("text")
-          .attr("font-size", "28px")
-          .attr("font-family", "'Arial', sans-serif")
-          .attr("transform", (d, i) => `translate(35, -6)`)
-          .text(d => d);
+          .attr("dy", 6)
+          .attr("x", d3.max(sizeLegendCircles) * 2 + 12)
+          .attr("y", d => d3.max(sizeLegendCircles) * 2 - d.r * 2)
+          .text(d => d3.format("0.2f")(d.label));
 
         this.scaleToFit(minX, maxX, minY, maxY);
       }
@@ -433,4 +454,6 @@ svg
   g, path
     user-select: none
     outline: none !important
+  .legendTitle
+    fill: #aaa
 </style>
