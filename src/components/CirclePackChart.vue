@@ -219,7 +219,7 @@ export default {
             tippy(this, {
               content:
                 "<div><strong>" +
-                d.data.hostname +
+                (d.data.hostname ? d.data.hostname : d.data.ip) +
                 "</strong></div>" +
                 "<div>Last day: " +
                 parseFloat(d.data.lastday).toFixed(2) +
@@ -230,7 +230,7 @@ export default {
                 "<div>Reputation: " +
                 d.data.email_score_name +
                 "</div>" +
-                "<div>Blacklists: " +
+                "<div>Blacklists count: " +
                 d.data.blacklists_count +
                 (d.data.blacklists_count
                   ? " - " + d.data.blacklists_sources.replace(/ \|/g, ", ")
@@ -263,7 +263,7 @@ export default {
                 .attr("font-size", "14px") //d => textScale(d.r) + "px")
                 .attr("text-anchor", "middle")
                 .attr("font-family", "'Arial', sans-serif")
-                .text(d.data.hostname);
+                .text(d.data.hostname ? d.data.hostname : d.data.ip);
               parent.raise();
             }
           });

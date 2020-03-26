@@ -121,6 +121,7 @@ export default {
   display flex
   border-left 1px solid #ccc
   background #fff
+  overflow scroll
   &.open
     right 0px
   .button-container

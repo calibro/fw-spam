@@ -26,7 +26,7 @@ const makeHierarchy = data => {
         children: children.map(e => ({
           ...e,
           level: "hostname",
-          name: e.hostname
+          name: e.hostname ? e.hostname: e.ip
         }))
       }))
     })
