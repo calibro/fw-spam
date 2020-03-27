@@ -2,11 +2,11 @@
   <div class="range-filter">
     <div class="input-block">
       <label>Min</label>
-      <b-form-input ref="minInput" :value="minVal" type="number" :min="minVal" :max="maxVal" @input="change" step="0.01"></b-form-input>
+      <b-form-input ref="minInput" :value="minVal" type="number" :min="minRange" :max="maxRange" @input="change" step="0.01"></b-form-input>
     </div>
     <div class="input-block">
       <label>Max</label>
-      <b-form-input ref="maxInput" :value="maxVal" type="number" :min="minVal" :max="maxVal" @input="change" step="0.01"></b-form-input>
+      <b-form-input ref="maxInput" :value="maxVal" type="number" :min="minRange" :max="maxRange" @input="change" step="0.01"></b-form-input>
     </div>
   </div>
 </template>
