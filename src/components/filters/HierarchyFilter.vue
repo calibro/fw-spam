@@ -35,8 +35,8 @@ export default {
       let recursiveFilter = (el) => {
         let hasMatchingChildren = false
         if (el.children) {
-          el.children = el.children.filter(recursiveFilter)
-          hasMatchingChildren = el.children.length > 0
+          el.filteredChildren = el.children.filter(recursiveFilter)
+          hasMatchingChildren = el.filteredChildren.length > 0
         }
         return (el.name && el.name.includes(self.searchTerm)) || hasMatchingChildren
       }
@@ -67,8 +67,9 @@ export default {
       }*/
 
       let excludedNodes = this.excludeNodes
+      let children = clickedNode.filteredChildren || clickedNode.children
       // check/uncheck Leaves
-      if(!clickedNode.children){
+      if(!children){
         if (checked) {
           excludedNodes = _.without(excludedNodesm, clickedNode.item.nodeId)
         } else{
@@ -77,7 +78,7 @@ export default {
       } 
       // check/uncheck branches
       else {
-        let h = d3.hierarchy(clickedNode, d => d.children)
+        let h = d3.hierarchy(clickedNode, d => d.filteredChildren || d.children)
         let nodes = h.leaves()
         if (checked) {
           excludedNodes = _.difference(excludedNodes, nodes.map(e => e.data.nodeId))

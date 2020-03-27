@@ -39,11 +39,10 @@ export default {
       return this.item.name
     },
     children () {
-      return this.item.children
+      return this.item.filteredChildren || this.item.children
     },
     isChecked () {
       return this.$store.getters['data/isNodeChecked'](this.item)
-           
     },
     isIndeterminate () {
       return this.$store.getters['data/isNodeIndeterminate'](this.item)
