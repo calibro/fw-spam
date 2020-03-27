@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="fw-header item-container">
-      <div>Infosec Data Visualization Lab</div>
+      <div>Cyber Security Data Visualization Lab</div>
     </div>
     <div v-if="showApp" class="ui-body">
       <div class="options-bar-container item-container">
@@ -24,15 +24,15 @@
 </template>
 
 <script>
-import SlideContainer from './components/SlideContainer.vue'
-import OptionsBar from './components/OptionsBar.vue'
-import ExportBar from './components/ExportBar.vue'
-import FilterSidebar from './components/FilterSidebar.vue'
-import DataSelector from './components/DataSelector.vue'
-import resize from 'vue-resize-directive'
+import SlideContainer from "./components/SlideContainer.vue";
+import OptionsBar from "./components/OptionsBar.vue";
+import ExportBar from "./components/ExportBar.vue";
+import FilterSidebar from "./components/FilterSidebar.vue";
+import DataSelector from "./components/DataSelector.vue";
+import resize from "vue-resize-directive";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
     SlideContainer,
     ExportBar,
@@ -41,22 +41,25 @@ export default {
     DataSelector
   },
   computed: {
-    showApp () {
-      return this.$store.state.data.csvData.length > 0 || this.$store.state.data.fetchingData
+    showApp() {
+      return (
+        this.$store.state.data.csvData.length > 0 ||
+        this.$store.state.data.fetchingData
+      );
     }
   },
   methods: {
-    doExport (format) {
-      this.$refs.slide.exportImage(format)
+    doExport(format) {
+      this.$refs.slide.exportImage(format);
     },
-    onResize () {
-      this.$refs.slide.resize()
+    onResize() {
+      this.$refs.slide.resize();
     }
   },
   directives: {
-      resize
+    resize
   }
-}
+};
 </script>
 <style lang="stylus">
 body
@@ -90,20 +93,16 @@ body
     justify-content center
     align-content center
 
-  .options-bar-container, .export-bar-container
-    min-height 90px
-    max-height 90px
   .options-bar-container
     border-bottom 1px solid #ccc
+    padding: 15px 0
   .export-bar-container
-    margin-top auto
     border-top 1px solid #ccc
+    padding: 15px 0
   .slide-container
-    height 100%
     display flex
-    flex 1 0 auto
+    flex 1 1 auto
     background #f2f2f2
-    max-height: calc(100vh - 40px - 90px - 90px)
     overflow: hidden;
     position relative
     .slide-box
@@ -111,4 +110,9 @@ body
       margin 15px auto
       overflow hidden
       text-align: center
+  .fw-option-select-label
+    font-size: 0.7rem
+    text-transform:uppercase
+    color: #495057
+    margin-bottom:2px
 </style>

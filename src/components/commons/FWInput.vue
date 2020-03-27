@@ -1,22 +1,24 @@
 <template>
   <div class="fw-input">
-    <label>{{label}}</label>
-    <b-form-input :value="value" @input="onInput"></b-form-input>
+    <label class="fw-option-select-label">{{ label }}</label>
+    <b-form-input
+      :value="value"
+      @input="onInput"
+      :placeholder="placeholder"
+    ></b-form-input>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'FWInput',
-  props: ['label', 'value'],
+  name: "FWInput",
+  props: ["label", "value", "placeholder"],
   methods: {
-    onInput (evt) {
-      this.$emit('input', evt);
+    onInput(evt) {
+      this.$emit("input", evt);
     }
   }
-}
+};
 </script>
 
-<style lang="stylus" scoped>
-
-</style>
+<style lang="stylus" scoped></style>
