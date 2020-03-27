@@ -97,12 +97,6 @@ export default {
           .startAngle(-Math.PI)
           .endAngle(Math.PI);
 
-        const getValue = el => {
-          return (
-            (Math.pow(10, el[self.areaBy]) / Math.pow(10, 10)) * Math.pow(10, 8)
-          );
-        };
-
         const hierarchy = d3.hierarchy(
           { children: this.hierarchyData },
           d => d.children
@@ -155,7 +149,7 @@ export default {
 
         const textScale = d3
           .scaleLinear()
-          .range([6, 14])
+          .range([7, 14])
           .domain(
             d3.extent(
               root
@@ -254,15 +248,21 @@ export default {
               parent.selectAll(".node-label").remove();
             } else {
               d3.select(this)
-                .attr("stroke", "#222")
+                .attr("stroke", "#ccc")
                 .classed("has-label", true);
               parent
                 .append("text")
                 .attr("fill", "black")
                 .attr("class", "node-label")
-                .attr("font-size", "14px") //d => textScale(d.r) + "px")
+                .attr("font-size", "12px")
                 .attr("text-anchor", "middle")
+                .attr("dy", 4)
                 .attr("font-family", "'Arial', sans-serif")
+                .attr("paint-order", "stroke")
+                .attr("stroke", "#fff")
+                .attr("stroke-width", "2px")
+                .attr("stroke-linecap", "round")
+                .attr("stroke-linejoin", "miter")
                 .text(d.data.hostname ? d.data.hostname : d.data.ip);
               parent.raise();
             }
@@ -459,4 +459,6 @@ svg
     outline: none !important
   .legendTitle
     fill: #aaa
+.node-label
+  pointer-events: none
 </style>
