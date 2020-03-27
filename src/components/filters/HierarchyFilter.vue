@@ -71,7 +71,7 @@ export default {
       // check/uncheck Leaves
       if(!children){
         if (checked) {
-          excludedNodes = _.without(excludedNodesm, clickedNode.item.nodeId)
+          excludedNodes = _.without(excludedNodes, clickedNode.item.nodeId)
         } else{
           excludedNodes.push(clickedNode.item.nodeId)
         }
