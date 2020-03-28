@@ -1,6 +1,7 @@
 import * as d3 from "d3";
 import { groups } from "d3-array";
 import Vue from "vue";
+import _ from 'underscore'
 
 const initialFilters = {
   reputation: ["poor", "neutral", "good"],
@@ -9,6 +10,8 @@ const initialFilters = {
   lastmonthRange: [0, 10],
   excludeNodes: []
 };
+
+const mandatoryCols = ['lastmonth','ip','hostname','email_score_name', 'lastday', 'blacklists_count', 'second_level_domain']
 
 const makeHierarchy = data => {
   let hier = Array.from(
@@ -47,6 +50,8 @@ export default {
   state: {
     loaded: false,
     fetchingData: false,
+    firstLoad: true,
+    dataError: '',
     csvData: [],
     hierarchy: [],
     selectedDataSource: {
@@ -121,39 +126,45 @@ export default {
   },
   mutations: {
     setData(state, data) {
-      state.loaded = true;
       state.fetchingData = false;
-      state.csvData = data;
+      if(_.every(mandatoryCols, c => data.columns.includes(c))){
+        state.csvData = data;
+        state.firstLoad = false
+        state.loaded = true;
+        state.hierarchy = makeHierarchy(data);
 
-      state.hierarchy = makeHierarchy(data);
+        let blVals = [...new Set(data.map(x => x.blacklists_count))].sort(
+          (a, b) => a - b
+        );
+        state.filterOptions.blacklists = blVals.map(el => {
+          return {
+            text: el,
+            value: el
+          };
+        });
 
-      let blVals = [...new Set(data.map(x => x.blacklists_count))].sort(
-        (a, b) => a - b
-      );
-      state.filterOptions.blacklists = blVals.map(el => {
-        return {
-          text: el,
-          value: el
-        };
-      });
+        let lastdayVals = data.map(x => parseFloat(x.lastday));
+        state.filterOptions.lastdayRange = [
+          Math.min(...lastdayVals),
+          Math.max(...lastdayVals) + 0.01
+        ];
 
-      let lastdayVals = data.map(x => parseFloat(x.lastday));
-      state.filterOptions.lastdayRange = [
-        Math.min(...lastdayVals),
-        Math.max(...lastdayVals) + 0.01
-      ];
+        let lastmonthVals = data.map(x => parseFloat(x.lastmonth));
+        state.filterOptions.lastmonthRange = [
+          Math.min(...lastmonthVals),
+          Math.max(...lastmonthVals) + 0.01
+        ];
 
-      let lastmonthVals = data.map(x => parseFloat(x.lastmonth));
-      state.filterOptions.lastmonthRange = [
-        Math.min(...lastmonthVals),
-        Math.max(...lastmonthVals) + 0.01
-      ];
-
-      state.filters.blacklists = state.filterOptions.blacklists.map(
-        e => e.value
-      );
-      state.filters.lastdayRange = state.filterOptions.lastdayRange;
-      state.filters.lastmonthRange = state.filterOptions.lastmonthRange;
+        state.filters.blacklists = state.filterOptions.blacklists.map(
+          e => e.value
+        );
+        state.filters.lastdayRange = state.filterOptions.lastdayRange;
+        state.filters.lastmonthRange = state.filterOptions.lastmonthRange;
+      } else {
+        state.csvData = []
+        state.hierarchy= []
+        state.dataError = "Wrong CSV format."
+      }
     },
     setReputation(state, val) {
       state.filters.reputation = val;
@@ -169,6 +180,11 @@ export default {
     },
     setExcludeNodes(state, val) {
       Vue.set(state.filters, "excludeNodes", val);
+    },
+    setDataError(state, error) {
+      state.loaded = false
+      state.fetchingData = false
+      state.dataError =  error
     },
     toggleExcludeNode(state, val) {
       let exHierarchy = state.filters.excludeNodes;
@@ -198,7 +214,7 @@ export default {
       state.loaded = false;
       state.fetchingData = true;
 
-      const csvData = await d3.csv("./data/data.csv", d3.autoType);
+      const csvData = await d3.csv("./data/data.csv", d3.autoType).catch(err => commit("setDataError", 'Could not open test data'))
       commit("setData", csvData);
       commit("resetFilters");
     },
@@ -206,34 +222,44 @@ export default {
       if (file) {
         state.loaded = false;
         state.fetchingData = true;
+        state.dataError = ''
         state.selectedDataSource = {
           localFile: file,
           remoteFileUrl: null
-        };
+        }
+
         var reader = new FileReader();
         reader.onloadend = async function(evt) {
           var dataUrl = evt.target.result;
           // The following call results in an "Access denied" error in IE.
-          let csvData = await d3.csv(dataUrl, d3.autoType);
+          let csvData = await d3.csv(dataUrl, d3.autoType).catch(err => commit("setDataError", 'Could not open CSV file. ' + err.message))
           commit("setData", csvData);
           commit("resetFilters");
         };
+        reader.onerror = async function(evt) {
+          commit("setDataError", 'Could not open CSV file.')
+        }
         reader.readAsDataURL(file);
       }
     },
     async loadData({ state, commit }, filename) {
-      state.loaded = false;
-      state.fetchingData = true;
+      state.loaded = false
+      state.fetchingData = true
+      state.dataError = ''
       state.selectedDataSource = {
         localFile: null,
         remoteFileUrl: filename
-      };
+      }
       let csvData = await d3.csv(
         process.env.VUE_APP_SCRAPER_URL + "data/" + filename,
         d3.autoType
-      );
-      commit("setData", csvData);
-      commit("resetFilters");
+      ).catch(err => {
+        commit("setDataError", 'Could not open CSV file. ' + err.message)
+      })
+      if (csvData) {
+        commit("setData", csvData);
+        commit("resetFilters");
+      }
     }
   }
 };

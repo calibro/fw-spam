@@ -43,8 +43,7 @@ export default {
   computed: {
     showApp() {
       return (
-        this.$store.state.data.csvData.length > 0 ||
-        this.$store.state.data.fetchingData
+        !this.$store.state.data.firstLoad || this.$store.state.data.fetchingData
       );
     }
   },
@@ -89,9 +88,9 @@ body
     flex-direction column
   .load-data-ui
     display: flex
-    height: 50vh
+    height: 100%
     justify-content center
-    align-content center
+    align-items center
 
   .options-bar-container
     border-bottom 1px solid #ccc

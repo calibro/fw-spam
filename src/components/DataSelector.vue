@@ -1,6 +1,10 @@
 <template>
   <div class="data-selector">
-      <div class="upload-button-container">
+      <b-alert :show="dataError != ''" class="error-bar" variant="warning">
+        {{dataError}}
+      </b-alert>
+      <div class="data-selector-line">
+        <div class="upload-button-container">
         <div class="upload-file-name" v-if="selectedFile">
           {{selectedFile.name}}
         </div>
@@ -9,7 +13,6 @@
         <input type="file" ref="fileSelector" style="display: none" accept="text/csv" @change="onSelectFile">
       </fw-button>
       </div>
-      
       <span class="separator">or</span>
       <b-form-select v-model="selectedRemote" :options="remoteFileList"
       value-field="filename"
@@ -20,6 +23,7 @@
           <b-form-select-option :value="null" disabled>-- Please select an option --</b-form-select-option>
         </template>
       </b-form-select>
+    </div>
   </div>
 </template>
 
@@ -35,7 +39,8 @@ export default {
     ...mapState({
       remoteFileList: state => state.remoteFileList,
       selectedFile: state => state.data.selectedDataSource.localFile,
-      selectedRemote: state => state.data.selectedDataSource.remoteFileUrl
+      selectedRemote: state => state.data.selectedDataSource.remoteFileUrl,
+      dataError: state => state.data.dataError
     })
   },
   methods: {
@@ -57,8 +62,14 @@ export default {
 
 <style lang="stylus" scoped>
 .data-selector
-  display flex
-  align-items: flex-end
+  .error-bar
+    width 100%
+    margin 5px 0px
+    padding 5px
+    font-size 0.7em
+  .data-selector-line
+    display flex
+    align-items: flex-end
   .separator
     margin 8px
   .upload-button
