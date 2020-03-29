@@ -88,6 +88,8 @@ export default {
           .style("font-size", "40px")
           .attr("y", "50%")
           .text("No data in your selection");
+
+        this.scaleToFit(0,0, this.width, this.height)
       } else {
         svg.selectAll(".no-data-text").remove();
 
