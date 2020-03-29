@@ -85,7 +85,8 @@ export default {
         svg
           .append("text")
           .attr("class", "no-data-text")
-          .style("font-size", "20px")
+          .style("font-size", "40px")
+          .attr("y", "50%")
           .text("No data in your selection");
       } else {
         svg.selectAll(".no-data-text").remove();
