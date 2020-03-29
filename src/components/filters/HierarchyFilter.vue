@@ -6,7 +6,7 @@
         <span @click="selectAll" class="select-all">Select all</span> / <span @click="deselectAll" class="select-all">Deselect all</span>
       </div>
     </div>
-    <hierarchy-tree-item v-for="(child, index) in filteredHierarchy" :item="child" :level="0" :excludeNodes="excludeNodes" :onChange="changedNode" :key="child.name +'-'+ index"></hierarchy-tree-item>
+    <hierarchy-tree-item v-for="(child, index) in filteredHierarchy" :item="child" :level="0" :excludeNodes="excludeNodes" :onChange="changedNode" :key="child.name" :isFiltered="searchTerm != ''"></hierarchy-tree-item>
   </div>
 </template>
 

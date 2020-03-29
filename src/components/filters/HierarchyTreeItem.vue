@@ -8,12 +8,13 @@
         class="item-checkbox"
         @click="toggleCheckbox"
         v-indeterminate="isIndeterminate"
+        :disabled="isDisabled"
         />
       {{label}}
     </div>
     <transition name="fade">
       <div class="children-container" v-show="openTree">
-        <hierarchy-tree-item ref="childrenList" v-for="(child, index) in children" :item="child" :level="level+1" :excludeNodes="excludeNodes" :onChange="onChange" :key="child.name + '-'+ index"></hierarchy-tree-item>
+        <hierarchy-tree-item ref="childrenList" v-for="(child, index) in children" :item="child" :level="level+1" :excludeNodes="excludeNodes" :onChange="onChange" :key="child.name" :isFiltered="isFiltered"></hierarchy-tree-item>
       </div>
     </transition>
   </div>
@@ -25,10 +26,10 @@ import Vue from 'vue'
 
 export default {
   name: 'HierarchyTreeItem',
-  props: ['item', 'level', 'excludeNodes', 'onChange'],
+  props: ['item', 'level', 'excludeNodes', 'isFiltered', 'onChange'],
   data () {
     return {
-      openTree: false,
+      openTree: this.isFiltered,
     }
   },
   computed: {
@@ -46,16 +47,29 @@ export default {
     },
     isIndeterminate () {
       return this.$store.getters['data/isNodeIndeterminate'](this.item)
+    },
+    isDisabled () {
+      return this.isNotLeaf && this.isFiltered && this.item.filteredChildren.length == 0
     }
   },
   methods: {
     toggleTree () {
-      this.openTree = !this.openTree
+      if (!this.isDisabled) {
+        this.openTree = !this.openTree
+      }
     },
     toggleCheckbox (evt) {
       let val = evt.target.checked
       this.onChange(this, val)
     },
+  },
+  watch: {
+    isFiltered(newVal, oldVal) {
+      // Force open tree when start searching nodes
+      if(!oldVal && newVal) {
+        this.openTree = true
+      }
+    }
   },
   directives: {
     indeterminate: function(el, binding) {
