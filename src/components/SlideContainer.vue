@@ -85,7 +85,7 @@ export default {
       }
     },
     resize() {
-      this.svgHeight = this.$el.parentNode.clientHeight;
+      this.svgHeight = Math.min(this.$el.parentNode.clientHeight, this.$el.parentNode.clientWidth / this.aspectRatio);
     }
   }
 };
