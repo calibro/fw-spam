@@ -87,5 +87,6 @@ export default {
       width 100%
 .fw-button
   font-size: 0.7rem
+  padding 0.525rem 0.75rem
   text-transform uppercase
 </style>

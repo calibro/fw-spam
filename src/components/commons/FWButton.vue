@@ -18,4 +18,5 @@ export default {
 <style lang="stylus" scoped>
 .fw-button
   font-size: 0.7rem
+  padding 0.525rem 0.75rem
 </style>
