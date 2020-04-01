@@ -230,7 +230,8 @@ export default {
                 "<div>Blacklists count: " +
                 d.data.blacklists_count +
                 (d.data.blacklists_count
-                  ? " - " + d.data.blacklists_sources.replace(/ \|/g, ", ")
+                  ? " <br> - " +
+                    d.data.blacklists_sources.split(" | ").join("<br> - ")
                   : "") +
                 "</div>",
               allowHTML: true
