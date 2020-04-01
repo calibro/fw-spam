@@ -31,7 +31,7 @@
           <b-col>
             <b-button
               variant="warning"
-              class="btn-block"
+              class="btn-block fw-button"
               @click="() => onExport('svg')"
             >
               .svg
@@ -40,7 +40,7 @@
           <b-col>
             <b-button
               variant="warning"
-              class="btn-block"
+              class="btn-block fw-button"
               @click="() => onExport('png')"
             >
               .png
@@ -83,7 +83,9 @@ export default {
 .export-bar
   width 100%
   .row
-    align-items: flex-end
     .export-button
       width 100%
+.fw-button
+  font-size: 0.7rem
+  text-transform uppercase
 </style>
