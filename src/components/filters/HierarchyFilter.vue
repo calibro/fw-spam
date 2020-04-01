@@ -134,8 +134,13 @@ export default {
   max-height 30vh
   overflow scroll
   .hierarchy-filter-controls
-    margin 5px 5px 10px 5px
+    padding 5px 5px 10px 5px
+    position sticky
+    top 0px
+    z-index 1
+    background-color white
     .select-deselect-all
+      margin-top 7px
       span
         cursor pointer
         text-decoration underline
