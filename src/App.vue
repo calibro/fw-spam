@@ -19,7 +19,7 @@
       </b-container>
     </div>
     <div v-if="showApp" class="ui-body">
-      <div class="options-bar-container item-container">
+      <div class="options-bar-container">
         <options-bar></options-bar>
       </div>
       <div class="slide-container item-container">
@@ -28,7 +28,7 @@
         </div>
         <filter-sidebar></filter-sidebar>
       </div>
-      <div class="export-bar-container item-container">
+      <div class="export-bar-container">
         <export-bar @export="doExport"></export-bar>
       </div>
     </div>
