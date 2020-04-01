@@ -2,7 +2,7 @@
   "name": "email-reputation",
   "version": "0.1.0",
   "private": true,
-  "description": "FW Spam visualization",
+  "description": "Visualize data related to e-mails traffic",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -41,7 +41,8 @@
     "stylus-loader": "^3.0.2",
     "vue-cli-plugin-electron-builder": "^1.4.6",
     "vue-cli-plugin-gh-pages": "~1.0.0",
-    "vue-svg-loader": "^0.16.0"
+    "vue-svg-loader": "^0.16.0",
+    "vue-template-compiler": "^2.6.11"
   },
   "postcss": {
     "plugins": {
