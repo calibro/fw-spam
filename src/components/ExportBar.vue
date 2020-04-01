@@ -26,17 +26,27 @@
         ></fw-select>
       </b-col>
       <b-col>
-        <b-dropdown
-          class="export-button"
-          dropup
-          right
-          text="Export slide"
-          variant="warning"
-        >
-          <b-dropdown-item @click="() => onExport('svg')">SVG</b-dropdown-item>
-          <b-dropdown-item @click="() => onExport('png')">PNG</b-dropdown-item>
-        </b-dropdown>
-        <!--<fw-button class="" @click="onExport"></fw-button>-->
+        <div class="fw-option-select-label">export</div>
+        <b-row>
+          <b-col>
+            <b-button
+              variant="warning"
+              class="btn-block"
+              @click="() => onExport('svg')"
+            >
+              .svg
+            </b-button>
+          </b-col>
+          <b-col>
+            <b-button
+              variant="warning"
+              class="btn-block"
+              @click="() => onExport('png')"
+            >
+              .png
+            </b-button>
+          </b-col>
+        </b-row>
       </b-col>
     </b-row>
   </b-container>

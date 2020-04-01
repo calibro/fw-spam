@@ -1,7 +1,22 @@
 <template>
   <div id="app">
-    <div class="fw-header item-container">
-      <div>Cyber Security Data Visualization Lab</div>
+    <div class="fw-header">
+      <b-container class="h-100">
+        <b-row class="h-100">
+          <b-col>
+            <div
+              class="d-flex h-100 align-items-center justify-content-between"
+            >
+              <div class="logoCont">
+                <img src="./assets/fwlogo.svg" height="100%" width="auto" />
+              </div>
+              <h6 class="my-0 text-uppercase">
+                cybersecurity datavizlab
+              </h6>
+            </div>
+          </b-col>
+        </b-row>
+      </b-container>
     </div>
     <div v-if="showApp" class="ui-body">
       <div class="options-bar-container item-container">
@@ -77,20 +92,25 @@ body
       width 80%
       margin auto
   .fw-header
-    min-height 40px
     background #000
     color #ffc107
     align-items: center;
     display: flex;
+    height: 40px
+  .logoCont
+    height: 40px
+    padding-top 10px
+    padding-bottom 5px
   .ui-body
     display: flex
-    height:calc(100vh - 40px)
+    height: calc(100vh - 40px)
     flex-direction column
   .load-data-ui
     display: flex
     height: 100%
     justify-content center
     align-items center
+    background-color: #F2F2F2
 
   .options-bar-container
     border-bottom 1px solid #ccc

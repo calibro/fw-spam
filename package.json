@@ -1,5 +1,5 @@
 {
-  "name": "fw-spam",
+  "name": "email-reputation",
   "version": "0.1.0",
   "private": true,
   "description": "FW Spam visualization",
@@ -18,7 +18,7 @@
   "dependencies": {
     "axios": "^0.19.2",
     "bootstrap": "^4.4.1",
-    "bootstrap-vue": "^2.5.0",
+    "bootstrap-vue": "^2.8.0",
     "core-js": "^2.6.5",
     "d3": "^5.15.0",
     "d3-array": "^2.4.0",
@@ -41,7 +41,7 @@
     "stylus-loader": "^3.0.2",
     "vue-cli-plugin-electron-builder": "^1.4.6",
     "vue-cli-plugin-gh-pages": "~1.0.0",
-    "vue-template-compiler": "^2.6.10"
+    "vue-svg-loader": "^0.16.0"
   },
   "postcss": {
     "plugins": {
