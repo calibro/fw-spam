@@ -89,7 +89,7 @@ export default {
           .attr("y", "50%")
           .text("No data in your selection");
 
-        this.scaleToFit(0,0, this.width, this.height)
+        this.scaleToFit(0, 0, this.width, this.height);
       } else {
         svg.selectAll(".no-data-text").remove();
 
@@ -410,7 +410,26 @@ export default {
           .attr("dy", 6)
           .attr("x", d3.max(sizeLegendCircles) * 2 + 12)
           .attr("y", d => d3.max(sizeLegendCircles) * 2 - d.r * 2)
+          .attr("text-anchor", "end")
+          .attr("transform", "translate(36,0)")
           .text(d => d3.format("0.2f")(d.label));
+
+        const legendBbox = d3
+          .select(this.$refs.legend)
+          .node()
+          .getBBox();
+
+        d3.select(this.$refs.legend)
+          .selectAll(".background")
+          .data([legendBbox])
+          .enter()
+          .append("rect")
+          .attr("class", "background")
+          .attr("width", d => d.width)
+          .attr("height", d => d.height)
+          .attr("y", d => d.y)
+          .attr("fill", "white")
+          .lower();
 
         this.scaleToFit(minX, maxX, minY, maxY);
       }
