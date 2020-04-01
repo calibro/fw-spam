@@ -14,7 +14,7 @@
     </div>
     <transition name="fade">
       <div class="children-container" v-show="openTree">
-        <hierarchy-tree-item ref="childrenList" v-for="(child, index) in children" :item="child" :level="level+1" :excludeNodes="excludeNodes" :onChange="onChange" :key="child.name" :isFiltered="isFiltered"></hierarchy-tree-item>
+        <hierarchy-tree-item ref="childrenList" v-for="(child, index) in children" :item="child" :level="level+1" :excludeNodes="excludeNodes" :onChange="onChange" :key="child.name + child.ip" :isFiltered="isFiltered"></hierarchy-tree-item>
       </div>
     </transition>
   </div>
@@ -40,7 +40,8 @@ export default {
       return this.item.name
     },
     children () {
-      return this.item.filteredChildren || this.item.children
+      let c = this.item.filteredChildren || this.item.children
+      return c ? c.sort((a,b) =>  a.name > b.name ? 1 : -1) : c
     },
     isChecked () {
       return this.$store.getters['data/isNodeChecked'](this.item)

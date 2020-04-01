@@ -55,8 +55,8 @@ export default {
           (el.name && el.name.includes(self.searchTerm)) || hasMatchingChildren
         );
       };
+      data.sort((a,b) => a.name > b.name ? 1 : -1)
       return this.searchTerm ? data.filter(recursiveFilter) : data;
-      return data;
     },
     hierarchy() {
       return this.$store.state.data.hierarchy;
@@ -83,6 +83,7 @@ export default {
       let excludedNodes = this.excludeNodes;
       let children = clickedNode.filteredChildren || clickedNode.children;
       // check/uncheck Leaves
+      debugger
       if (!children) {
         if (checked) {
           excludedNodes = _.without(excludedNodes, clickedNode.item.nodeId);
