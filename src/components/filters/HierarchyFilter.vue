@@ -83,7 +83,6 @@ export default {
       let excludedNodes = this.excludeNodes;
       let children = clickedNode.filteredChildren || clickedNode.children;
       // check/uncheck Leaves
-      debugger
       if (!children) {
         if (checked) {
           excludedNodes = _.without(excludedNodes, clickedNode.item.nodeId);

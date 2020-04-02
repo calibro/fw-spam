@@ -23,7 +23,7 @@
       <span class="separator">or</span>
       <div>
         <b-form-select
-          v-model="selectedRemote"
+          :value="selectedRemote"
           :options="remoteFileList"
           value-field="filename"
           text-field="filename"
