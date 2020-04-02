@@ -14,7 +14,7 @@ export default new Vuex.Store({
     colorBy: "email_score_name",
     useOriginalValues: false,
     sildeTitle: "",
-    slideSource: "talosintelligence.com",
+    slideSource: "",
     slideSize: "1920:1080",
     remoteFileList: []
   },
@@ -35,6 +35,9 @@ export default new Vuex.Store({
     },
     setSlideSource(state, val) {
       state.slideSource = val;
+    },
+    setSlideSourceFromData(state, val) {
+      state.slideSource = 'talosintelligence.com - ' + val.substring(0, val.lastIndexOf('.'))
     },
     setSlideSize(state, val) {
       state.slideSize = val;

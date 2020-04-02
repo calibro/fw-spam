@@ -160,6 +160,7 @@ export default {
         );
         state.filters.lastdayRange = state.filterOptions.lastdayRange;
         state.filters.lastmonthRange = state.filterOptions.lastmonthRange;
+
       } else {
         state.csvData = []
         state.hierarchy= []
@@ -234,6 +235,7 @@ export default {
           // The following call results in an "Access denied" error in IE.
           let csvData = await d3.csv(dataUrl, d3.autoType).catch(err => commit("setDataError", 'Could not open CSV file. ' + err.message))
           commit("setData", csvData);
+          commit('setSlideSourceFromData', file.name, { root: true })
           commit("resetFilters");
         };
         reader.onerror = async function(evt) {
@@ -258,6 +260,7 @@ export default {
       })
       if (csvData) {
         commit("setData", csvData);
+        commit('setSlideSourceFromData', filename, { root: true })
         commit("resetFilters");
       }
     }
