@@ -4,7 +4,7 @@
       <b-col sm="6">
         <data-selector></data-selector>
       </b-col>
-      <b-col>
+      <b-col sm="2">
         <fw-select
           label="Area by"
           :value="areaBy"
@@ -12,6 +12,9 @@
           :options="areaOptions"
         >
         </fw-select>
+      </b-col>
+      <b-col sm="2">
+        <b-form-checkbox :checked="useOriginalValues" @change="setUseOriginalValues">Use original values</b-form-checkbox>
       </b-col>
       <b-col>
         <fw-select
@@ -47,10 +50,10 @@ export default {
     };
   },
   computed: {
-    ...mapState(["areaBy", "colorBy"])
+    ...mapState(["areaBy", "colorBy", "useOriginalValues"])
   },
   methods: {
-    ...mapMutations(["setAreaBy", "setColorBy"])
+    ...mapMutations(["setAreaBy", "setColorBy", "setUseOriginalValues"])
   }
 };
 </script>

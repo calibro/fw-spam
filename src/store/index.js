@@ -12,6 +12,7 @@ export default new Vuex.Store({
   state: {
     areaBy: "lastmonth",
     colorBy: "email_score_name",
+    useOriginalValues: false,
     sildeTitle: "",
     slideSource: "talosintelligence.com",
     slideSize: "1920:1080",
@@ -40,6 +41,9 @@ export default new Vuex.Store({
     },
     setRemoteFileList(state, val) {
       state.remoteFileList = val;
+    },
+    setUseOriginalValues(state, val) {
+      state.useOriginalValues = val
     }
   },
   actions: {

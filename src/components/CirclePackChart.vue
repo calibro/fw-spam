@@ -25,6 +25,7 @@ export default {
     ...mapState({
       colorBy: state => state.colorBy,
       areaBy: state => state.areaBy,
+      useOriginalValues: state => state.useOriginalValues,
       csvData: state => state.data.csvData
     }),
     ...mapGetters({
@@ -105,15 +106,18 @@ export default {
           d => d.children
         );
 
+        // Define range base on useOriginaValue or not
+        const lastmonthExtent = d3.extent(hierarchy.leaves(), d => d.data.lastmonth)
         const sizeScaleLastmonth = d3
           .scaleLinear()
-          .domain(d3.extent(hierarchy.leaves(), d => d.data.lastmonth))
-          .range([1.0, 100.0]);
+          .domain(lastmonthExtent)
+          .range(this.useOriginalValues ? lastmonthExtent : [1.0, 100.0]);
 
+        const lastdayExtent = d3.extent(hierarchy.leaves(), d => d.data.lastday)
         const sizeScaleLastday = d3
           .scaleLinear()
-          .domain(d3.extent(hierarchy.leaves(), d => d.data.lastday))
-          .range([1, 100.0]);
+          .domain(lastdayExtent)
+          .range(this.useOriginalValues ? lastdayExtent : [1, 100.0]);
 
         const sizeScales = {
           lastday: sizeScaleLastday,
@@ -469,6 +473,9 @@ export default {
       this.draw();
     },
     colorBy() {
+      this.draw();
+    },
+    useOriginalValues() {
       this.draw();
     }
   }
