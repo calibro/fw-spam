@@ -21,19 +21,21 @@
         </fw-button>
       </div>
       <span class="separator">or</span>
-      <b-form-select
-        v-model="selectedRemote"
-        :options="remoteFileList"
-        value-field="filename"
-        text-field="filename"
-        @change="selectRemoteFile"
-      >
-        <template v-slot:first>
-          <b-form-select-option :value="null" disabled
-            >-- Please select an option --</b-form-select-option
-          >
-        </template>
-      </b-form-select>
+      <div>
+        <b-form-select
+          v-model="selectedRemote"
+          :options="remoteFileList"
+          value-field="filename"
+          text-field="filename"
+          @change="selectRemoteFile"
+        >
+          <template v-slot:first>
+            <b-form-select-option :value="null" disabled
+              >-- Please select an option --</b-form-select-option
+            >
+          </template>
+        </b-form-select>
+      </div>
     </div>
   </div>
 </template>
