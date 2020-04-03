@@ -107,17 +107,23 @@ export default {
         );
 
         // Define range base on useOriginaValue or not
-        const lastmonthExtent = d3.extent(hierarchy.leaves(), d => d.data.lastmonth)
+        const lastmonthExtent = d3.extent(
+          hierarchy.leaves(),
+          d => d.data.lastmonth
+        );
         const sizeScaleLastmonth = d3
           .scaleLinear()
           .domain(lastmonthExtent)
           .range(this.useOriginalValues ? lastmonthExtent : [1.0, 100.0]);
 
-        const lastdayExtent = d3.extent(hierarchy.leaves(), d => d.data.lastday)
+        const lastdayExtent = d3.extent(
+          hierarchy.leaves(),
+          d => d.data.lastday
+        );
         const sizeScaleLastday = d3
           .scaleLinear()
           .domain(lastdayExtent)
-          .range(this.useOriginalValues ? lastdayExtent : [1, 100.0]);
+          .range(this.useOriginalValues ? lastdayExtent : [1.0, 100.0]);
 
         const sizeScales = {
           lastday: sizeScaleLastday,

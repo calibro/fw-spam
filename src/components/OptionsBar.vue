@@ -6,6 +6,14 @@
       </b-col>
       <b-col sm="2">
         <fw-select
+          label="Color by"
+          :value="colorBy"
+          @change="setColorBy"
+          :options="colorOptions"
+        ></fw-select>
+      </b-col>
+      <b-col sm="2">
+        <fw-select
           label="Area by"
           :value="areaBy"
           @change="setAreaBy"
@@ -13,16 +21,14 @@
         >
         </fw-select>
       </b-col>
-      <b-col sm="2">
-        <b-form-checkbox :checked="useOriginalValues" @change="setUseOriginalValues">Use original values</b-form-checkbox>
-      </b-col>
-      <b-col>
-        <fw-select
-          label="Color by"
-          :value="colorBy"
-          @change="setColorBy"
-          :options="colorOptions"
-        ></fw-select>
+      <b-col sm="2" class="align-self-start d-flex flex-column">
+        <label class="fw-option-select-label">Area scale</label>
+        <b-form-checkbox
+          :checked="useOriginalValues"
+          @change="setUseOriginalValues"
+          class="mt-2"
+          >Use original values</b-form-checkbox
+        >
       </b-col>
     </b-row>
   </b-container>

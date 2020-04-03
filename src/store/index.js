@@ -37,7 +37,9 @@ export default new Vuex.Store({
       state.slideSource = val;
     },
     setSlideSourceFromData(state, val) {
-      state.slideSource = 'talosintelligence.com - ' + val.substring(0, val.lastIndexOf('.'))
+      state.slideSource =
+        "talosintelligence.com - " +
+        val.substring(0, val.lastIndexOf(".")).split("T")[0];
     },
     setSlideSize(state, val) {
       state.slideSize = val;
@@ -46,7 +48,7 @@ export default new Vuex.Store({
       state.remoteFileList = val;
     },
     setUseOriginalValues(state, val) {
-      state.useOriginalValues = val
+      state.useOriginalValues = val;
     }
   },
   actions: {

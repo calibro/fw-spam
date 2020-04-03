@@ -1,7 +1,7 @@
 import * as d3 from "d3";
 import { groups } from "d3-array";
 import Vue from "vue";
-import _ from 'underscore'
+import _ from "underscore";
 
 const initialFilters = {
   reputation: ["poor", "neutral", "good"],
@@ -11,7 +11,15 @@ const initialFilters = {
   excludeNodes: []
 };
 
-const mandatoryCols = ['lastmonth','ip','hostname','email_score_name', 'lastday', 'blacklists_count', 'second_level_domain']
+const mandatoryCols = [
+  "lastmonth",
+  "ip",
+  "hostname",
+  "email_score_name",
+  "lastday",
+  "blacklists_count",
+  "second_level_domain"
+];
 
 const makeHierarchy = data => {
   let hier = Array.from(
@@ -29,7 +37,7 @@ const makeHierarchy = data => {
         children: children.map(e => ({
           ...e,
           level: "hostname",
-          name: e.hostname ? e.hostname: e.ip,
+          name: e.hostname ? e.hostname : e.ip,
           nodeId: e.hostname + e.ip
         }))
       }))
@@ -38,7 +46,6 @@ const makeHierarchy = data => {
   if (hier.length == 1 && !hier[0].name) {
     hier = hier[0].children;
   }
-  console.log(hier);
   return hier;
 };
 
@@ -51,7 +58,7 @@ export default {
     loaded: false,
     fetchingData: false,
     firstLoad: true,
-    dataError: '',
+    dataError: "",
     csvData: [],
     hierarchy: [],
     selectedDataSource: {
@@ -98,38 +105,44 @@ export default {
     },
     isNodeInHierarchy: state => node => {
       return (
-        state.filters.excludeNodes.length == 0 || passFilterHierarchy(state, node)
+        state.filters.excludeNodes.length == 0 ||
+        passFilterHierarchy(state, node)
       );
     },
     isNodeChecked: state => node => {
-      let isChecked = false
-      if (node.children){
-        let h = d3.hierarchy(node, d=> d.children)
-        let leaves = h.leaves()
-        let checkedChildren = leaves.filter(n => passFilterHierarchy(state, n.data))
-        isChecked = checkedChildren.length > 0
+      let isChecked = false;
+      if (node.children) {
+        let h = d3.hierarchy(node, d => d.children);
+        let leaves = h.leaves();
+        let checkedChildren = leaves.filter(n =>
+          passFilterHierarchy(state, n.data)
+        );
+        isChecked = checkedChildren.length > 0;
       } else {
-        isChecked = passFilterHierarchy(state, node)
+        isChecked = passFilterHierarchy(state, node);
       }
-      return isChecked
+      return isChecked;
     },
     isNodeIndeterminate: state => node => {
-      let isIndetermine = false
-      if (node.children){
-        let h = d3.hierarchy(node, d=> d.children)
-        let leaves = h.leaves()
-        let checkedChildren = leaves.filter(n => passFilterHierarchy(state, n.data))
-        isIndetermine = checkedChildren.length > 0 && (leaves.length > checkedChildren.length)
+      let isIndetermine = false;
+      if (node.children) {
+        let h = d3.hierarchy(node, d => d.children);
+        let leaves = h.leaves();
+        let checkedChildren = leaves.filter(n =>
+          passFilterHierarchy(state, n.data)
+        );
+        isIndetermine =
+          checkedChildren.length > 0 && leaves.length > checkedChildren.length;
       }
-      return isIndetermine
+      return isIndetermine;
     }
   },
   mutations: {
     setData(state, data) {
       state.fetchingData = false;
-      if(_.every(mandatoryCols, c => data.columns.includes(c))){
+      if (_.every(mandatoryCols, c => data.columns.includes(c))) {
         state.csvData = data;
-        state.firstLoad = false
+        state.firstLoad = false;
         state.loaded = true;
         state.hierarchy = makeHierarchy(data);
 
@@ -160,11 +173,10 @@ export default {
         );
         state.filters.lastdayRange = state.filterOptions.lastdayRange;
         state.filters.lastmonthRange = state.filterOptions.lastmonthRange;
-
       } else {
-        state.csvData = []
-        state.hierarchy= []
-        state.dataError = "Wrong CSV format."
+        state.csvData = [];
+        state.hierarchy = [];
+        state.dataError = "Wrong CSV format.";
       }
     },
     setReputation(state, val) {
@@ -183,9 +195,9 @@ export default {
       Vue.set(state.filters, "excludeNodes", val);
     },
     setDataError(state, error) {
-      state.loaded = false
-      state.fetchingData = false
-      state.dataError =  error
+      state.loaded = false;
+      state.fetchingData = false;
+      state.dataError = error;
     },
     toggleExcludeNode(state, val) {
       let exHierarchy = state.filters.excludeNodes;
@@ -215,7 +227,9 @@ export default {
       state.loaded = false;
       state.fetchingData = true;
 
-      const csvData = await d3.csv("./data/data.csv", d3.autoType).catch(err => commit("setDataError", 'Could not open test data'))
+      const csvData = await d3
+        .csv("./data/data.csv", d3.autoType)
+        .catch(err => commit("setDataError", "Could not open test data"));
       commit("setData", csvData);
       commit("resetFilters");
     },
@@ -223,44 +237,47 @@ export default {
       if (file) {
         state.loaded = false;
         state.fetchingData = true;
-        state.dataError = ''
+        state.dataError = "";
         state.selectedDataSource = {
           localFile: file,
           remoteFileUrl: null
-        }
+        };
 
         var reader = new FileReader();
         reader.onloadend = async function(evt) {
           var dataUrl = evt.target.result;
           // The following call results in an "Access denied" error in IE.
-          let csvData = await d3.csv(dataUrl, d3.autoType).catch(err => commit("setDataError", 'Could not open CSV file. ' + err.message))
+          let csvData = await d3
+            .csv(dataUrl, d3.autoType)
+            .catch(err =>
+              commit("setDataError", "Could not open CSV file. " + err.message)
+            );
           commit("setData", csvData);
-          commit('setSlideSourceFromData', file.name, { root: true })
+          commit("setSlideSourceFromData", file.name, { root: true });
           commit("resetFilters");
         };
         reader.onerror = async function(evt) {
-          commit("setDataError", 'Could not open CSV file.')
-        }
+          commit("setDataError", "Could not open CSV file.");
+        };
         reader.readAsDataURL(file);
       }
     },
     async loadData({ state, commit }, filename) {
-      state.loaded = false
-      state.fetchingData = true
-      state.dataError = ''
+      state.loaded = false;
+      state.fetchingData = true;
+      state.dataError = "";
       state.selectedDataSource = {
         localFile: null,
         remoteFileUrl: filename
-      }
-      let csvData = await d3.csv(
-        process.env.VUE_APP_SCRAPER_URL + "data/" + filename,
-        d3.autoType
-      ).catch(err => {
-        commit("setDataError", 'Could not open CSV file. ' + err.message)
-      })
+      };
+      let csvData = await d3
+        .csv(process.env.VUE_APP_SCRAPER_URL + "data/" + filename, d3.autoType)
+        .catch(err => {
+          commit("setDataError", "Could not open CSV file. " + err.message);
+        });
       if (csvData) {
         commit("setData", csvData);
-        commit('setSlideSourceFromData', filename, { root: true })
+        commit("setSlideSourceFromData", filename, { root: true });
         commit("resetFilters");
       }
     }
