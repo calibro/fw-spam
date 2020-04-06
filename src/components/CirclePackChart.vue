@@ -184,44 +184,26 @@ export default {
         let nodeEnter = node
           .enter()
           .append("g")
-          .attr("class", "node-g");
-
-        nodeEnter
+          .attr("class", "node-g")
           .attr("opacity", 0)
           .attr(
             "transform",
             d => `translate(${this.width / 2},${this.height / 2})`
-          )
+          );
+
+        nodeEnter
           .append("path")
           .attr("class", "node-path")
           .attr("id", (d, i) => {
-            d.id = "p_" + i;
-            return "p_" + i;
-          });
+            const id =
+              "p_" +
+              d.data.level +
+              d.data.name +
+              (d.data.ip ? d.data.ip : "group");
 
-        node.exit().remove();
-
-        node = node.merge(nodeEnter);
-        node
-          .transition()
-          .duration(500)
-          .attr("opacity", 1)
-          .attr("transform", d => `translate(${d.x + 1},${d.y + 1})`);
-
-        node.select(".node-path").attr("d", d => circle(d.r));
-
-        const hidden = node.filter(d => d.children && d.children.length == 1);
-
-        hidden
-          .select("path")
-          .attr("stroke", "none")
-          .attr("fill", "none");
-
-        const leaves = node.filter(d => !d.children);
-
-        leaves
-          .select("path")
-          .attr("stroke", "none")
+            return id;
+          })
+          .filter(d => !d.children)
           .on("mouseover", function(d) {
             tippy(this, {
               content:
@@ -262,7 +244,7 @@ export default {
               parent.selectAll(".node-label").remove();
             } else {
               d3.select(this)
-                .attr("stroke", "#ccc")
+                .attr("stroke", "black")
                 .classed("has-label", true);
               parent
                 .append("text")
@@ -282,30 +264,90 @@ export default {
             }
           });
 
-        leaves
-          .select("path")
+        node.exit().remove();
+
+        node = node.merge(nodeEnter);
+
+        node
           .transition()
           .duration(500)
-          .attr("fill", d =>
-            this.colorScales[self.colorBy](d.data[self.colorBy])
-          );
+          .attr("opacity", 1)
+          .attr("transform", d => `translate(${d.x + 1},${d.y + 1})`);
 
-        const internal = node.filter(d => d.children && d.children.length > 1);
+        node
+          .select(".node-path")
+          .attr("d", d => circle(d.r))
+          .attr("stroke", function(d) {
+            if (d.children && d.children.length > 1) {
+              return "#ddd";
+            } else if (d3.select(this).classed("has-label")) {
+              return "black";
+            } else {
+              return "none";
+            }
+          })
+          .transition()
+          .duration(500)
+          .attr("fill", d => {
+            if (d.children && d.children.length >= 1) {
+              return "none";
+            } else {
+              return this.colorScales[self.colorBy](d.data[self.colorBy]);
+            }
+          });
 
-        internal
-          .select("path")
-          .attr("stroke", "#ddd")
-          .attr("fill", "none");
-
-        internal
-          .append("text")
+        // LABELS
+        let nodeLabels = svg
+          .selectAll(".node-labels")
+          .data(
+            root
+              .descendants()
+              .slice(rooted ? 0 : 1)
+              .reverse()
+              .filter(d => d.children && d.children.length > 1),
+            d => d.data.level + d.data.name + (d.data.ip ? d.data.ip : "group")
+          )
+          .join(
+            enter =>
+              enter
+                .append("text")
+                .attr(
+                  "transform",
+                  `translate(${this.width / 2},${this.height / 2})`
+                )
+                .call(enter =>
+                  enter
+                    .transition()
+                    .duration(500)
+                    .attr("transform", d => `translate(${d.x + 1},${d.y + 1})`)
+                ),
+            update =>
+              update.call(update =>
+                update
+                  .transition()
+                  .duration(500)
+                  .attr("transform", d => `translate(${d.x + 1},${d.y + 1})`)
+              )
+          )
+          .attr("class", "node-labels")
           .attr("dy", "-0.3em")
           .attr("fill", "black")
           .attr("font-size", d => textScale(d.r) + "px")
           .attr("text-anchor", "middle")
-          .attr("font-family", "'Arial', sans-serif")
-          .append("textPath")
-          .attr("xlink:href", d => "#" + d.id)
+          .attr("font-family", "'Arial', sans-serif");
+
+        nodeLabels
+          .selectAll("textPath")
+          .data(d => [d])
+          .join("textPath")
+          .attr("href", (d, i) => {
+            const id =
+              "p_" +
+              d.data.level +
+              d.data.name +
+              (d.data.ip ? d.data.ip : "group");
+            return "#" + id;
+          })
           .attr("startOffset", "50%")
           .text(d => {
             return d.data.name;
