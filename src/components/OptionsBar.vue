@@ -27,7 +27,7 @@
           :checked="useOriginalValues"
           @change="setUseOriginalValues"
           class="mt-2"
-          >Use original values</b-form-checkbox
+          >Log scale</b-form-checkbox
         >
       </b-col>
     </b-row>
