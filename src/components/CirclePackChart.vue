@@ -382,6 +382,11 @@ export default {
             .attr("font-family", "'Arial', sans-serif");
         }
 
+        d3.select(this.$refs.legend)
+          .select(".legendSize")
+          .select(".legendTitle")
+          .text(self.legendLabels[self.areaBy]);
+
         const legendSizeCont = d3
           .select(this.$refs.legend)
           .select(".legendSize");
