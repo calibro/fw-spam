@@ -15,7 +15,7 @@
       font-family="'Arial', sans-serif"
       font-weight="bold"
     >
-      {{ sildeTitle }}
+      {{ slideTitle }}
     </text>
     <circle-pack-chart
       x="25"
@@ -62,7 +62,7 @@ export default {
   },
   computed: {
     ...mapState({
-      sildeTitle: state => state.sildeTitle,
+      slideTitle: state => state.slideTitle,
       slideSource: state => state.slideSource,
       fetchingData: state => state.data.fetchingData
     }),
@@ -75,17 +75,22 @@ export default {
     }
   },
   methods: {
-    exportImage(format) {
+    exportImage(format, slideTitle) {
+      console.log(format, slideTitle);
+      const title = slideTitle ? slideTitle : "chart";
       switch (format) {
         case "png":
-          saveSvgAsPng(this.$refs.mainSlide, "chart.png");
+          saveSvgAsPng(this.$refs.mainSlide, title + ".png");
           break;
         case "svg":
-          saveSVG(this.$refs.mainSlide);
+          saveSVG(this.$refs.mainSlide, title);
       }
     },
     resize() {
-      this.svgHeight = Math.min(this.$el.parentNode.clientHeight, this.$el.parentNode.clientWidth / this.aspectRatio);
+      this.svgHeight = Math.min(
+        this.$el.parentNode.clientHeight,
+        this.$el.parentNode.clientWidth / this.aspectRatio
+      );
     }
   }
 };

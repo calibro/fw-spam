@@ -5,17 +5,32 @@
         <fw-input
           label="Title"
           :value="slideTitle"
-          @input="setSildeTitle"
+          @input="setslideTitle"
           placeholder="your slide title"
         ></fw-input>
       </b-col>
       <b-col>
-        <fw-input
-          label="Source"
-          :value="slideSource"
-          @input="setSlideSource"
-          placeholder="additional information"
-        ></fw-input>
+        <div class="fw-option-select-label">export</div>
+        <b-row>
+          <b-col>
+            <b-button
+              variant="warning"
+              class="btn-block fw-button"
+              @click="() => onExport('svg', slideTitle)"
+            >
+              .svg
+            </b-button>
+          </b-col>
+          <b-col>
+            <b-button
+              variant="warning"
+              class="btn-block fw-button"
+              @click="() => onExport('png', slideTitle)"
+            >
+              .png
+            </b-button>
+          </b-col>
+        </b-row>
       </b-col>
       <b-col>
         <fw-select
@@ -26,27 +41,12 @@
         ></fw-select>
       </b-col>
       <b-col>
-        <div class="fw-option-select-label">export</div>
-        <b-row>
-          <b-col>
-            <b-button
-              variant="warning"
-              class="btn-block fw-button"
-              @click="() => onExport('svg')"
-            >
-              .svg
-            </b-button>
-          </b-col>
-          <b-col>
-            <b-button
-              variant="warning"
-              class="btn-block fw-button"
-              @click="() => onExport('png')"
-            >
-              .png
-            </b-button>
-          </b-col>
-        </b-row>
+        <fw-input
+          label="Source"
+          :value="slideSource"
+          @input="setSlideSource"
+          placeholder="additional information"
+        ></fw-input>
       </b-col>
     </b-row>
   </b-container>
@@ -70,10 +70,10 @@ export default {
     ...mapState(["slideTitle", "slideSource", "slideSize"])
   },
   methods: {
-    ...mapMutations(["setSildeTitle", "setSlideSource", "setSlideSize"]),
+    ...mapMutations(["setslideTitle", "setSlideSource", "setSlideSize"]),
 
-    onExport(format) {
-      this.$emit("export", format);
+    onExport(format, title) {
+      this.$emit("export", format, title);
     }
   }
 };

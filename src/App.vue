@@ -63,8 +63,8 @@ export default {
     }
   },
   methods: {
-    doExport(format) {
-      this.$refs.slide.exportImage(format);
+    doExport(format, title) {
+      this.$refs.slide.exportImage(format, title);
     },
     onResize() {
       this.$refs.slide.resize();

@@ -13,8 +13,8 @@ export default new Vuex.Store({
     areaBy: "lastmonth",
     colorBy: "email_score_name",
     useOriginalValues: false,
-    sildeTitle: "",
-    slideSource: "",
+    slideTitle: "",
+    slideSource: "talosintelligence.com",
     slideSize: "1920:1080",
     remoteFileList: []
   },
@@ -30,16 +30,14 @@ export default new Vuex.Store({
     setColorBy(state, val) {
       state.colorBy = val;
     },
-    setSildeTitle(state, val) {
-      state.sildeTitle = val;
+    setslideTitle(state, val) {
+      state.slideTitle = val;
+    },
+    setSlideTitleFromData(state, val) {
+      state.slideTitle = val.substring(0, val.lastIndexOf(".")).split("T")[0];
     },
     setSlideSource(state, val) {
       state.slideSource = val;
-    },
-    setSlideSourceFromData(state, val) {
-      state.slideSource =
-        "talosintelligence.com - " +
-        val.substring(0, val.lastIndexOf(".")).split("T")[0];
     },
     setSlideSize(state, val) {
       state.slideSize = val;

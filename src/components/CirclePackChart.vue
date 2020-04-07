@@ -178,7 +178,11 @@ export default {
             .descendants()
             .slice(rooted ? 0 : 1)
             .reverse(),
-          d => d.data.level + d.data.name + (d.data.ip ? d.data.ip : "group")
+          d =>
+            d.depth +
+            d.data.level +
+            d.data.name +
+            (d.data.ip ? d.data.ip : "group")
         );
 
         let nodeEnter = node
@@ -197,6 +201,8 @@ export default {
           .attr("id", (d, i) => {
             const id =
               "p_" +
+              (d.children ? d.children.length : 0) +
+              d.depth +
               d.data.level +
               d.data.name +
               (d.data.ip ? d.data.ip : "group");
@@ -305,12 +311,17 @@ export default {
               .slice(rooted ? 0 : 1)
               .reverse()
               .filter(d => d.children && d.children.length > 1),
-            d => d.data.level + d.data.name + (d.data.ip ? d.data.ip : "group")
+            d =>
+              d.depth +
+              d.data.level +
+              d.data.name +
+              (d.data.ip ? d.data.ip : "group")
           )
           .join(
             enter =>
               enter
                 .append("text")
+                .attr("font-size", d => textScale(d.r) + "px")
                 .attr(
                   "transform",
                   `translate(${this.width / 2},${this.height / 2})`
@@ -322,17 +333,18 @@ export default {
                     .attr("transform", d => `translate(${d.x + 1},${d.y + 1})`)
                 ),
             update =>
-              update.call(update =>
-                update
-                  .transition()
-                  .duration(500)
-                  .attr("transform", d => `translate(${d.x + 1},${d.y + 1})`)
-              )
+              update
+                .attr("font-size", d => textScale(d.r) + "px")
+                .call(update =>
+                  update
+                    .transition()
+                    .duration(500)
+                    .attr("transform", d => `translate(${d.x + 1},${d.y + 1})`)
+                )
           )
           .attr("class", "node-labels")
           .attr("dy", "-0.3em")
           .attr("fill", "black")
-          .attr("font-size", d => textScale(d.r) + "px")
           .attr("text-anchor", "middle")
           .attr("font-family", "'Arial', sans-serif");
 
@@ -343,6 +355,8 @@ export default {
           .attr("href", (d, i) => {
             const id =
               "p_" +
+              (d.children ? d.children.length : 0) +
+              d.depth +
               d.data.level +
               d.data.name +
               (d.data.ip ? d.data.ip : "group");

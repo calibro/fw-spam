@@ -253,7 +253,7 @@ export default {
               commit("setDataError", "Could not open CSV file. " + err.message)
             );
           commit("setData", csvData);
-          commit("setSlideSourceFromData", file.name, { root: true });
+          commit("setSlideTitleFromData", file.name, { root: true });
           commit("resetFilters");
         };
         reader.onerror = async function(evt) {
@@ -277,7 +277,7 @@ export default {
         });
       if (csvData) {
         commit("setData", csvData);
-        commit("setSlideSourceFromData", filename, { root: true });
+        commit("setSlideTitleFromData", filename, { root: true });
         commit("resetFilters");
       }
     }
