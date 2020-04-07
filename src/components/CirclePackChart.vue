@@ -114,7 +114,9 @@ export default {
         const sizeScaleLastmonth = d3
           .scaleLinear()
           .domain(lastmonthExtent)
-          .range(this.useOriginalValues ? lastmonthExtent : [1.0, 100.0]);
+          .range(
+            this.useOriginalValues ? [0.1, lastmonthExtent[1]] : [1.0, 100.0]
+          );
 
         const lastdayExtent = d3.extent(
           hierarchy.leaves(),
@@ -123,7 +125,9 @@ export default {
         const sizeScaleLastday = d3
           .scaleLinear()
           .domain(lastdayExtent)
-          .range(this.useOriginalValues ? lastdayExtent : [1.0, 100.0]);
+          .range(
+            this.useOriginalValues ? [0.1, lastdayExtent[1]] : [1.0, 100.0]
+          );
 
         const sizeScales = {
           lastday: sizeScaleLastday,
@@ -178,11 +182,7 @@ export default {
             .descendants()
             .slice(rooted ? 0 : 1)
             .reverse(),
-          d =>
-            d.depth +
-            d.data.level +
-            d.data.name +
-            (d.data.ip ? d.data.ip : "group")
+          d => d.data.level + d.data.name + (d.data.ip ? d.data.ip : "group")
         );
 
         let nodeEnter = node
@@ -199,15 +199,16 @@ export default {
           .append("path")
           .attr("class", "node-path")
           .attr("id", (d, i) => {
-            const id =
-              "p_" +
-              (d.children ? d.children.length : 0) +
-              d.depth +
-              d.data.level +
-              d.data.name +
-              (d.data.ip ? d.data.ip : "group");
-
-            return id;
+            if (d.children && d.children.length > 1) {
+              const id =
+                "p_" +
+                (d.children ? d.children.length : 0) +
+                d.depth +
+                d.data.level +
+                d.data.name +
+                (d.data.ip ? d.data.ip : "group");
+              return id;
+            }
           })
           .filter(d => !d.children)
           .on("mouseover", function(d) {
@@ -311,27 +312,44 @@ export default {
               .slice(rooted ? 0 : 1)
               .reverse()
               .filter(d => d.children && d.children.length > 1),
-            d =>
-              d.depth +
-              d.data.level +
-              d.data.name +
-              (d.data.ip ? d.data.ip : "group")
+            d => d.data.level + d.data.name + (d.data.ip ? d.data.ip : "group")
           )
           .join(
-            enter =>
-              enter
+            enter => {
+              const selection = enter
                 .append("text")
                 .attr("font-size", d => textScale(d.r) + "px")
                 .attr(
                   "transform",
                   `translate(${this.width / 2},${this.height / 2})`
-                )
-                .call(enter =>
-                  enter
-                    .transition()
-                    .duration(500)
-                    .attr("transform", d => `translate(${d.x + 1},${d.y + 1})`)
-                ),
+                );
+
+              selection
+                .append("textPath")
+                .attr("href", (d, i) => {
+                  const id =
+                    "p_" +
+                    (d.children ? d.children.length : 0) +
+                    d.depth +
+                    d.data.level +
+                    d.data.name +
+                    (d.data.ip ? d.data.ip : "group");
+                  return "#" + id;
+                })
+                .attr("startOffset", "50%")
+                .text(d => {
+                  return d.data.name;
+                });
+
+              selection.call(enter =>
+                enter
+                  .transition()
+                  .duration(500)
+                  .attr("transform", d => `translate(${d.x + 1},${d.y + 1})`)
+              );
+
+              return selection;
+            },
             update =>
               update
                 .attr("font-size", d => textScale(d.r) + "px")
@@ -348,24 +366,25 @@ export default {
           .attr("text-anchor", "middle")
           .attr("font-family", "'Arial', sans-serif");
 
-        nodeLabels
-          .selectAll("textPath")
-          .data(d => [d])
-          .join("textPath")
-          .attr("href", (d, i) => {
-            const id =
-              "p_" +
-              (d.children ? d.children.length : 0) +
-              d.depth +
-              d.data.level +
-              d.data.name +
-              (d.data.ip ? d.data.ip : "group");
-            return "#" + id;
-          })
-          .attr("startOffset", "50%")
-          .text(d => {
-            return d.data.name;
-          });
+        // nodeLabels
+        //   .selectAll("textPath")
+        //   .data(d => [d])
+        //   .join("textPath")
+        //   .attr("href", (d, i) => {
+        //     console.log(d);
+        //     const id =
+        //       "p_" +
+        //       (d.children ? d.children.length : 0) +
+        //       d.depth +
+        //       d.data.level +
+        //       d.data.name +
+        //       (d.data.ip ? d.data.ip : "group");
+        //     return "#" + id;
+        //   })
+        //   .attr("startOffset", "50%")
+        //   .text(d => {
+        //     return d.data.name;
+        //   });
 
         const legendColorCont = d3
           .select(this.$refs.legend)
