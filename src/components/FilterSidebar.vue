@@ -29,7 +29,7 @@
             v-b-toggle.accordion-1
             role="tab"
           >
-            Hierachy<b-icon-chevron-up class="caret"></b-icon-chevron-up>
+            Hierarchy<b-icon-chevron-up class="caret"></b-icon-chevron-up>
           </div>
           <b-collapse
             id="accordion-1"
