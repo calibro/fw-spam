@@ -20,6 +20,7 @@ export default function saveSVG(svg, title) {
       }
     }
   }
+
   svg.setAttributeNS(xmlns, "xmlns", svgns);
   svg.setAttributeNS(xmlns, "xmlns:xlink", xlinkns);
   const serializer = new window.XMLSerializer();
