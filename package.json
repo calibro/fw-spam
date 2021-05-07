@@ -27,7 +27,7 @@
     "save-as": "^0.1.8",
     "save-svg-as-png": "^1.4.17",
     "tippy.js": "^6.0.3",
-    "underscore": "^1.9.2",
+    "underscore": "^1.12.1",
     "vue": "^2.6.11",
     "vue-click-outside": "^1.0.7",
     "vue-resize-directive": "^1.2.0",
